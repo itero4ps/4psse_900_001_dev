@@ -1,0 +1,376 @@
+OBJECT Page 450 Issued Finance Charge Memo
+{
+  OBJECT-PROPERTIES
+  {
+    Date=;
+    Time=;
+    Version List=NAVW19.00.00.43897,NAVDK9.NO9,4PS9.00,4PSSE.DK.NO;
+  }
+  PROPERTIES
+  {
+    Editable=No;
+    CaptionML=ENU=Issued Finance Charge Memo;
+    InsertAllowed=No;
+    ModifyAllowed=No;
+    SourceTable=Table304;
+    PageType=Document;
+    OnOpenPage=VAR
+                 GLSetup@1000 : Record 98;
+               BEGIN
+                 //**4PS Generated Code. Do Not Change.sn01
+                 DPA_IsHardFilter := DPA_SetFilters(CurrPage.OBJECTID(FALSE));
+                 //**4PS Generated Code.en01
+
+                 //4PSSE
+                 GLSetup.GET;
+                 NORlocalizationEnable := GLSetup."Norwegian Localization Active";
+                 DKinfoEnable := GLSetup."Danish localization active";
+               END;
+
+    OnNewRecord=BEGIN
+                  //**4PS Generated Code. Do Not Change.sn02
+                  DPA_SetDefaultDepartment;
+                  //**4PS Generated Code.en02
+                END;
+
+    OnInsertRecord=VAR
+                     xRecRef@1100000999 : RecordRef;
+                   BEGIN
+                     //**4PS Generated Code. Do Not Change.sn05
+                     xRecRef.GETTABLE(xRec);
+                     DPA_SetDefaultDpmtFromNoSeries(xRecRef);
+                     //**4PS Generated Code.en05
+                   END;
+
+    ActionList=ACTIONS
+    {
+      { 1900000003;0 ;ActionContainer;
+                      ActionContainerType=RelatedInformation }
+      { 31      ;1   ;ActionGroup;
+                      CaptionML=ENU=&Memo;
+                      Image=Notes }
+      { 34      ;2   ;Action    ;
+                      ShortCutKey=Shift+Ctrl+L;
+                      CaptionML=ENU=List;
+                      Image=OpportunitiesList;
+                      OnAction=BEGIN
+                                 IssuedFinChrgMemoHeader.COPY(Rec);
+                                 IF PAGE.RUNMODAL(0,IssuedFinChrgMemoHeader) = ACTION::LookupOK THEN
+                                   Rec := IssuedFinChrgMemoHeader;
+                               END;
+                                }
+      { 36      ;2   ;Action    ;
+                      CaptionML=ENU=Co&mments;
+                      RunObject=Page 454;
+                      RunPageLink=Type=CONST(Issued Finance Charge Memo),
+                                  No.=FIELD(No.);
+                      Image=ViewComments }
+      { 35      ;2   ;Action    ;
+                      CaptionML=ENU=C&ustomer;
+                      RunObject=Page 22;
+                      RunPageLink=No.=FIELD(Customer No.);
+                      Image=Customer }
+      { 26      ;2   ;Action    ;
+                      AccessByPermission=TableData 348=R;
+                      ShortCutKey=Shift+Ctrl+D;
+                      CaptionML=ENU=Dimensions;
+                      Image=Dimensions;
+                      OnAction=BEGIN
+                                 ShowDimensions;
+                               END;
+                                }
+      { 6       ;2   ;Separator  }
+      { 7       ;2   ;Action    ;
+                      ShortCutKey=F7;
+                      CaptionML=ENU=Statistics;
+                      RunObject=Page 453;
+                      RunPageLink=No.=FIELD(No.);
+                      Promoted=Yes;
+                      Image=Statistics;
+                      PromotedCategory=Process }
+      { 1900000004;0 ;ActionContainer;
+                      ActionContainerType=ActionItems }
+      { 1080000 ;1   ;ActionGroup;
+                      CaptionML=ENU=F&unctions }
+      { 1080001 ;2   ;Action    ;
+                      Ellipsis=Yes;
+                      CaptionML=ENU=Create NO Electronic Finance Charge Memo;
+                      Visible=NORlocalizationEnable;
+                      Image=CreateDocument;
+                      OnAction=BEGIN
+                                 IssuedFinChrgMemoHeader := Rec;
+                                 IssuedFinChrgMemoHeader.SETRECFILTER;
+                                 REPORT.RUNMODAL(REPORT::"Create NO Elec. Fin. Chrg Mems",TRUE,FALSE,IssuedFinChrgMemoHeader);
+                               END;
+                                }
+      { 15      ;1   ;Action    ;
+                      Ellipsis=Yes;
+                      CaptionML=ENU=&Print;
+                      Promoted=Yes;
+                      Image=Print;
+                      PromotedCategory=Process;
+                      OnAction=BEGIN
+                                 CurrPage.SETSELECTIONFILTER(IssuedFinChrgMemoHeader);
+                                 IssuedFinChrgMemoHeader.PrintRecords(TRUE,FALSE,FALSE);
+                               END;
+                                }
+      { 3       ;1   ;Action    ;
+                      Ellipsis=Yes;
+                      CaptionML=ENU=&Email;
+                      Promoted=Yes;
+                      Image=Email;
+                      PromotedCategory=Process;
+                      OnAction=BEGIN
+                                 IssuedFinChrgMemoHeader := Rec;
+                                 CurrPage.SETSELECTIONFILTER(IssuedFinChrgMemoHeader);
+                                 IssuedFinChrgMemoHeader.PrintRecords(FALSE,TRUE,FALSE);
+                               END;
+                                }
+      { 30      ;1   ;Action    ;
+                      CaptionML=ENU=&Navigate;
+                      Promoted=Yes;
+                      PromotedIsBig=Yes;
+                      Image=Navigate;
+                      PromotedCategory=Process;
+                      OnAction=BEGIN
+                                 Navigate;
+                               END;
+                                }
+      { 1100285008;1 ;Action    ;
+                      CaptionML=ENU=Create DK Electronic Finance Charge Memo;
+                      Promoted=Yes;
+                      Visible=DKinfoEnable;
+                      Image=CreateFinanceChargememo;
+                      PromotedCategory=Process;
+                      OnAction=BEGIN
+                                 IssuedFinChrgMemoHeader := Rec;
+                                 IssuedFinChrgMemoHeader.SETRECFILTER;
+
+                                 REPORT.RUNMODAL(REPORT::"Create DK Elec. Fin. Chrg. Mem", TRUE, FALSE, IssuedFinChrgMemoHeader);
+                               END;
+                                }
+      { 1100285007;1 ;Action    ;
+                      CaptionML=ENU=Create Electronic Finance Charge Memo;
+                      Promoted=Yes;
+                      PromotedIsBig=Yes;
+                      Image=CreateFinanceChargememo;
+                      PromotedCategory=Process;
+                      OnAction=VAR
+                                 cuExportSvefaktura@1100285000 : Codeunit 11128055;
+                                 lvFinChrgMemoIssue@1100285001 : Codeunit 395;
+                               BEGIN
+                                 // 140909 ITERO.MH ENH042
+                                 IssuedFinChrgMemoHeader := Rec;
+                                 IssuedFinChrgMemoHeader.SETRECFILTER;
+
+                                 //>> 150126 ITERO.AC RFC035  Send PDF instead of XML file
+                                 IF (IssuedFinChrgMemoHeader."Elec. Fin. Charge Memo Created") THEN
+                                   IF NOT (CONFIRM(txtSendSvefakturaAgain, TRUE)) THEN EXIT;
+                                 // cuExportSvefaktura.CreateFinChargeMemo(IssuedFinChrgMemoHeader);
+                                 lvFinChrgMemoIssue.SendFinChargeMemoElectronically(IssuedFinChrgMemoHeader)
+                                 //<< 150126 ITERO.AC RFC035
+                               END;
+                                }
+      { 1900000006;0 ;ActionContainer;
+                      ActionContainerType=Reports }
+      { 1902355906;1 ;Action    ;
+                      CaptionML=ENU=Finance Charge Memo Nos.;
+                      RunObject=Report 127;
+                      Promoted=No;
+                      Image=Report;
+                      PromotedCategory=Report }
+      { 1903158706;1 ;Action    ;
+                      CaptionML=ENU=Finance Charge Memo;
+                      RunObject=Report 118;
+                      Promoted=Yes;
+                      Image=FinChargeMemo;
+                      PromotedCategory=Report }
+      { 1902299006;1 ;Action    ;
+                      CaptionML=ENU=Customer - Balance to Date;
+                      RunObject=Report 121;
+                      Promoted=Yes;
+                      Image=Report;
+                      PromotedCategory=Report }
+      { 1906871306;1 ;Action    ;
+                      CaptionML=ENU=Customer - Detail Trial Bal.;
+                      RunObject=Report 104;
+                      Promoted=No;
+                      Image=Report;
+                      PromotedCategory=Report }
+    }
+  }
+  CONTROLS
+  {
+    { 1900000001;0;Container;
+                ContainerType=ContentArea }
+
+    { 1   ;1   ;Group     ;
+                CaptionML=ENU=General }
+
+    { 2   ;2   ;Field     ;
+                SourceExpr="No.";
+                Importance=Promoted }
+
+    { 4   ;2   ;Field     ;
+                SourceExpr="Customer No.";
+                Importance=Standard }
+
+    { 41  ;2   ;Field     ;
+                SourceExpr=Name;
+                Importance=Promoted }
+
+    { 39  ;2   ;Field     ;
+                SourceExpr=Address }
+
+    { 13  ;2   ;Field     ;
+                SourceExpr="Address 2" }
+
+    { 10  ;2   ;Field     ;
+                SourceExpr="Post Code" }
+
+    { 9   ;2   ;Field     ;
+                SourceExpr=City }
+
+    { 8   ;2   ;Field     ;
+                SourceExpr=Contact }
+
+    { 1100285000;2;Field  ;
+                SourceExpr="Contact Phone No.";
+                Visible=DKinfoEnable }
+
+    { 1100285001;2;Field  ;
+                SourceExpr="Contact Fax No.";
+                Visible=DKinfoEnable }
+
+    { 1100285002;2;Field  ;
+                SourceExpr="Contact E-Mail";
+                Visible=DKinfoEnable }
+
+    { 1100285003;2;Field  ;
+                SourceExpr="Contact Role";
+                Visible=DKinfoEnable }
+
+    { 18  ;2   ;Field     ;
+                SourceExpr="Posting Date";
+                Importance=Standard }
+
+    { 20  ;2   ;Field     ;
+                SourceExpr="Document Date" }
+
+    { 16  ;2   ;Field     ;
+                SourceExpr="Pre-Assigned No." }
+
+    { 32  ;2   ;Field     ;
+                SourceExpr="No. Printed" }
+
+    { 111283;2 ;Field     ;
+                SourceExpr="Electronic Invoicing" }
+
+    { 29  ;1   ;Part      ;
+                Name=FinChrgMemoLines;
+                SubPageLink=Finance Charge Memo No.=FIELD(No.);
+                PagePartID=Page451 }
+
+    { 1904784501;1;Group  ;
+                CaptionML=ENU=Posting }
+
+    { 43  ;2   ;Field     ;
+                SourceExpr="Fin. Charge Terms Code";
+                Importance=Standard }
+
+    { 22  ;2   ;Field     ;
+                SourceExpr="Due Date";
+                Importance=Promoted }
+
+    { 24  ;2   ;Field     ;
+                SourceExpr="Currency Code";
+                Importance=Promoted;
+                OnAssistEdit=BEGIN
+                               ChangeExchangeRate.SetParameter(
+                                 "Currency Code",
+                                 CurrExchRate.ExchangeRate(
+                               //  "Posting Date","Currency Code"), //**4PS.o
+                                   0, '',"Posting Date","Currency Code",TRUE), //**4PS.n
+                                   "Posting Date");
+                               ChangeExchangeRate.EDITABLE(FALSE);
+                               IF ChangeExchangeRate.RUNMODAL = ACTION::OK THEN;
+                               CLEAR(ChangeExchangeRate);
+                             END;
+                              }
+
+    { 1100285004;2;Field  ;
+                SourceExpr="EAN No.";
+                Visible=DKinfoEnable }
+
+    { 1100285005;2;Field  ;
+                SourceExpr="Account Code DK";
+                Visible=DKinfoEnable }
+
+    { 1100285006;2;Field  ;
+                SourceExpr="Payment Channel";
+                Visible=DKinfoEnable }
+
+    { 1080010;2;Field     ;
+                SourceExpr=GLN;
+                Visible=NORlocalizationEnable }
+
+    { 1080012;2;Field     ;
+                SourceExpr="Account Code NO";
+                Visible=NORlocalizationEnable }
+
+    { 1080002;2;Field     ;
+                SourceExpr="E-Invoice";
+                Visible=NORlocalizationEnable }
+
+    { 1080004;2;Field     ;
+                SourceExpr="E-Invoice Created";
+                Visible=NORlocalizationEnable }
+
+    { 55  ;2   ;Field     ;
+                SourceExpr="Shortcut Dimension 1 Code";
+                OnValidate=BEGIN
+                             //**4PS Generated Code. Do Not Change.sn03
+                             DPA_ChkDepartmentCodeAllowed(DPA_IsHardFilter);
+                             //**4PS Generated Code.en03
+                           END;
+                            }
+
+    { 57  ;2   ;Field     ;
+                SourceExpr="Shortcut Dimension 2 Code" }
+
+    { 1900000007;0;Container;
+                ContainerType=FactBoxArea }
+
+    { 1900383207;1;Part   ;
+                Visible=FALSE;
+                PartType=System;
+                SystemPartID=RecordLinks }
+
+    { 1905767507;1;Part   ;
+                Visible=TRUE;
+                PartType=System;
+                SystemPartID=Notes }
+
+  }
+  CODE
+  {
+    VAR
+      IssuedFinChrgMemoHeader@1000 : Record 304;
+      CurrExchRate@1001 : Record 330;
+      ChangeExchangeRate@1002 : Page 511;
+      DPA_IsHardFilter@1100000999 : Boolean;
+      DKinfoEnable@1100285501 : Boolean INDATASET;
+      NORlocalizationEnable@1100285502 : Boolean INDATASET;
+      txtSendSvefakturaAgain@1100285000 : TextConst 'ENU=The memo have already been created. Would you like to continue?';
+
+    BEGIN
+    {
+      140909 ITERO.MH INH-042 Added visibility on/off of E-invoice button
+                              Added action for svefaktura-export
+      150126 ITERO.AC RFC035  Send PDF instead of XML file
+      Version List=NAVW19.00.00.43897,NAVDK9.00.00.43897;
+    }
+    END.
+  }
+}
+

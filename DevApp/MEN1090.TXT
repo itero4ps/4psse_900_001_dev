@@ -1,0 +1,1181 @@
+OBJECT MenuSuite 1090 Dept - Company
+{
+  OBJECT-PROPERTIES
+  {
+    Date=;
+    Time=;
+    Version List=;
+  }
+  PROPERTIES
+  {
+  }
+  MENUNODES
+  {
+    {                ;[{753556F5-576C-4007-9A0C-86497356A257}] ;NextNodeID=[{38BBCE47-3D64-49FD-A418-B9BCD67D0651}] }
+    { MenuItem       ;[{38BBCE47-3D64-49FD-A418-B9BCD67D0651}] ;Name=Receivables-Payables;
+                                                                CaptionML=ENU=Receivables-Payables;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=159;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Reports and Analysis }
+    { MenuItem       ;[{939B20B4-B53B-42DC-8B20-1475FF141A6F}] ;Name=Huvudbok;
+                                                                CaptionML=ENU=Detail Trial Balance;
+                                                                RunObjectType=Report;
+                                                                RunObjectID=4;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Reports and Analysis }
+    { MenuItem       ;[{240FB4FC-ADF5-4345-95B2-424E2EBC0D15}] ;Name=Balansr„kning;
+                                                                CaptionML=ENU=Balance sheet;
+                                                                RunObjectType=Report;
+                                                                RunObjectID=11128010;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Reports and Analysis }
+    { MenuItem       ;[{810A4B81-FF2A-4987-9E85-D2729C3B83B2}] ;Name=Resultatr„kning;
+                                                                CaptionML=ENU=Income statement;
+                                                                RunObjectType=Report;
+                                                                RunObjectID=11128011;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Reports and Analysis }
+    { MenuItem       ;[{C23CE35E-59F7-4652-8FB8-3B9E54A86FA3}] ;Name=Trial Balance/Previous Period;
+                                                                CaptionML=ENU=Trial Balance/Previous Period;
+                                                                RunObjectType=Report;
+                                                                RunObjectID=11128500;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Reports and Analysis }
+    { MenuItem       ;[{2450E37E-4F29-44CD-8A02-96F63797AE26}] ;Name=G/L Register Customer/Vendor;
+                                                                CaptionML=ENU=G/L Register Customer/Vendor;
+                                                                RunObjectType=Report;
+                                                                RunObjectID=11128502;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Reports and Analysis }
+    { MenuItem       ;[{6CEC7A52-A1F3-4B97-89E7-CD718DFE8259}] ;Name=Customer - Collection List;
+                                                                CaptionML=ENU=Customer - Collection List;
+                                                                RunObjectType=Report;
+                                                                RunObjectID=11128509;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Reports and Analysis }
+    { MenuItem       ;[{987AD54B-5DBB-4386-B6CB-55986486926E}] ;Name=Cust. Ledger Entries on Hold;
+                                                                CaptionML=ENU=Cust. Ledger Entries on Hold;
+                                                                RunObjectType=Report;
+                                                                RunObjectID=11128512;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Reports and Analysis }
+    { MenuItem       ;[{ED36949C-8A5A-4ACB-933E-DF8652CF453A}] ;Name=Reminder 2;
+                                                                CaptionML=ENU=Reminder 2;
+                                                                RunObjectType=Report;
+                                                                RunObjectID=11128513;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Reports and Analysis }
+    {                ;[{3293CB42-5B5E-4ABC-9A19-3DC1F956094C}] ;NextNodeID=[{B58F2EF6-E82B-4E52-A630-070FB56B52D5}] }
+    { MenuGroup      ;[{B58F2EF6-E82B-4E52-A630-070FB56B52D5}] ;Name=Project Forecast;
+                                                                CaptionML=ENU=Project Forecast;
+                                                                Visible=Yes;
+                                                                IsDepartmentPage=No }
+    { MenuItem       ;[{D5706053-317E-4E8F-96A4-CEDA84CBB91D}] ;Name=Project Forecast Automation;
+                                                                CaptionML=ENU=Project Forecast Automation;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11126557;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{3FB34EF7-CA08-4C2E-922C-81F28CEDF41D}] ;Name=Project Forecast Automation Log;
+                                                                CaptionML=ENU=Project Forecast Automation Log;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11126558;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuGroup      ;[{84D9CC7F-F957-4EF3-80AF-79E265D1024D}] ;Name=Revision Rules;
+                                                                CaptionML=ENU=Revision Rules;
+                                                                Visible=Yes;
+                                                                IsDepartmentPage=No }
+    { MenuItem       ;[{9ADDC33E-A7D6-4A40-96DB-ED2014202EA9}] ;Name=Risicoregelingen;
+                                                                CaptionML=ENU=Revision Rules;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11012475;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{893F89E4-092B-487A-B595-81217A76BD65}] ;Name=Risicoregeling Indexen;
+                                                                CaptionML=ENU=Revision Rule Indexes;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11012476;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{5F9B8DA2-837B-46EB-9926-FA989EBF6128}] ;Name=Revision Rule Project Variable;
+                                                                CaptionML=ENU=Revision Rule Project Variable;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11012478;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuGroup      ;[{08293C63-27DF-4DCF-B5DC-57C8480EB3FD}] ;Name=KOMO Install;
+                                                                CaptionML=ENU=KOMO Install;
+                                                                Visible=Yes;
+                                                                IsDepartmentPage=No }
+    { MenuItem       ;[{95ECDF37-89BA-4B31-A8DE-7E214DAA672B}] ;Name=Controles;
+                                                                CaptionML=ENU=KOMO Inspections;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11012960;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{D93B35B6-0654-46DA-9FFB-BEFE541212A0}] ;Name=KOMO Deviations;
+                                                                CaptionML=ENU=KOMO Deviations;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11012961;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{5CA811F1-98D1-4C91-9F88-14A7DDE3C260}] ;Name=Meetapparatuur;
+                                                                CaptionML=ENU=Measuring Equipment;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11012962;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{7DD9738E-1B0C-420D-BCEC-8F4669F58F66}] ;Name=Acties;
+                                                                CaptionML=ENU=KOMO Actions;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11012978;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{217F7D12-0DAC-4003-99BD-9BE7F1CAC10C}] ;Name=Installaties per discipline;
+                                                                CaptionML=ENU=KOMO Discipline;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11012964;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuGroup      ;[{68A865E2-6B9C-4894-A4EE-A21167150838}] ;Name=Civil Engineering;
+                                                                CaptionML=ENU=Civil Engineering;
+                                                                Visible=Yes;
+                                                                IsDepartmentPage=No }
+    { MenuItem       ;[{A44A5FE8-9D2B-43C9-B871-80DCA2D20C6F}] ;Name=Standard Tender Elements;
+                                                                CaptionML=ENU=Standard Tender Elements;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11020551;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{8B61EF2F-84CC-47AC-AD7B-250B7BCE3E3A}] ;Name=Standaard deelbesteksposten;
+                                                                CaptionML=ENU=Standard Tender Element Parts;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11020552;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{4083D907-F169-40DC-AA04-37AA55D188E6}] ;Name=[Speciale eenheden Arbeid voor ];
+                                                                CaptionML=ENU=Special Units Labor for Import KPD-Budget GWW;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11012392;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuGroup      ;[{65DBC761-16CA-4702-A2FC-0CC28057C1FC}] ;Name=Site Manager Form;
+                                                                CaptionML=ENU=Site Manager Form;
+                                                                Visible=Yes;
+                                                                IsDepartmentPage=No }
+    { MenuItem       ;[{0475086A-5E67-4F43-A47A-555F2A9733F7}] ;Name=Standaard teksten;
+                                                                CaptionML=ENU=Standard Text Codes;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11125528;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{A0224370-D516-45E1-AEA6-435B13D2E791}] ;Name=Standaard keuringen;
+                                                                CaptionML=ENU=Standard Inspections;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11125537;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuGroup      ;[{35E43CB2-BA13-42B7-BCB5-AC7ED13B5F2D}] ;Name=Process Control;
+                                                                CaptionML=ENU=Process Control;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{00000000-0000-0000-0000-000000000000}];
+                                                                IsDepartmentPage=No }
+    { MenuItem       ;[{364C5E77-416C-4B8E-B65E-467B50660FA9}] ;Name=Hoofdkenmerken;
+                                                                CaptionML=ENU=Process Main Features;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11012950;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{A3D24A6B-3363-4324-9EB2-2CF9C150ECE2}] ;Name=Kenmerken;
+                                                                CaptionML=ENU=Process Features;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11012951;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{D57AE50A-C592-4BB4-A508-A9243EE867F2}] ;Name=Kenmerkkeuzes;
+                                                                CaptionML=ENU=Process Features;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11012952;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{8FE8612F-35E9-4A8A-A8C6-7B521B49E863}] ;Name=Cost Groups;
+                                                                CaptionML=ENU=Cost Groups;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11126044;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{CC93BC72-6A72-4A26-A7A8-01F626D05633}] ;Name=Cost Obj. by Cost Gr. Matrix;
+                                                                CaptionML=ENU=Cost Obj. by Cost Gr. Matrix;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11126045;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{87FC1FF5-C3A1-47FE-9686-8E6FC42D5530}] ;Name=Avg Hour Rate Calculations;
+                                                                CaptionML=ENU=Avg Hour Rate Calculations;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11126421;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    {                ;[{0E1D7809-8488-49A3-830F-10108A76E771}] ;NextNodeID=[{EF1F378E-7344-4D90-BD5E-8EAE04BFB2D9}] }
+    { MenuItem       ;[{EF1F378E-7344-4D90-BD5E-8EAE04BFB2D9}] ;Name=Project Portal Setup;
+                                                                CaptionML=ENU=Project Portal Setup;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11071793;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{00000000-0000-0000-0000-000000000000}];
+                                                                DepartmentCategory=Tasks }
+    {                ;[{4EAEC864-8E71-49D6-BB9B-FD37BD632812}] ;NextNodeID=[{FA76946C-2AFC-4B90-AE69-32E173C7302C}] }
+    { MenuItem       ;[{FA76946C-2AFC-4B90-AE69-32E173C7302C}] ;Name=Online Document Storage Configuration;
+                                                                CaptionML=ENU=SharePoint Connection Setup;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=9551;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{E66E0B5F-5B52-4B1E-8702-8B070E5CEA60}] ;Name=Account Schedule KPI Web Servi;
+                                                                CaptionML=ENU=Account Schedule KPI Web Service Setup;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=195;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Administration }
+    { MenuItem       ;[{3788EA85-996F-46DE-ABDF-B860CEC76402}] ;Name=Acc. Sched. KPI Web Service;
+                                                                CaptionML=ENU=Account Schedule KPI Web Service;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=197;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Administration }
+    { MenuItem       ;[{8EFAD413-ADDC-4D1E-ABF1-224F55067F97}] ;Name=Control Add-ins;
+                                                                CaptionML=ENU=Control Add-ins;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=9820;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{C64D27E3-1A25-46EF-B513-A118524A561F}];
+                                                                DepartmentCategory=Lists }
+    {                ;[{25B844D0-2461-4EB3-B0E2-756E9AC18E23}] ;NextNodeID=[{98C75CF6-B8E9-4811-B66C-C126077384F1}] }
+    { MenuItem       ;[{98C75CF6-B8E9-4811-B66C-C126077384F1}] ;Name=Fix Service Orders;
+                                                                CaptionML=ENU=Fix Service Orders;
+                                                                RunObjectType=Report;
+                                                                RunObjectID=11071687;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{CB2C3EFB-0662-48C6-B50F-6E082EFD13CB}];
+                                                                DepartmentCategory=Tasks }
+    {                ;[{01F389CE-87D7-4B0F-BE35-C7A8A412A499}] ;NextNodeID=[{F53F702E-ABD0-47DC-9B6F-1474CC567CDD}] }
+    { MenuGroup      ;[{F53F702E-ABD0-47DC-9B6F-1474CC567CDD}] ;Name=GWP;
+                                                                CaptionML=ENU=GWP;
+                                                                Visible=Yes;
+                                                                IsDepartmentPage=No }
+    { MenuItem       ;[{0599902C-D2EA-4FA4-8860-FE5699791748}] ;Name=Gebruikersinstellingen (WOP);
+                                                                CaptionML=ENU=User Setup (WOP);
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11229480;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{ADFC1DF6-8965-4494-9961-AC8DB7E0B821}] ;Name=Bedrijfsplangroepen;
+                                                                CaptionML=ENU=Company Plan Groups;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11126617;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{0599902C-D2EA-4FA4-8860-FE5699791748}];
+                                                                DepartmentCategory=Tasks }
+    { MenuGroup      ;[{1F798501-3D23-4C1C-868A-ECCE6A0C476A}] ;Name=Dispatch;
+                                                                CaptionML=ENU=Dispatch;
+                                                                Visible=Yes;
+                                                                IsDepartmentPage=No }
+    { MenuItem       ;[{F57C8115-5045-48C3-A7F6-52C16E6AD9F7}] ;Name=Dispatch gebruikersinstellingen;
+                                                                CaptionML=ENU=Dispatch User Setup;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11229571;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{D2797C51-5152-4073-92B6-AEC3F02D7B75}] ;Name=Dispatch opdrachtgevers;
+                                                                CaptionML=ENU=Dispatch Principals;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11229575;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{550B4547-6F89-42D8-BDE9-7F51C892203F}] ;Name=Dispatch bijlagetypes;
+                                                                CaptionML=ENU=Dispatch Attachment Types;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11229579;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{F57C8115-5045-48C3-A7F6-52C16E6AD9F7}];
+                                                                DepartmentCategory=Tasks }
+    { MenuGroup      ;[{74BBFFE9-ED07-40D2-8E2A-C068A200A92B}] ;Name=Service Call App;
+                                                                CaptionML=ENU=Service Call App;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{5459D647-3880-46E8-85DE-CE108AC5CE1A}];
+                                                                IsDepartmentPage=No }
+    { MenuItem       ;[{890F4AC6-D957-43CD-9DEC-EF0076EBFEE3}] ;Name=SCA Users;
+                                                                CaptionML=ENU=SCA Users;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11229451;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{D7F919B7-FE1F-4483-86E7-496F4F7DE69C}] ;Name=Service Locations per SCA User;
+                                                                CaptionML=ENU=Service Locations per SCA User;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11229452;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{890F4AC6-D957-43CD-9DEC-EF0076EBFEE3}];
+                                                                DepartmentCategory=Tasks }
+    {                ;[{87965B5E-76AD-4164-9905-A35512123AC0}] ;NextNodeID=[{2EE1D1E5-0E4C-4EE5-AB0D-44E2F317DD65}] }
+    { MenuItem       ;[{2EE1D1E5-0E4C-4EE5-AB0D-44E2F317DD65}] ;Name=Dispatch Woon instellingen;
+                                                                CaptionML=ENU=Dispatch Setup;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11229570;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{E2CA6DFE-7ED4-4253-BAF4-AD450F24CD9F}] ;Name=Service Call App Setup;
+                                                                CaptionML=ENU=Service Call App Setup;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11229447;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{94E6D488-9FFF-4029-9DA6-9E7DDD08EAF2}] ;Name=Field Service Worksheet Setup;
+                                                                CaptionML=ENU=Field Service Worksheet Setup;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11126703;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{19FBA4D7-D599-436A-96B3-1C9D2273A00F}];
+                                                                DepartmentCategory=Tasks }
+    {                ;[{38737D91-1BCC-47A6-8832-19A37DDE7402}] ;NextNodeID=[{4D55AB0D-27BD-4643-9C06-58EA587A7E7D}] }
+    { MenuGroup      ;[{4D55AB0D-27BD-4643-9C06-58EA587A7E7D}] ;Name=Dispatch;
+                                                                CaptionML=ENU=Dispatch;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{697D3B9D-9705-4727-B900-EBEC43390D90}];
+                                                                IsDepartmentPage=Yes }
+    { MenuItem       ;[{40CB05A0-8B80-4520-901D-0BFF962CA30E}] ;Name=Dispatch opdrachten ophalen;
+                                                                CaptionML=ENU=Get Dispatch Orders;
+                                                                RunObjectType=Codeunit;
+                                                                RunObjectID=11071685;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{40CB05A0-8B80-4520-901D-0BFF962CA30E}];
+                                                                DepartmentCategory=Tasks }
+    {                ;[{34ABD858-C4F0-4673-9107-722477B766CD}] ;NextNodeID=[{00B3CE41-E4AB-4E07-B2DE-493D18C25930}] }
+    { MenuGroup      ;[{00B3CE41-E4AB-4E07-B2DE-493D18C25930}] ;Name=Risk Management;
+                                                                CaptionML=ENU=Risk Management;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{5194D7AB-C754-4480-99B5-783F4B40E9F6}];
+                                                                IsDepartmentPage=Yes }
+    { MenuItem       ;[{60B8EB23-5147-4BD3-9A7E-8B57EB2F614D}] ;Name=Risk Opportunity Impact List;
+                                                                CaptionML=ENU=Risk Opportunity Impact List;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11126569;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{2BFD9416-1E25-4BD2-AE05-F64042518A77}] ;Name=Risk Opportunity Probability List;
+                                                                CaptionML=ENU=Risk Opportunity Probability List;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11126570;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{0E7F4EEA-CA54-443D-A55E-5FC27EC87630}] ;Name=Base Risks Opportunity Group;
+                                                                CaptionML=ENU=Base Risks Opportunity Group;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11126559;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{EF148677-7F72-4476-9C18-545FE8EE3ED1}] ;Name=Base Risk Oppertunity;
+                                                                CaptionML=ENU=Base Risks & Oppertunity;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11126560;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{60B8EB23-5147-4BD3-9A7E-8B57EB2F614D}];
+                                                                DepartmentCategory=Tasks }
+    {                ;[{95822E41-B2FC-4687-8EC1-F2D555828383}] ;NextNodeID=[{125AB588-09B5-4075-BB14-EBD7B058A36A}] }
+    { MenuGroup      ;[{125AB588-09B5-4075-BB14-EBD7B058A36A}] ;Name=Major Maintenance;
+                                                                CaptionML=ENU=Major Maintenance;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{8DFB701E-7545-4B71-8628-517AF1C3F8B1}];
+                                                                IsDepartmentPage=Yes }
+    { MenuItem       ;[{F8C582A3-E1F6-42D3-83FD-143AA57D559B}] ;Name=Verrekenbare hoeveelheden over;
+                                                                CaptionML=ENU=Settlement Quantity Type;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11229533;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{B06878AE-AE35-4E01-A653-1469C40448F4}] ;Name=Standaard verrekenbare hoeveel;
+                                                                CaptionML=ENU=General Settlement Quantity Surcharges;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11229524;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{CEF8523D-C890-4D5C-ADB0-17882C24ABF9}] ;Name=Verrekenbare hoeveelheden;
+                                                                AccessByPermission=TableData 11072243=RIMD;
+                                                                CaptionML=ENU=Base Settlement Quantities;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11229534;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{F8C582A3-E1F6-42D3-83FD-143AA57D559B}];
+                                                                DepartmentCategory=Lists }
+    {                ;[{D5DE9B51-5768-4245-AAC5-C149757D9A20}] ;NextNodeID=[{72A2F8B3-AD6D-4BBE-9CE5-90F9C4636DAC}] }
+    { MenuItem       ;[{72A2F8B3-AD6D-4BBE-9CE5-90F9C4636DAC}] ;Name=Body-tekst voor e-mail (portalen);
+                                                                CaptionML=ENU=E-Mail Body Text (Portals);
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11020344;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{11892ED2-4826-437B-B365-06F379F76E36}];
+                                                                DepartmentCategory=Tasks }
+    {                ;[{78B7F2DF-45EB-42D3-92C3-2E7A37C4D10F}] ;NextNodeID=[{69EDFDD8-B9D2-474C-84CC-96BBF54E7F10}] }
+    { MenuGroup      ;[{69EDFDD8-B9D2-474C-84CC-96BBF54E7F10}] ;Name=Purchase Consent;
+                                                                CaptionML=ENU=Purchase Consent;
+                                                                Visible=Yes;
+                                                                IsDepartmentPage=No }
+    { MenuItem       ;[{D4F62883-75D0-4D2C-A584-7F138BECB59E}] ;Name=Fiatteringsberichten verzenden;
+                                                                CaptionML=ENU=Send Consent Notifications;
+                                                                RunObjectType=Report;
+                                                                RunObjectID=11012227;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{0909B53D-8E71-4921-8DDE-A54DC9A9818C}] ;Name=Gefiatteerde documenten verzenden;
+                                                                CaptionML=ENU=Send Consented Documents;
+                                                                RunObjectType=Report;
+                                                                RunObjectID=11012229;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{D4F62883-75D0-4D2C-A584-7F138BECB59E}];
+                                                                DepartmentCategory=Tasks }
+    {                ;[{05C13026-8183-4241-A25D-723DA25DA114}] ;NextNodeID=[{74E02819-E125-46AF-945B-B2F7165FBDDA}] }
+    { MenuItem       ;[{74E02819-E125-46AF-945B-B2F7165FBDDA}] ;Name=Import materieelfacturen serviceorders;
+                                                                CaptionML=ENU=Import Plant Invoices Service Orders;
+                                                                RunObjectType=XMLport;
+                                                                RunObjectID=11012552;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{F5A20913-2B29-4C65-B78C-88AFD9EEF80F}];
+                                                                DepartmentCategory=Tasks }
+    {                ;[{8CB1F27B-5F48-4D14-8951-168420B10395}] ;NextNodeID=[{EADD4843-7766-4DAF-A814-6F483768E4E4}] }
+    { MenuItem       ;[{EADD4843-7766-4DAF-A814-6F483768E4E4}] ;Name=Company Information;
+                                                                CaptionML=ENU=Glazing Service Calls;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11125786;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{CC905232-1E3B-454B-AAC9-9993660E3779}];
+                                                                DepartmentCategory=Lists }
+    {                ;[{EE578AF1-B96A-47EA-9B34-71B93D82A2E8}] ;NextNodeID=[{FD883C48-1B93-4A76-A2D7-6A82B6DADD8B}] }
+    { MenuItem       ;[{FD883C48-1B93-4A76-A2D7-6A82B6DADD8B}] ;Name=Materieel keuringscertificaat registreren;
+                                                                CaptionML=ENU=Registrate Plant Inspection Certificate;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11229858;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{A014F29C-1BC3-4CBB-B7CE-20D39A1E1CE0}];
+                                                                DepartmentCategory=Tasks }
+    {                ;[{D69B988D-4F53-4D78-AF4D-1F345648E00B}] ;NextNodeID=[{7D2CBF6B-EAF0-4ABA-8F91-ECA4B065AF72}] }
+    { MenuItem       ;[{7D2CBF6B-EAF0-4ABA-8F91-ECA4B065AF72}] ;Name=Materieel keuringscertificaat instellingen;
+                                                                CaptionML=ENU=Plant Inspection Certificate Setup;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11229857;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{F570612C-6182-4498-8522-8DF44B5A4124}];
+                                                                DepartmentCategory=Tasks }
+    {                ;[{0CEC9C3B-38D2-4333-904F-0CF83806F7F1}] ;NextNodeID=[{50D156A6-0ADB-49A9-927C-F4FF98394216}] }
+    { MenuItem       ;[{50D156A6-0ADB-49A9-927C-F4FF98394216}] ;Name=Artikelkeuringstypen;
+                                                                CaptionML=ENU=Item Inspection Types;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11229859;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{A771EE0F-E170-44AB-B7DC-931DCE9EB534}];
+                                                                DepartmentCategory=Tasks }
+    {                ;[{01A4ADD2-839D-498B-9A67-11C00CAF7BFB}] ;NextNodeID=[{F95667F6-9AFB-4A97-A9D9-E8BE439EE39F}] }
+    { MenuGroup      ;[{F95667F6-9AFB-4A97-A9D9-E8BE439EE39F}] ;Name=Implementation Activities;
+                                                                CaptionML=ENU=Implementation Activities;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{A40FEF63-23E6-4DC9-8D4E-34093F4D3EBD}];
+                                                                IsDepartmentPage=No }
+    { MenuItem       ;[{E63C81D2-FFF0-461B-BA4F-4423194243AA}] ;Name=Activiteiten;
+                                                                CaptionML=ENU=Activities;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11125690;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{99ACD488-8B0A-4D8D-805C-34E4B80A02F5}] ;Name=Impl. Work Group Member;
+                                                                CaptionML=ENU=Work Groups;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11125353;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{07EC965E-E5B0-4C55-A243-62A7FB286F61}] ;Name=Werkgroep leden;
+                                                                CaptionML=ENU=Work Group Members;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11125349;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{E4B674C4-1D11-4BA9-BAFF-D2E9140223B2}] ;Name=Impl. Members;
+                                                                CaptionML=ENU=Persons;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11125361;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{B0136DD8-D24C-4FEC-A4A7-B55B5E0C215D}] ;Name=Implementatie activiteit status;
+                                                                CaptionML=ENU=Activity Status;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11125689;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{4AD30A06-EBBB-4052-A777-4D47BF0628A9}] ;Name=Implementatie elementen;
+                                                                CaptionML=ENU=Elements;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11125691;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{E72F758F-3C1B-4BC2-8669-04601ED26BFE}] ;Name=Implementatie instellingen;
+                                                                CaptionML=ENU=Implementation Setup;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11125693;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{E63C81D2-FFF0-461B-BA4F-4423194243AA}];
+                                                                DepartmentCategory=Tasks }
+    {                ;[{63316867-7CBD-456C-B550-D8BE31954DC1}] ;NextNodeID=[{C450EE85-82EC-413B-BDAB-9D4612E6A4B1}] }
+    { MenuGroup      ;[{C450EE85-82EC-413B-BDAB-9D4612E6A4B1}] ;Name=Job Notices iMOS;
+                                                                CaptionML=ENU=Job Notices iMOS;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{6F04B7DF-E434-4ABA-9FA1-1439EF1D176B}];
+                                                                IsDepartmentPage=No }
+    { MenuItem       ;[{FDB88DF5-E01E-4A4B-9982-8F4E7D313881}] ;Name=Werkbonoverzicht (iMOS);
+                                                                CaptionML=ENU=Job Notices;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11020535;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{CDBA4A5F-54DF-4863-A360-ACC33446D63C}] ;Name=Uitgaande werkbonnen;
+                                                                CaptionML=ENU=Outbound Job Notices;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11020541;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{12838343-7C8E-49E1-9303-57DE2F8FEBFF}] ;Name=Inkomende werkbon (iMOS);
+                                                                CaptionML=ENU=Inbound Job Notices;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11020538;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{6CB9BB68-C7AB-491C-AC99-BFC1FAA81EE0}] ;Name=Uitgaande &artikelen;
+                                                                CaptionML=ENU=Outbound Items;
+                                                                RunObjectType=Report;
+                                                                RunObjectID=11020524;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{7B047C42-1197-4076-BF72-B4AF24091AB6}] ;Name=Uitgaande &monteurs;
+                                                                CaptionML=ENU=Outbound Engineers;
+                                                                RunObjectType=Report;
+                                                                RunObjectID=11020523;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{FFB5B725-E7DE-4F7E-ADAC-90CF7216BBE7}] ;Name=Uitgaande materieel&locaties;
+                                                                CaptionML=ENU=Outbound Plant Locations;
+                                                                RunObjectType=Report;
+                                                                RunObjectID=11020522;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{A30E8B7A-95B4-4F4D-BF9C-6AAD952163F5}] ;Name=Uitgaande &planners;
+                                                                CaptionML=ENU=Outbound Planners;
+                                                                RunObjectType=Report;
+                                                                RunObjectID=11020521;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{1BEC53F0-E980-405E-BCFD-0BD86D100A28}] ;Name=Uitgaande &rayons;
+                                                                CaptionML=ENU=Outbound Districts;
+                                                                RunObjectType=Report;
+                                                                RunObjectID=11020520;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{B36AF554-52C2-4D4E-9244-17AA27621C07}] ;Name=Uitgaande &wagens;
+                                                                CaptionML=ENU=Outbound Cars;
+                                                                RunObjectType=Report;
+                                                                RunObjectID=11020519;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{58B28916-2E4C-4BA8-80E5-839AB92C890F}] ;Name=Uitgaande m&onteurswagens;
+                                                                CaptionML=ENU=Outbound Engineer Cars;
+                                                                RunObjectType=Report;
+                                                                RunObjectID=11020518;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{FDB88DF5-E01E-4A4B-9982-8F4E7D313881}];
+                                                                DepartmentCategory=Tasks }
+    {                ;[{E7E4D711-61B5-48B2-A224-19FB53921EB6}] ;NextNodeID=[{1ECC427A-B329-4733-9B52-EB3EF172B819}] }
+    { MenuItem       ;[{1ECC427A-B329-4733-9B52-EB3EF172B819}] ;Name=Project Portal Setup;
+                                                                CaptionML=ENU=Document Portal Setup;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11071793;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{D3216AE6-4093-4285-834D-1B65AC8C28FE}];
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{C64D27E3-1A25-46EF-B513-A118524A561F}] ;Name=Void Management App Features;
+                                                                CaptionML=ENU=Void Management App Features;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11129051;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{DAB19490-D154-462E-8DB0-58701A97F16F}];
+                                                                DepartmentCategory=Administration }
+    { MenuItem       ;[{DAB19490-D154-462E-8DB0-58701A97F16F}] ;Name=Permissie reeks overzicht;
+                                                                CaptionML=ENU=Permission Ranges;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11012145;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{76AC314B-E2BC-4EBB-AA35-A73480E20B74}] ;Name=Social Listening Setup;
+                                                                CaptionML=ENU=Social Engagement Setup;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=870;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{E53DCB3A-9A5F-4303-B2A1-89826DB48898}] ;Name=Currency Exchange Rate Services;
+                                                                CaptionML=ENU=Currency Exchange Rate Services;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=1650;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Administration }
+    { MenuItem       ;[{3997E3A9-3197-41F7-BA5D-727C3CB7DB61}] ;Name=Code Coverage;
+                                                                CaptionML=ENU=Code Coverage;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=9990;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{6E099450-7315-4E9A-BA06-EC7A4852E66E}] ;Name=Integration Table Mappings;
+                                                                CaptionML=ENU=Integration Table Mappings;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=5335;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{270B190D-682E-4739-9C03-A19F060EB33F}] ;Name=Integration Synchronization Jobs;
+                                                                CaptionML=ENU=Integration Synchronization Jobs;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=5338;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{7CF303E4-A409-4E88-A06D-CBF457739B82}] ;Name=Integration Synchronization Errors;
+                                                                CaptionML=ENU=Integration Synchronization Errors;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=5339;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{00000000-0000-0000-0000-000000000000}];
+                                                                DepartmentCategory=Lists }
+    {                ;[{EB6B0AF5-28B3-4568-8BD2-820C3C623643}] ;NextNodeID=[{4F69A2D8-A23F-47C4-911F-0F36CA1AF7B2}] }
+    { MenuGroup      ;[{4F69A2D8-A23F-47C4-911F-0F36CA1AF7B2}] ;Name=Document Portal;
+                                                                CaptionML=ENU=Document Portal;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{FD392519-B5E1-487A-9EBE-545E36A8CE22}];
+                                                                IsDepartmentPage=Yes }
+    { MenuItem       ;[{1152DCCD-A039-4CE2-B208-ADEA780770BE}] ;Name=(De)Activate Project Portal Si;
+                                                                CaptionML=ENU=(De)Activate Portal Site;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11072413;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{1152DCCD-A039-4CE2-B208-ADEA780770BE}];
+                                                                DepartmentCategory=Tasks }
+    {                ;[{8A8C7835-3CF6-495A-9924-9119E70DBB35}] ;NextNodeID=[{8A96DC60-2D61-4573-994F-556D3FCAC29D}] }
+    { MenuGroup      ;[{8A96DC60-2D61-4573-994F-556D3FCAC29D}] ;Name=Document Portal;
+                                                                CaptionML=ENU=Document Portal;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{BD64A86A-222E-4C5D-A675-D9DC3BFA665F}];
+                                                                IsDepartmentPage=Yes }
+    { MenuItem       ;[{944E2C7E-465E-440B-87E0-16E39FAA2A63}] ;Name=Update Relation Picker (PPT);
+                                                                CaptionML=ENU=Update Relation Picker;
+                                                                RunObjectType=Report;
+                                                                RunObjectID=11012914;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{944E2C7E-465E-440B-87E0-16E39FAA2A63}];
+                                                                DepartmentCategory=Tasks }
+    {                ;[{5600E720-2362-449E-B5EE-8A27416474F3}] ;NextNodeID=[{094673F1-FB74-41D4-8650-AD7FFFD4F1E3}] }
+    { MenuItem       ;[{094673F1-FB74-41D4-8650-AD7FFFD4F1E3}] ;Name=Service inventarisatiesjablonen;
+                                                                CaptionML=ENU=Service Survey Templates;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11126755;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{1B50236C-78DF-42D2-B961-193D1ADBC096}] ;Name=Standaard inventarisatiestaartblad overzicht;
+                                                                CaptionML=ENU=Standard Survey Summary Sheets;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11229408;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{316FE7B6-8C40-46C9-9BF9-5AC4AF965D05}];
+                                                                DepartmentCategory=Tasks }
+    {                ;[{59848D80-C8CC-450C-9222-5B9A1C6FA22C}] ;NextNodeID=[{2E99E23B-34A7-4B2C-B3DE-690BFD9C2848}] }
+    { MenuGroup      ;[{2E99E23B-34A7-4B2C-B3DE-690BFD9C2848}] ;Name=Empoly Warehouse App;
+                                                                CaptionML=ENU=Empoly Warehouse App;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{FA459C69-F5CE-4803-9972-AA5BA8150F4E}];
+                                                                IsDepartmentPage=Yes }
+    { MenuItem       ;[{C4E5CC70-A6E8-4819-88ED-3E9AD7BE6DD7}] ;Name=Empoly Warehouse Order;
+                                                                CaptionML=ENU=Warehouse Orders;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11126732;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{2387FEC3-D02A-44C4-8E33-30D761A4D5D8}] ;Name=Empoly Warehouse Orders Archive;
+                                                                CaptionML=ENU=Warehouse Orders Archive;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11126725;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{C4E5CC70-A6E8-4819-88ED-3E9AD7BE6DD7}];
+                                                                DepartmentCategory=Lists }
+    {                ;[{3B997BA0-00A8-4029-80F6-60F1D7814070}] ;NextNodeID=[{5F6405B8-E5BC-4B0A-BDF7-23F998A642CE}] }
+    { MenuItem       ;[{5F6405B8-E5BC-4B0A-BDF7-23F998A642CE}] ;Name=Project Portal Logins;
+                                                                CaptionML=ENU=Document Portal Logins;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11072417;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{1C57104F-5084-4DA0-88F0-52DCD117D74C}] ;Name=Promoted Possible Doc Links;
+                                                                AccessByPermission=TableData 11012748=I;
+                                                                CaptionML=ENU=Promoted Possible Doc Links;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11125850;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{177DD11D-1A56-4CE1-88F0-1D163969AF43}];
+                                                                DepartmentCategory=Tasks }
+    {                ;[{B036807B-5709-439B-A6EA-49C1A0474FD2}] ;NextNodeID=[{7141964E-7E08-4765-B13B-E0797EECF6B1}] }
+    { MenuGroup      ;[{7141964E-7E08-4765-B13B-E0797EECF6B1}] ;Name=Document Portal;
+                                                                CaptionML=ENU=Document Portal;
+                                                                Visible=Yes;
+                                                                IsDepartmentPage=Yes }
+    { MenuItem       ;[{E27A228B-6098-4E6A-A11A-5D4A75D7954D}] ;Name=Project Portal Sites;
+                                                                CaptionML=ENU=Document Portal Subsites;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11071794;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{48E79133-D9A8-43A4-8D61-8A4E05C6596A}] ;Name=Project Portal Doc Types per S;
+                                                                CaptionML=ENU=Document Types per Docuument Portal Subsite;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11072410;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{E27A228B-6098-4E6A-A11A-5D4A75D7954D}];
+                                                                DepartmentCategory=Tasks }
+    { MenuGroup      ;[{3EF42CC2-9F33-4D17-B311-0A5018B333C4}] ;Name=Project Document Portal;
+                                                                CaptionML=ENU=Project Document Portal;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{739390B5-6CD6-4409-B72E-F0D04640D69B}];
+                                                                IsDepartmentPage=Yes }
+    { MenuItem       ;[{C6CA66FE-029F-4857-93A5-6F0DDBD402D5}] ;Name=Default Project Portal Resp. P;
+                                                                CaptionML=ENU=Default Responsible Persons Permissions;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11072414;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{182B33CF-6CEF-46E5-9E0E-1B020A0D5371}] ;Name=Default Project Portal Resp Pe;
+                                                                CaptionML=ENU=Default Responsible Persons Filters;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11229188;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{2BBF0751-6CAA-4173-82F5-16043877CAEF}] ;Name=Default Project Portal Authori;
+                                                                CaptionML=ENU=Default Authority Permissions;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11072415;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{077DB02B-A69D-440D-813B-8B310573CAE5}] ;Name=Default Project Portal Authori;
+                                                                CaptionML=ENU=Default Authority Filters;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11229189;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{6463A003-4729-4A41-9793-7986BC0E08FF}] ;Name=Additional Metadata;
+                                                                CaptionML=ENU=Additional Metadata;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11229195;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{4E6BB4DC-DE99-454F-B08B-9BB5B5B21118}] ;Name=Project Portal Metadata;
+                                                                CaptionML=ENU=Metadata and Refiners;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11229192;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{C6CA66FE-029F-4857-93A5-6F0DDBD402D5}];
+                                                                DepartmentCategory=Tasks }
+    {                ;[{C02A6D57-C10D-4EBE-816F-9E1614A58BCA}] ;NextNodeID=[{5DB04F0C-023D-48D8-B35C-4596B2A0A46B}] }
+    { MenuItem       ;[{5DB04F0C-023D-48D8-B35C-4596B2A0A46B}] ;Name=Bewakingsrapportages;
+                                                                CaptionML=ENU=Built Control Reportings;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11229424;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{7E830E93-6DF9-4A1C-BFF9-DCDE3FC0C128}] ;Name=Mandaten serviceorders controle;
+                                                                CaptionML=ENU=Limit Budget Check List;
+                                                                RunObjectType=Report;
+                                                                RunObjectID=11072147;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{C3378A9F-AE77-4339-BF9E-C820C1CD3935}];
+                                                                DepartmentCategory=Tasks }
+    {                ;[{3D70A92E-CA8A-42F1-90A9-D5FDA5178CD2}] ;NextNodeID=[{EE88E867-251A-44A1-BC1A-920781099344}] }
+    { MenuItem       ;[{EE88E867-251A-44A1-BC1A-920781099344}] ;Name=2ba Unifeed initialiseren;
+                                                                AccessByPermission=TableData 11012317=MD;
+                                                                CaptionML=ENU=2ba Unifeed Initialize;
+                                                                RunObjectType=Codeunit;
+                                                                RunObjectID=11012307;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{B650383A-F530-477C-BAD3-89A80802793A}];
+                                                                DepartmentCategory=Tasks }
+    {                ;[{1D6C0767-996E-400E-94B8-32C2C45F3750}] ;NextNodeID=[{75B977F2-5766-4092-A721-D47D2D5BD40B}] }
+    { MenuItem       ;[{75B977F2-5766-4092-A721-D47D2D5BD40B}] ;Name=Werkorders verwijderen;
+                                                                CaptionML=ENU=Remove Work Orders;
+                                                                RunObjectType=Report;
+                                                                RunObjectID=11229277;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{D8EC7344-1C0B-4B96-B713-BC75B013C8B5}];
+                                                                DepartmentCategory=Tasks }
+    {                ;[{90909E02-4FB3-4243-A792-1ADA0973E10C}] ;NextNodeID=[{3C6AE783-85F2-4FC6-BEF4-A3BF44DEF0FE}] }
+    { MenuGroup      ;[{3C6AE783-85F2-4FC6-BEF4-A3BF44DEF0FE}] ;Name=INSBOU;
+                                                                CaptionML=ENU=INSBOU;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{EDE0B420-308B-412A-BCE9-1D593004D146}];
+                                                                IsDepartmentPage=Yes }
+    { MenuItem       ;[{004E0AFB-556E-451C-A0E3-2B8E145B5DDA}] ;Name=GS1 Available Messages;
+                                                                CaptionML=ENU=INSBOU Available Messages;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11071986;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{ED6A5312-3572-402A-B523-E75869E4800B}] ;Name=GS1 Price Catalogues;
+                                                                CaptionML=ENU=INSBOU Price Catalogues;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11072558;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{004E0AFB-556E-451C-A0E3-2B8E145B5DDA}];
+                                                                DepartmentCategory=Lists }
+    {                ;[{8EBCDFCD-24BD-4E80-86AC-19C282409EC9}] ;NextNodeID=[{154226BA-A3DD-48D2-A2BC-5FC64383C741}] }
+    { MenuItem       ;[{154226BA-A3DD-48D2-A2BC-5FC64383C741}] ;Name=INSBOU Setup;
+                                                                CaptionML=ENU=INSBOU Setup;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11072559;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    {                ;[{CCB9626B-E63D-41C3-B0A2-2106210B7CB8}] ;NextNodeID=[{19B1FD45-20F1-45F0-BAAD-748E983993A1}] }
+    { MenuItem       ;[{19B1FD45-20F1-45F0-BAAD-748E983993A1}] ;Name=Document Sending Profiles;
+                                                                CaptionML=ENU=Document Sending Profiles;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=359;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{6D59E254-50D2-478D-9D42-C97DC5708ED8}] ;Name=Electronic Document Formats;
+                                                                CaptionML=ENU=Electronic Document Formats;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=363;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{ABEB2FDF-5F32-4A74-8F2C-2047268FDE5E}] ;Name=Data Exchange Types;
+                                                                CaptionML=ENU=Data Exchange Types;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=1213;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    {                ;[{5B78E2EF-0934-4A48-8173-74D0550B49C5}] ;NextNodeID=[{7F1FCAF5-2B95-4B7A-A39D-FA70FA80BB85}] }
+    { MenuItem       ;[{7F1FCAF5-2B95-4B7A-A39D-FA70FA80BB85}] ;Name=CRM Connection Setup;
+                                                                AccessByPermission=TableData 5330=IM;
+                                                                CaptionML=ENU=Microsoft Dynamics CRM Connection Setup;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=5330;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{67C19D0B-4369-4266-AF19-76201B7422A7}];
+                                                                DepartmentCategory=Administration }
+    {                ;[{606F22CB-3C9D-4CD7-95CE-A4CF61BEDF61}] ;NextNodeID=[{CE256BE5-36C6-4DC6-89DF-F6941433F04E}] }
+    { MenuGroup      ;[{CE256BE5-36C6-4DC6-89DF-F6941433F04E}] ;Name=Workflow;
+                                                                CaptionML=ENU=Workflow;
+                                                                Visible=Yes }
+    { MenuItem       ;[{BC729408-05A5-4D01-9640-B47986E09A87}] ;Name=Workflows;
+                                                                CaptionML=ENU=Workflows;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=1500;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{E9184AD2-9DD9-48F4-B778-006B90575A65}] ;Name=Workflow Templates;
+                                                                CaptionML=ENU=Workflow Templates;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=1505;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{41101119-FA06-4272-B306-1B2BCB5E9BA8}] ;Name=Workflow Categories;
+                                                                CaptionML=ENU=Workflow Categories;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=1508;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{88C8D2C1-7042-4742-BBDE-96E5A2696354}] ;Name=Workflow Step Instances;
+                                                                CaptionML=ENU=Workflow Step Instances;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=1504;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{A02243D4-933D-42B7-8693-737D3ACB89EC}] ;Name=Archived Workflow Step Instances;
+                                                                CaptionML=ENU=Archived Workflow Step Instances;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=1530;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=History }
+    { MenuItem       ;[{0045B4F5-932A-4BB0-949F-C2A07BBC6F81}] ;Name=Workflow User Group;
+                                                                CaptionML=ENU=Workflow User Groups;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=1533;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{9DCFFD6D-9F26-471F-A4F6-BB123F1E6371}] ;Name=Approval User Setup;
+                                                                CaptionML=ENU=Approval User Setup;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=663;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Administration }
+    { MenuItem       ;[{C0F57025-ECF0-42B6-BC41-E589C440A81B}] ;Name=Send Overdue Appr. Notif.;
+                                                                CaptionML=ENU=Send Overdue Approval Notifications;
+                                                                RunObjectType=Report;
+                                                                RunObjectID=1509;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{E1C76293-3EC2-45E7-92D7-ABDB88CC336A}] ;Name=Overdue Approval Entries;
+                                                                CaptionML=ENU=Overdue Approval Entries;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=666;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=History }
+    { MenuItem       ;[{0E6A8091-FB34-4F84-B7A5-A9FF944AA419}] ;Name=Dynamic Request Page Entities;
+                                                                CaptionML=ENU=Dynamic Request Page Entities;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=1535;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Administration }
+    { MenuItem       ;[{53B7CF73-A5E2-4987-8FC6-3D1053A71904}] ;Name=Dynamic Request Page Fields;
+                                                                CaptionML=ENU=Dynamic Request Page Fields;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=1536;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Administration }
+    { MenuItem       ;[{D73721A7-179A-4255-838D-2240F4BD45C8}] ;Name=Restricted Records;
+                                                                CaptionML=ENU=Restricted Records;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=1550;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{75B28741-ED2E-4EFF-B633-1D428CA5B856}] ;Name=WF Event/Event Combinations;
+                                                                CaptionML=ENU=Workflow Event Hierarchies;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=1506;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Administration }
+    { MenuItem       ;[{353C8DFD-4990-43DB-B0E6-C182AE216800}] ;Name=WF Event/Response Combinations;
+                                                                CaptionML=ENU=Workflow Event/Response Combinations;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=1507;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Administration }
+    { MenuItem       ;[{6E9B7151-5C24-4764-858C-9C92CBBC0CAF}] ;Name=Workflow - Table Relations;
+                                                                CaptionML=ENU=Workflow - Table Relations;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=1509;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{BC729408-05A5-4D01-9640-B47986E09A87}];
+                                                                DepartmentCategory=Administration }
+    { MenuGroup      ;[{CBB7A65F-ABDA-4796-929C-48B629C6F7D9}] ;Name=Notifications;
+                                                                CaptionML=ENU=Notifications;
+                                                                Visible=Yes }
+    { MenuItem       ;[{9F053EBE-670A-4426-8BCA-D7B27E57039C}] ;Name=Notification Templates;
+                                                                CaptionML=ENU=Notification Templates;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=1510;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Administration }
+    { MenuItem       ;[{A1FF54EC-CC50-4932-9377-50A50F507529}] ;Name=Notification Entries;
+                                                                CaptionML=ENU=Notification Entries;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=1511;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{7846FA5D-8CD6-4857-BC19-F8AB987458E0}] ;Name=Notification Setup;
+                                                                CaptionML=ENU=Notification Setup;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=1512;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Administration }
+    { MenuItem       ;[{D69400BE-D547-48CF-9CF6-02C6FE5BE41F}] ;Name=Sent Notification Entries;
+                                                                CaptionML=ENU=Sent Notification Entries;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=1514;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{9F053EBE-670A-4426-8BCA-D7B27E57039C}];
+                                                                DepartmentCategory=Lists }
+    { MenuGroup      ;[{9C310259-247A-48FD-939F-96A03E505157}] ;Name=BI Dataset Management;
+                                                                CaptionML=ENU=BI Dataset Management;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{B588DFBA-2470-435D-A8ED-06B90A98A5DA}];
+                                                                IsDepartmentPage=Yes }
+    { MenuGroup      ;[{A948598B-DF27-4EDB-80F7-48F3CC0F1FA1}] ;Name=Setup;
+                                                                CaptionML=ENU=Setup;
+                                                                Visible=Yes;
+                                                                IsDepartmentPage=Yes }
+    { MenuItem       ;[{1C9189E3-1BEE-4234-B19D-3FC4C258B0D3}] ;Name=Dataset Setup;
+                                                                CaptionML=ENU=Dataset Setup;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11126855;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{1C9189E3-1BEE-4234-B19D-3FC4C258B0D3}];
+                                                                DepartmentCategory=Tasks }
+    { MenuGroup      ;[{2201B998-2CC4-454D-8254-77E681276186}] ;Name=General;
+                                                                CaptionML=ENU=General;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{A948598B-DF27-4EDB-80F7-48F3CC0F1FA1}];
+                                                                IsDepartmentPage=Yes }
+    { MenuItem       ;[{BCEB8F88-BCDD-48BE-AD13-F52D0784845F}] ;Name=Dataset List;
+                                                                CaptionML=ENU=Dataset List;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11126854;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{C996FE3D-A9B7-4C7B-9C73-9F009D2EE232}] ;Name=Datapart List;
+                                                                CaptionML=ENU=Datapart List;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11126856;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{BCEB8F88-BCDD-48BE-AD13-F52D0784845F}];
+                                                                DepartmentCategory=Tasks }
+    {                ;[{D5A4ABEF-5CF0-4E00-8414-AA20B1586810}] ;NextNodeID=[{11732C32-5FD2-4D71-A9DC-C27D96ADD960}] }
+    { MenuItem       ;[{11732C32-5FD2-4D71-A9DC-C27D96ADD960}] ;Name=Data Exchange Types;
+                                                                CaptionML=ENU=Data Exchange Types;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=1213;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{00000000-0000-0000-0000-000000000000}];
+                                                                DepartmentCategory=Administration }
+    {                ;[{F481F9D9-C045-457E-96EE-A52367BC3002}] ;NextNodeID=[{C2A39263-A655-46B8-B51A-6BD9B7336858}] }
+    { MenuGroup      ;[{C2A39263-A655-46B8-B51A-6BD9B7336858}] ;Name=Microsoft Dynamics CRM;
+                                                                CaptionML=ENU=Microsoft Dynamics CRM;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{1A084DCB-C422-4765-B7EA-89929ECDD0B3}];
+                                                                IsDepartmentPage=Yes }
+    { MenuItem       ;[{AE07F6F6-9216-478C-815A-0ABE901D2DC5}] ;Name=Microsoft Dynamics CRM Sales Order List;
+                                                                CaptionML=ENU=Microsoft Dynamics CRM Sales Orders;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=5353;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{DF00B806-D0CA-4AF1-81F4-64F40F16CBAA}] ;Name=Dynamics CRM Accounts;
+                                                                CaptionML=ENU=Microsoft Dynamics CRM Accounts;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=5341;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{B48A4722-8BF4-4406-A7E1-89B619E88DBC}] ;Name=Dynamics CRM Cases;
+                                                                CaptionML=ENU=Microsoft Dynamics CRM Cases;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=5349;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{EB46B856-B3F4-4450-967D-0AFDD51F6669}] ;Name=Microsoft Dynamics CRM Contacts;
+                                                                CaptionML=ENU=Microsoft Dynamics CRM Contacts;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=5342;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{4DAEC19D-AB17-469D-B1B0-4B97F19C43CB}] ;Name=Dynamics CRM Opportunities;
+                                                                CaptionML=ENU=Microsoft Dynamics CRM Opportunities;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=5343;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{F8FDD153-07DF-47C8-AD3A-7EB316FBC6F5}] ;Name=Dynamics CRM Products;
+                                                                CaptionML=ENU=Microsoft Dynamics CRM Products;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=5348;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{F97934B3-E6F2-4F5B-9FFE-325FBEBFCFB2}] ;Name=Dynamics CRM Quotes;
+                                                                CaptionML=ENU=Microsoft Dynamics CRM Quotes;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=5351;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{C36E17EB-735B-4BAF-827D-885BB37FFABF}] ;Name=Dynamics CRM Transaction Currencies;
+                                                                CaptionML=ENU=Microsoft Dynamics CRM Transaction Currencies;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=5345;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{B706608F-329F-4DC8-BB98-7E6A7862FE49}] ;Name=Dynamics CRM Unit Groups;
+                                                                CaptionML=ENU=Microsoft Dynamics CRM Unit Groups;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=5362;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{AE07F6F6-9216-478C-815A-0ABE901D2DC5}];
+                                                                DepartmentCategory=Lists }
+    {                ;[{93B8B81C-73DB-46E3-BD59-5D3F823A991F}] ;NextNodeID=[{48A45A81-4CFF-4553-B449-851DEAFB250F}] }
+    { MenuItem       ;[{48A45A81-4CFF-4553-B449-851DEAFB250F}] ;Name=Leave Ledger Entries..;
+                                                                CaptionML=ENU=Leave Ledger Entries..;
+                                                                RunObjectType=Report;
+                                                                RunObjectID=11012653;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{5F12B04F-905F-44B8-9087-21875AE2C221}];
+                                                                DepartmentCategory=Tasks }
+    {                ;[{D2AA8ECE-CCF7-42FB-810E-4AC676DB2EF2}] ;NextNodeID=[{82CF0229-BACA-444D-96EA-81FE9A5D9372}] }
+    { MenuItem       ;[{82CF0229-BACA-444D-96EA-81FE9A5D9372}] ;Name=Bezettingsprognose;
+                                                                CaptionML=ENU=Occupation Prognosis;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11020697;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    {                ;[{4642DD13-054A-4053-A0AF-7E12E168F228}] ;NextNodeID=[{D9087A87-0656-4749-81F4-ADE88B128EAE}] }
+    { MenuItem       ;[{D9087A87-0656-4749-81F4-ADE88B128EAE}] ;Name=Transportplanning webservice-Id expediteur;
+                                                                CaptionML=ENU=Transport Planning Web Service ID Shipping Agent;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11229912;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{D94686C9-F683-4906-9AC6-D7E15DBBA479}];
+                                                                DepartmentCategory=Tasks }
+    {                ;[{ABB93D9A-CB88-4F31-BC47-57FA552ADCBF}] ;NextNodeID=[{40C80667-2785-49AF-8C8A-06A57FE9CF71}] }
+    { MenuItem       ;[{40C80667-2785-49AF-8C8A-06A57FE9CF71}] ;Name=WhiteVision instellingen;
+                                                                CaptionML=ENU=WhiteVision Setup;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11126861;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{4E2E50DC-04CA-4FE4-932C-ABB64F62E71D}];
+                                                                DepartmentCategory=Tasks }
+    {                ;[{0063D1D6-18B2-4B91-BC95-261700BF31B2}] ;NextNodeID=[{B5B646BA-8EA5-4C58-9DD7-2F3A9C31F3A4}] }
+    { MenuGroup      ;[{B5B646BA-8EA5-4C58-9DD7-2F3A9C31F3A4}] ;Name=BIM;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{0EDDE5BB-271C-4B22-B524-066161902D67}] }
+    { MenuItem       ;[{7E0A3BFF-CA01-494E-9FAE-FE3D5D79A729}] ;Name=BIM Models;
+                                                                CaptionML=ENU=BIM Models;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11130581;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{7E0A3BFF-CA01-494E-9FAE-FE3D5D79A729}];
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{C9A090FC-C9D8-4159-8970-39ADE94A6555}] ;Name=AGDA Export;
+                                                                CaptionML=ENU=Export Dimensions Only AGDA;
+                                                                RunObjectType=Codeunit;
+                                                                RunObjectID=11128271;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{DB88C010-3D9F-4FAA-AC74-55BC441D0BAB}] ;Name=Exportera timmar AGDA;
+                                                                CaptionML=ENU=Export hours AGDA;
+                                                                RunObjectType=Report;
+                                                                RunObjectID=11128024;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{11D7B91F-B99A-4E2F-8BFC-5FBD884315D3}] ;Name=Lista ”ver exporterade timmar;
+                                                                CaptionML=ENU=Export Hours List;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11012038;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{BFAE6DAE-05D9-4102-AB1C-B66013AB8415}] ;Name=Import Pers. Workschedule AGDA;
+                                                                CaptionML=ENU=Import Pers. Workschedule AGDA;
+                                                                RunObjectType=XMLport;
+                                                                RunObjectID=11128022;
+                                                                Visible=Yes;
+                                                                DepartmentCategory=Tasks }
+    { MenuItem       ;[{C805E71C-7265-4A4B-84E0-66D03FC7A02E}] ;Name=Error Log Work Schedule;
+                                                                CaptionML=ENU=Error Log Work Schedule;
+                                                                RunObjectType=Page;
+                                                                RunObjectID=11128054;
+                                                                Visible=Yes;
+                                                                NextNodeID=[{C9A090FC-C9D8-4159-8970-39ADE94A6555}];
+                                                                DepartmentCategory=Lists }
+    { MenuItem       ;[{0EDDE5BB-271C-4B22-B524-066161902D67}] ;Name=Object Manipulation;
+                                                                CaptionML=ENU=Object Manipulation;
+                                                                MemberOfMenu=[{38079159-A6B4-4539-95FF-0C0D6C5EAA7F}];
+                                                                RunObjectType=Page;
+                                                                RunObjectID=77777;
+                                                                ParentNodeID=[{38079159-A6B4-4539-95FF-0C0D6C5EAA7F}];
+                                                                Visible=Yes;
+                                                                NextNodeID=[{0063D1D6-18B2-4B91-BC95-261700BF31B2}];
+                                                                DepartmentCategory=Administration }
+  }
+}
+

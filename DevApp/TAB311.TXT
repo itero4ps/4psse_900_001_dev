@@ -1,0 +1,532 @@
+OBJECT Table 311 Sales & Receivables Setup
+{
+  OBJECT-PROPERTIES
+  {
+    Date=;
+    Time=;
+    Version List=NAVW19.00,NAVSE9.FI9.NO9,4PS9.00,4PSSE;
+  }
+  PROPERTIES
+  {
+    CaptionML=ENU=Sales & Receivables Setup;
+    LookupPageID=Page459;
+    DrillDownPageID=Page459;
+  }
+  FIELDS
+  {
+    { 1   ;   ;Primary Key         ;Code10        ;CaptionML=ENU=Primary Key }
+    { 2   ;   ;Discount Posting    ;Option        ;CaptionML=ENU=Discount Posting;
+                                                   OptionCaptionML=ENU=No Discounts,Invoice Discounts,Line Discounts,All Discounts;
+                                                   OptionString=No Discounts,Invoice Discounts,Line Discounts,All Discounts }
+    { 4   ;   ;Credit Warnings     ;Option        ;CaptionML=ENU=Credit Warnings;
+                                                   OptionCaptionML=ENU=Both Warnings,Credit Limit,Overdue Balance,No Warning;
+                                                   OptionString=Both Warnings,Credit Limit,Overdue Balance,No Warning }
+    { 5   ;   ;Stockout Warning    ;Boolean       ;InitValue=Yes;
+                                                   CaptionML=ENU=Stockout Warning }
+    { 6   ;   ;Shipment on Invoice ;Boolean       ;AccessByPermission=TableData 110=R;
+                                                   CaptionML=ENU=Shipment on Invoice }
+    { 7   ;   ;Invoice Rounding    ;Boolean       ;CaptionML=ENU=Invoice Rounding }
+    { 8   ;   ;Ext. Doc. No. Mandatory;Boolean    ;CaptionML=ENU=Ext. Doc. No. Mandatory }
+    { 9   ;   ;Customer Nos.       ;Code10        ;TableRelation="No. Series";
+                                                   CaptionML=ENU=Customer Nos. }
+    { 10  ;   ;Quote Nos.          ;Code10        ;TableRelation="No. Series";
+                                                   CaptionML=ENU=Quote Nos. }
+    { 11  ;   ;Order Nos.          ;Code10        ;TableRelation="No. Series";
+                                                   AccessByPermission=TableData 110=R;
+                                                   CaptionML=ENU=Order Nos. }
+    { 12  ;   ;Invoice Nos.        ;Code10        ;TableRelation="No. Series";
+                                                   CaptionML=ENU=Invoice Nos. }
+    { 13  ;   ;Posted Invoice Nos. ;Code10        ;TableRelation="No. Series";
+                                                   CaptionML=ENU=Posted Invoice Nos. }
+    { 14  ;   ;Credit Memo Nos.    ;Code10        ;TableRelation="No. Series";
+                                                   CaptionML=ENU=Credit Memo Nos. }
+    { 15  ;   ;Posted Credit Memo Nos.;Code10     ;TableRelation="No. Series";
+                                                   CaptionML=ENU=Posted Credit Memo Nos. }
+    { 16  ;   ;Posted Shipment Nos.;Code10        ;TableRelation="No. Series";
+                                                   AccessByPermission=TableData 110=R;
+                                                   CaptionML=ENU=Posted Shipment Nos. }
+    { 17  ;   ;Reminder Nos.       ;Code10        ;TableRelation="No. Series";
+                                                   CaptionML=ENU=Reminder Nos. }
+    { 18  ;   ;Issued Reminder Nos.;Code10        ;TableRelation="No. Series";
+                                                   CaptionML=ENU=Issued Reminder Nos. }
+    { 19  ;   ;Fin. Chrg. Memo Nos.;Code10        ;TableRelation="No. Series";
+                                                   CaptionML=ENU=Fin. Chrg. Memo Nos. }
+    { 20  ;   ;Issued Fin. Chrg. M. Nos.;Code10   ;TableRelation="No. Series";
+                                                   CaptionML=ENU=Issued Fin. Chrg. M. Nos. }
+    { 21  ;   ;Posted Prepmt. Inv. Nos.;Code10    ;TableRelation="No. Series";
+                                                   CaptionML=ENU=Posted Prepmt. Inv. Nos. }
+    { 22  ;   ;Posted Prepmt. Cr. Memo Nos.;Code10;TableRelation="No. Series";
+                                                   CaptionML=ENU=Posted Prepmt. Cr. Memo Nos. }
+    { 23  ;   ;Blanket Order Nos.  ;Code10        ;TableRelation="No. Series";
+                                                   AccessByPermission=TableData 110=R;
+                                                   CaptionML=ENU=Blanket Order Nos.;
+                                                   Description=4PS: Raam  -> Afroep }
+    { 24  ;   ;Calc. Inv. Discount ;Boolean       ;CaptionML=ENU=Calc. Inv. Discount }
+    { 25  ;   ;Appln. between Currencies;Option   ;AccessByPermission=TableData 4=R;
+                                                   CaptionML=ENU=Appln. between Currencies;
+                                                   OptionCaptionML=ENU=None,EMU,All;
+                                                   OptionString=None,EMU,All }
+    { 26  ;   ;Copy Comments Blanket to Order;Boolean;
+                                                   InitValue=Yes;
+                                                   AccessByPermission=TableData 110=R;
+                                                   CaptionML=ENU=Copy Comments Blanket to Order;
+                                                   Description=4PS: Raam  -> Afroep }
+    { 27  ;   ;Copy Comments Order to Invoice;Boolean;
+                                                   InitValue=Yes;
+                                                   AccessByPermission=TableData 110=R;
+                                                   CaptionML=ENU=Copy Comments Order to Invoice }
+    { 28  ;   ;Copy Comments Order to Shpt.;Boolean;
+                                                   InitValue=Yes;
+                                                   AccessByPermission=TableData 110=R;
+                                                   CaptionML=ENU=Copy Comments Order to Shpt. }
+    { 29  ;   ;Allow VAT Difference;Boolean       ;CaptionML=ENU=Allow VAT Difference }
+    { 30  ;   ;Calc. Inv. Disc. per VAT ID;Boolean;CaptionML=ENU=Calc. Inv. Disc. per VAT ID }
+    { 31  ;   ;Logo Position on Documents;Option  ;CaptionML=ENU=Logo Position on Documents;
+                                                   OptionCaptionML=ENU=No Logo,Left,Center,Right;
+                                                   OptionString=No Logo,Left,Center,Right }
+    { 32  ;   ;Check Prepmt. when Posting;Boolean ;CaptionML=ENU=Check Prepmt. when Posting }
+    { 35  ;   ;Default Posting Date;Option        ;CaptionML=ENU=Default Posting Date;
+                                                   OptionCaptionML=ENU=Work Date,No Date;
+                                                   OptionString=Work Date,No Date }
+    { 36  ;   ;Default Quantity to Ship;Option    ;AccessByPermission=TableData 110=R;
+                                                   CaptionML=ENU=Default Quantity to Ship;
+                                                   OptionCaptionML=ENU=Remainder,Blank;
+                                                   OptionString=Remainder,Blank }
+    { 37  ;   ;Archive Quotes and Orders;Boolean  ;CaptionML=ENU=Archive Quotes and Orders }
+    { 38  ;   ;Post with Job Queue ;Boolean       ;CaptionML=ENU=Post with Job Queue }
+    { 39  ;   ;Job Queue Category Code;Code10     ;TableRelation="Job Queue Category";
+                                                   CaptionML=ENU=Job Queue Category Code }
+    { 40  ;   ;Job Queue Priority for Post;Integer;InitValue=1000;
+                                                   OnValidate=BEGIN
+                                                                IF "Job Queue Priority for Post" < 0 THEN
+                                                                  ERROR(Text001);
+                                                              END;
+
+                                                   CaptionML=ENU=Job Queue Priority for Post;
+                                                   MinValue=0 }
+    { 41  ;   ;Post & Print with Job Queue;Boolean;CaptionML=ENU=Post & Print with Job Queue }
+    { 42  ;   ;Job Q. Prio. for Post & Print;Integer;
+                                                   InitValue=1000;
+                                                   OnValidate=BEGIN
+                                                                IF "Job Queue Priority for Post" < 0 THEN
+                                                                  ERROR(Text001);
+                                                              END;
+
+                                                   CaptionML=ENU=Job Q. Prio. for Post & Print;
+                                                   MinValue=0 }
+    { 43  ;   ;Notify On Success   ;Boolean       ;CaptionML=ENU=Notify On Success }
+    { 44  ;   ;VAT Bus. Posting Gr. (Price);Code10;TableRelation="VAT Business Posting Group";
+                                                   CaptionML=ENU=VAT Bus. Posting Gr. (Price) }
+    { 45  ;   ;Direct Debit Mandate Nos.;Code10   ;TableRelation="No. Series";
+                                                   CaptionML=ENU=Direct Debit Mandate Nos. }
+    { 5800;   ;Posted Return Receipt Nos.;Code10  ;TableRelation="No. Series";
+                                                   AccessByPermission=TableData 6660=R;
+                                                   CaptionML=ENU=Posted Return Receipt Nos. }
+    { 5801;   ;Copy Cmts Ret.Ord. to Ret.Rcpt;Boolean;
+                                                   InitValue=Yes;
+                                                   AccessByPermission=TableData 6660=R;
+                                                   CaptionML=ENU=Copy Cmts Ret.Ord. to Ret.Rcpt }
+    { 5802;   ;Copy Cmts Ret.Ord. to Cr. Memo;Boolean;
+                                                   InitValue=Yes;
+                                                   AccessByPermission=TableData 6660=R;
+                                                   CaptionML=ENU=Copy Cmts Ret.Ord. to Cr. Memo }
+    { 6600;   ;Return Order Nos.   ;Code10        ;TableRelation="No. Series";
+                                                   AccessByPermission=TableData 6660=R;
+                                                   CaptionML=ENU=Return Order Nos. }
+    { 6601;   ;Return Receipt on Credit Memo;Boolean;
+                                                   AccessByPermission=TableData 6660=R;
+                                                   CaptionML=ENU=Return Receipt on Credit Memo }
+    { 6602;   ;Exact Cost Reversing Mandatory;Boolean;
+                                                   CaptionML=ENU=Exact Cost Reversing Mandatory }
+    { 7101;   ;Customer Group Dimension Code;Code20;
+                                                   TableRelation=Dimension;
+                                                   CaptionML=ENU=Customer Group Dimension Code }
+    { 7102;   ;Salesperson Dimension Code;Code20  ;TableRelation=Dimension;
+                                                   CaptionML=ENU=Salesperson Dimension Code }
+    { 11012000;;One Installment per Invoice;Boolean;
+                                                   CaptionML=ENU=One Installment per Invoice }
+    { 11012011;;Invoice Sales Orders;Option       ;CaptionML=ENU=Invoice Sales Orders;
+                                                   OptionCaptionML=ENU=No,Yes - Not Posted Invoice,Yes - Posted Invoice;
+                                                   OptionString=No,NotPosted,Posted }
+    { 11012012;;Invoice Return Orders;Option      ;CaptionML=ENU=Invoice Return Orders;
+                                                   OptionCaptionML=ENU=No,Yes - Not Posted Credit Memo,Yes - Posted Credit Memo;
+                                                   OptionString=No,NotPosted,Posted }
+    { 11012020;;Generated Invoices Editable;Boolean;
+                                                   CaptionML=ENU=Generated Invoices Editable }
+    { 11012025;;Direct Delivery    ;Option        ;InitValue=No;
+                                                   CaptionML=ENU=Direct Delivery;
+                                                   OptionCaptionML=ENU=No,Yes,Yes - project/service only;
+                                                   OptionString=No,Yes,Yes - project/service only }
+    { 11012030;;Plant Depot Logistics;Code20      ;OnValidate=VAR
+                                                                lvPlantLocRec@1100485000 : Record 11012554;
+                                                              BEGIN
+                                                                //**4PS
+                                                                IF "Plant Depot Logistics" = '' THEN
+                                                                  EXIT;
+                                                                GetLogisticsCompanySeparated();
+                                                                lvPlantLocRec.CHANGECOMPANY(CompanyLogistics);
+                                                                lvPlantLocRec.GET("Plant Depot Logistics");
+                                                                lvPlantLocRec.TESTFIELD(Depot, TRUE);
+                                                              END;
+
+                                                   OnLookup=VAR
+                                                              lvPlantLocRec@1100485000 : Record 11012554;
+                                                            BEGIN
+                                                              //**4PS
+                                                              GetLogisticsCompanySeparated();
+                                                              lvPlantLocRec.CHANGECOMPANY(CompanyLogistics);
+                                                              lvPlantLocRec.FILTERGROUP(6);
+                                                              lvPlantLocRec.SETRANGE(Depot, TRUE);
+                                                              lvPlantLocRec.FILTERGROUP(0);
+                                                              lvPlantLocRec.Code := "Plant Depot Logistics";
+                                                              IF PAGE.RUNMODAL(0, lvPlantLocRec) = ACTION::LookupOK THEN
+                                                                VALIDATE("Plant Depot Logistics", lvPlantLocRec.Code);
+                                                            END;
+
+                                                   CaptionML=ENU=Plant Depot Logistics (Default);
+                                                   Description=Default plant depot logistics (From location), for granule 'Separated Sales / Logistic" }
+    { 11012035;;Location Code Logistics;Code10    ;OnValidate=VAR
+                                                                lvLocRec@1100485000 : Record 14;
+                                                              BEGIN
+                                                                //**4PS
+                                                                IF "Location Code Logistics" = '' THEN
+                                                                  EXIT;
+                                                                GetLogisticsCompanySeparated();
+                                                                lvLocRec.CHANGECOMPANY(CompanyLogistics);
+                                                                lvLocRec.GET("Location Code Logistics");
+                                                                lvLocRec.TESTFIELD("Use As In-Transit", FALSE);
+                                                              END;
+
+                                                   OnLookup=VAR
+                                                              lvLocRec@1100485000 : Record 14;
+                                                            BEGIN
+                                                              //**4PS
+                                                              GetLogisticsCompanySeparated();
+                                                              lvLocRec.CHANGECOMPANY(CompanyLogistics);
+                                                              lvLocRec.FILTERGROUP(6);
+                                                              lvLocRec.SETRANGE("Use As In-Transit", FALSE);
+                                                              lvLocRec.FILTERGROUP(0);
+                                                              lvLocRec.Code := "Location Code Logistics";
+                                                              IF PAGE.RUNMODAL(0, lvLocRec) = ACTION::LookupOK THEN
+                                                                VALIDATE("Location Code Logistics", lvLocRec.Code);
+                                                            END;
+
+                                                   CaptionML=ENU=Location Code Logistics (Default);
+                                                   Description=Default location/depot logistics (From location) for items, for granule 'Separated Sales / Logistic" }
+    { 11012040;;Min. Days To Invoice one Week;Integer;
+                                                   CaptionML=ENU=Minimum Days To Invoice one Week;
+                                                   MinValue=0;
+                                                   MaxValue=7;
+                                                   BlankZero=Yes }
+    { 11012050;;Credit Reason Code Obligatory;Boolean;
+                                                   CaptionML=ENU=Credit Reason Code Obligatory }
+    { 11012060;;Archive Quote on Create Order;Boolean;
+                                                   CaptionML=ENU=Archive Quote on Create Order }
+    { 11012070;;Post only released Invoices;Boolean;
+                                                   CaptionML=ENU=Post only released Invoices }
+    { 11012075;;Release Sales Orders Required;Boolean;
+                                                   CaptionML=ENU=Release Sales Orders Required }
+    { 11012080;;Create Customer via Relation;Boolean;
+                                                   CaptionML=ENU=Create Customer via Relation }
+    { 11012300;;Replace Posting Date;Boolean      ;CaptionML=ENU=Replace Posting Date }
+    { 11012310;;Replace Document Date;Boolean     ;CaptionML=ENU=Replace Document Date }
+    { 11012550;;Internal Plant Invoice Nos.;Code10;TableRelation="No. Series";
+                                                   CaptionML=ENU=Internal Plant Invoice Nos. }
+    { 11012551;;Posted Internal Plant Invoices;Code10;
+                                                   TableRelation="No. Series";
+                                                   CaptionML=ENU=Posted Internal Plant Invoices }
+    { 11012552;;Internal Plant Credit Memos;Code10;TableRelation="No. Series";
+                                                   CaptionML=ENU=Internal Plant Credit Memos }
+    { 11012553;;Posted Int. Plant Credit Memos;Code10;
+                                                   TableRelation="No. Series";
+                                                   CaptionML=ENU=Posted Int. Plant Credit Memos }
+    { 11012554;;Plant Invoice Nos. ;Code10        ;TableRelation="No. Series";
+                                                   CaptionML=ENU=Plant Invoice Nos. }
+    { 11012555;;Posted Plant Invoice Nos.;Code10  ;TableRelation="No. Series";
+                                                   CaptionML=ENU=Posted Plant Invoice Nos. }
+    { 11012556;;Plant Credit Memo Nos.;Code10     ;TableRelation="No. Series";
+                                                   CaptionML=ENU=Plant Credit Memo Nos. }
+    { 11012557;;Posted Plant Credit Memos;Code10  ;TableRelation="No. Series";
+                                                   CaptionML=ENU=Posted Plant Credit Memos }
+    { 11012560;;Calculate B Amounts based on;Option;
+                                                   CaptionML=ENU=Calculate B Amounts based on;
+                                                   OptionCaptionML=ENU=Labor Amount,Invoice Amount;
+                                                   OptionString=Labor Amount,Invoice Amount }
+    { 11012600;;PDF Export Path    ;Text250       ;CaptionML=ENU=PDF Export Path }
+    { 11012601;;XML Export Path    ;Text250       ;CaptionML=ENU=XML Export Path }
+    { 11012606;;Export XMLport Sales Inv.;Integer ;TableRelation=AllObjWithCaption."Object ID" WHERE (Object Type=CONST(XMLport));
+                                                   OnValidate=BEGIN
+                                                                CALCFIELDS("XMLport Name Sales Inv.");
+                                                              END;
+
+                                                   OnLookup=VAR
+                                                              AllObjWithCaption@1100525000 : Record 2000000058;
+                                                            BEGIN
+                                                              AllObjWithCaption.SETRANGE("Object Type",AllObjWithCaption."Object Type"::XMLport);
+                                                              IF PAGE.RUNMODAL(PAGE::Objects,AllObjWithCaption) = ACTION::LookupOK THEN
+                                                                VALIDATE("Export XMLport Sales Inv.",AllObjWithCaption."Object ID");
+                                                            END;
+
+                                                   CaptionML=ENU=Export XMLport Sales Inv.;
+                                                   BlankZero=Yes }
+    { 11012607;;XMLport Name Sales Inv.;Text80    ;FieldClass=FlowField;
+                                                   CalcFormula=Lookup(AllObjWithCaption."Object Caption" WHERE (Object Type=CONST(XMLport),
+                                                                                                                Object ID=FIELD(Export XMLport Sales Inv.)));
+                                                   CaptionML=ENU=XMLport Name Sales Inv.;
+                                                   Editable=No }
+    { 11012608;;Export XMLport Cr. Memo;Integer   ;TableRelation=AllObjWithCaption."Object ID" WHERE (Object Type=CONST(XMLport));
+                                                   OnValidate=BEGIN
+                                                                CALCFIELDS("XMLport Name Cr. Memo");
+                                                              END;
+
+                                                   OnLookup=VAR
+                                                              AllObjWithCaption@1100525000 : Record 2000000058;
+                                                            BEGIN
+                                                              AllObjWithCaption.SETRANGE("Object Type",AllObjWithCaption."Object Type"::XMLport);
+                                                              IF PAGE.RUNMODAL(PAGE::Objects,AllObjWithCaption) = ACTION::LookupOK THEN
+                                                                VALIDATE("Export XMLport Cr. Memo",AllObjWithCaption."Object ID");
+                                                            END;
+
+                                                   CaptionML=ENU=Export XMLport Cr. Memo;
+                                                   BlankZero=Yes }
+    { 11012609;;XMLport Name Cr. Memo;Text80      ;FieldClass=FlowField;
+                                                   CalcFormula=Lookup(AllObjWithCaption."Object Caption" WHERE (Object Type=CONST(XMLport),
+                                                                                                                Object ID=FIELD(Export XMLport Cr. Memo)));
+                                                   CaptionML=ENU=XMLport Name Cr. Memo;
+                                                   Editable=No }
+    { 11012610;;Charge Removal Contribution;Boolean;
+                                                   CaptionML=ENU=Charge Removal Contribution }
+    { 11126180;;Invoice No.        ;Boolean       ;CaptionML=ENU=Invoice No.;
+                                                   Description=NAVFI }
+    { 11126181;;Customer No.       ;Boolean       ;CaptionML=ENU=Customer No.;
+                                                   Description=NAVFI }
+    { 11126182;;Date               ;Boolean       ;CaptionML=ENU=Date;
+                                                   Description=NAVFI }
+    { 11126183;;Reference Nos.     ;Code10        ;TableRelation="No. Series".Code;
+                                                   OnValidate=BEGIN
+                                                                IF ("Reference Nos." <> '' ) THEN
+                                                                  BEGIN
+                                                                    NoSeriesLine.LOCKTABLE;
+                                                                    NoSeriesMgt.SetNoSeriesLineFilter(NoSeriesLine,"Reference Nos.",WORKDATE);
+
+                                                                    IF NOT NoSeriesLine.FIND('-') THEN BEGIN
+                                                                      NoSeriesLine.SETRANGE(NoSeriesLine."Starting Date");
+                                                                      IF NOT NoSeriesLine.FIND('-') THEN
+                                                                        ERROR(Text1090000,"Reference Nos.",WORKDATE);
+                                                                    END ELSE
+                                                                      IF NOT EVALUATE(TestNo,NoSeriesLine."Starting No.") THEN
+                                                                        ERROR(Text1090001,"Reference Nos.");
+                                                                  END;
+                                                              END;
+
+                                                   CaptionML=ENU=Reference Nos.;
+                                                   Description=NAVFI }
+    { 11126184;;Default Number     ;Code10        ;CaptionML=ENU=Default Number;
+                                                   Description=NAVFI }
+    { 11126185;;Print Reference No.;Boolean       ;CaptionML=ENU=Print Reference No.;
+                                                   Description=NAVFI }
+    { 11128055;;Export Path Svefaktura;Text250    ;CaptionML=ENU=Export Path Svefaktura }
+    { 11128056;;Export Path Svefaktura Attach.;Text250;
+                                                   CaptionML=ENU=Export Path Svefaktura Attachments }
+    { 11128057;;External Doc. No. as Pmt. Ref;Boolean;
+                                                   CaptionML=ENU=Use External Doc. No. as Payment Ref.;
+                                                   Description=IME201 }
+    { 11128058;;Export Path Reminder PDF;Text250  ;CaptionML=ENU=Export Path Reminder/FinChMemo as PDF;
+                                                   Description=ENH053 }
+    { 11128059;;Svefaktura Background Export;Boolean;
+                                                   CaptionML=ENU=Export Svefaktura by NAS }
+    { 11128060;;Svefaktura Invoice Report No.;Integer;
+                                                   TableRelation=Object.ID WHERE (Type=CONST(Report));
+                                                   CaptionML=ENU=Svefaktura Invoice Report No. }
+    { 11128061;;Svefaktura Cr.Memo Report No.;Integer;
+                                                   TableRelation=Object.ID WHERE (Type=CONST(Report));
+                                                   CaptionML=ENU=Svefaktura Cr.Memo Report No. }
+    { 11128065;;ROT Percentage     ;Integer       ;CaptionML=ENU=ROT % on Labour Cost;
+                                                   Description=RFC065 }
+    { 11128066;;ROT Amount Max     ;Decimal       ;CaptionML=ENU=Max. ROT Amount;
+                                                   Description=RFC065 }
+    { 11128500;;Print Receipt on Giro;Boolean     ;CaptionML=ENU=Print Receipt on Giro;
+                                                   Description=NAVNO }
+    { 11128503;;KID Setup          ;Option        ;InitValue=Document No.;
+                                                   OnValidate=BEGIN
+                                                                DocumentTools.TestKIDSetup(Rec);
+                                                              END;
+
+                                                   CaptionML=ENU=KID Setup;
+                                                   OptionCaptionML=ENU=Do not use,Document No.,Document No.+Customer No.,Customer No.+Document No.,Document Type+Document No.,Document No.+Document Type;
+                                                   OptionString=Do not use,Document No.,Document No.+Customer No.,Customer No.+Document No.,Document Type+Document No.,Document No.+Document Type;
+                                                   Description=NAVNO }
+    { 11128504;;Document No. length;Integer       ;InitValue=10;
+                                                   OnValidate=VAR
+                                                                SalesHeader@1100285500 : Record 36;
+                                                              BEGIN
+                                                                IF "Document No. length" < MAXSTRLEN(SalesHeader."No.") THEN
+                                                                  MESSAGE(Text1080003,MAXSTRLEN(SalesHeader."No."));
+                                                              END;
+
+                                                   CaptionML=ENU=Document No. length;
+                                                   Description=NAVNO }
+    { 11128505;;Customer No. length;Integer       ;OnValidate=VAR
+                                                                Customer@1100285500 : Record 18;
+                                                              BEGIN
+                                                                IF "Customer No. length" < MAXSTRLEN(Customer."No.") THEN
+                                                                  MESSAGE(Text1080004,MAXSTRLEN(Customer."No."));
+                                                              END;
+
+                                                   CaptionML=ENU=Customer No. length;
+                                                   Description=NAVNO }
+    { 11128506;;Use KID on Fin. Charge Memo;Boolean;
+                                                   OnValidate=BEGIN
+                                                                DocumentTools.TestKIDSetup(Rec);
+                                                              END;
+
+                                                   CaptionML=ENU=Use KID on Fin. Charge Memo;
+                                                   Description=NAVNO }
+    { 11128507;;Use KID on Reminder;Boolean       ;OnValidate=BEGIN
+                                                                DocumentTools.TestKIDSetup(Rec);
+                                                              END;
+
+                                                   CaptionML=ENU=Use KID on Reminder;
+                                                   Description=NAVNO }
+    { 11128508;;E-Invoice Sales Invoice Path;Text250;
+                                                   CaptionML=ENU=E-Invoice Sales Invoice Path;
+                                                   Description=NAVNO }
+    { 11128509;;E-Invoice Sales Cr. Memo Path;Text250;
+                                                   CaptionML=ENU=E-Invoice Sales Cr. Memo Path;
+                                                   Description=NAVNO }
+    { 11128510;;E-Invoice Reminder Path;Text250   ;CaptionML=ENU=E-Invoice Reminder Path;
+                                                   Description=NAVNO }
+    { 11128511;;E-Invoice Fin. Charge Path;Text250;CaptionML=ENU=E-Invoice Fin. Charge Path;
+                                                   Description=NAVNO }
+    { 11128570;;OIOUBL Invoice Path;Text250       ;CaptionML=ENU=OIOUBL Invoice Path;
+                                                   Description=NAVDK }
+    { 11128571;;OIOUBL Cr. Memo Path;Text250      ;CaptionML=ENU=OIOUBL Cr. Memo Path;
+                                                   Description=NAVDK }
+    { 11128572;;OIOUBL Reminder Path;Text250      ;CaptionML=ENU=OIOUBL Reminder Path;
+                                                   Description=NAVDK }
+    { 11128573;;OIOUBL Fin. Chrg. Memo Path;Text250;
+                                                   CaptionML=ENU=OIOUBL Fin. Chrg. Memo Path;
+                                                   Description=NAVDK }
+    { 11128574;No;OIOXML fields active;Boolean    ;CaptionML=ENU=OIOXML fields active;
+                                                   Description=NAVDK }
+    { 11128575;;ROT Application No.;Integer       ;CaptionML=ENU=ROT Application No. }
+    { 11128576;;ROT Application Last Sent;DateTime;CaptionML=ENU=ROT Application Last Sent }
+    { 11128577;;Default OIOUBL Profile Code;Code10;TableRelation="OIOUBL Profile";
+                                                   OnValidate=VAR
+                                                                OIOUBLProfile@1060000 : Record 11128570;
+                                                              BEGIN
+                                                                OIOUBLProfile.UpdateEmptyOIOUBLProfileCodes("Default OIOUBL Profile Code",xRec."Default OIOUBL Profile Code");
+                                                              END;
+
+                                                   CaptionML=ENU=Default OIOUBL Profile Code;
+                                                   Description=NAVDK }
+  }
+  KEYS
+  {
+    {    ;Primary Key                             ;Clustered=Yes }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+    VAR
+      Text001@1000 : TextConst 'ENU=Job Queue Priority must be zero or positive.';
+      CompanyLogistics@1100485000 : Text[30];
+      SetupOIOUBLQst@1002 : TextConst 'ENU=OIOUBL path of the OIOMXL file is missing. Do you want to update it now?';
+      MissingSetupOIOUBLErr@1001 : TextConst 'ENU=OIOUBL path of the OIOMXL file is missing. Please Correct it.';
+      DocumentTools@1080002 : Codeunit 11128501;
+      Text1080003@1080003 : TextConst 'ENU=Notice: Document No. can be up to %1 digits.';
+      Text1080004@1080004 : TextConst 'ENU=Notice: Customer No. can be up to %1 digits.';
+      NoSeries@1090000 : Record 308;
+      NoSeriesLine@1090001 : Record 309;
+      NoSeriesMgt@1090002 : Codeunit 396;
+      TestNo@1090003 : Decimal;
+      Text1090000@1090004 : TextConst 'ENU=You cannot assign new numbers from the number series %1 on %2.';
+      Text1090001@1090005 : TextConst 'ENU="Illegal characters in No. Series %1; only numbers between 0-9 allowed."';
+      CompHasTaxAssessCaptionLbl@1070000 : TextConst 'ENU=Company has Tax Assessment Note';
+
+    PROCEDURE GetLegalStatement@11() : Text;
+    VAR
+      CompanyInformation@1080000 : Record 79;
+      GeneralLedgerSetup@1100285500 : Record 98;
+    BEGIN
+      //NAVNO
+      GeneralLedgerSetup.GET;
+      IF GeneralLedgerSetup."Norwegian Localization Active" THEN BEGIN
+        CompanyInformation.GET;
+        EXIT(CompanyInformation.GetEnterpriseClassification);
+      END;
+
+      EXIT(CompHasTaxAssessCaptionLbl);
+    END;
+
+    PROCEDURE JobQueueActive@1() : Boolean;
+    BEGIN
+      GET;
+      EXIT("Post with Job Queue" OR "Post & Print with Job Queue");
+    END;
+
+    PROCEDURE GetLogisticsCompanySeparated@1100485006();
+    VAR
+      PlantMgtCompRec@1100485000 : Record 11020586;
+    BEGIN
+      //**4PS.n
+      IF CompanyLogistics = '' THEN
+        CompanyLogistics := PlantMgtCompRec.GetPlantCompanySalesRental(TRUE);
+    END;
+
+    LOCAL PROCEDURE IsOIOUBLPathSetupAvailble@1060000("Document Type"@1060000 : 'Quote,Order,Invoice,Credit Memo,Blanket Order,Return Order') : Boolean;
+    VAR
+      SalesSetup@1060001 : Record 311;
+      FileMgt@1060002 : Codeunit 419;
+    BEGIN
+      //NAVDK
+      IF NOT FileMgt.CanRunDotNetOnClient THEN
+        EXIT(TRUE);
+      CASE "Document Type" OF
+        "Document Type"::Order,"Document Type"::Invoice:
+          EXIT("OIOUBL Invoice Path" <> '');
+        "Document Type"::"Return Order","Document Type"::"Credit Memo":
+          EXIT("OIOUBL Cr. Memo Path" <> '');
+        "Document Type"::Quote,"Document Type"::"Return Order":
+          EXIT(TRUE);
+      END;
+    END;
+
+    PROCEDURE VerifyAndSetOIOUBLPathSetup@1060002("Document Type"@1060000 : 'Quote,Order,Invoice,Credit Memo,Blanket Order,Return Order');
+    VAR
+      OIOUBLsetupPage@1060001 : Page 11128571;
+    BEGIN
+      //NAVDK
+      GET;
+      IF IsOIOUBLPathSetupAvailble("Document Type") THEN
+        EXIT;
+
+      IF CONFIRM(SetupOIOUBLQst,TRUE) THEN BEGIN
+        OIOUBLsetupPage.SETRECORD(Rec);
+        OIOUBLsetupPage.EDITABLE(TRUE);
+        IF OIOUBLsetupPage.RUNMODAL = ACTION::OK THEN
+          OIOUBLsetupPage.GETRECORD(Rec);
+      END;
+
+      IF NOT IsOIOUBLPathSetupAvailble("Document Type") THEN
+        ERROR(MissingSetupOIOUBLErr);
+    END;
+
+    BEGIN
+    {
+      140205 ITERO.MH 4PSSE.I012 Added two fields: "ROT Application No.", "ROT Application Last Sent"
+      140702 ITERO.MH ENH021 New field: Export Path Svefaktura
+      140820 ITERO.MH New field Export Path Svefaktura Attach.
+      141007 ITERO.MH IME201 New field "External Doc. No. as Pmt. Ref"
+      141105 ITERO.MH ENH053 New field "Export Path Reminder PDF"
+      150122 ITERO.MH IME271 New field "Svefaktura Background Export"
+      150928 ITERO.MH New fields "Svefaktura Invoice Report No." and "Svefaktura Credit Memo Report No."
+      151103 ITERO.MH RFC065 New fields "ROT Amount Max", "ROT Percentage"
+      151104 ITERO.MH RFC035 Changed caption of "Export Path Reminder as PDF"
+    }
+    END.
+  }
+}
+

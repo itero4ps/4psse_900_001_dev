@@ -1,0 +1,38 @@
+OBJECT Page 12057095 EX Invoicing Codes
+{
+  OBJECT-PROPERTIES
+  {
+    Date=;
+    Time=;
+    Version List=EXF400000;
+  }
+  PROPERTIES
+  {
+    CaptionML=ENU=ExFlow Invoicing Code;
+    SourceTable=Table12013597;
+    PageType=List;
+  }
+  CONTROLS
+  {
+    { 1100285000;0;Container;
+                ContainerType=ContentArea }
+
+    { 1100285001;1;Group  ;
+                Name=Group;
+                GroupType=Repeater }
+
+    { 1100285004;2;Field  ;
+                SourceExpr="Invoicing Code" }
+
+    { 1100285005;2;Field  ;
+                SourceExpr=Description }
+
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+

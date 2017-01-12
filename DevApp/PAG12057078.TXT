@@ -1,0 +1,150 @@
+OBJECT Page 12057078 ExFlow Purch. Doc. PDF Web
+{
+  OBJECT-PROPERTIES
+  {
+    Date=;
+    Time=;
+    Version List=EXF400003;
+  }
+  PROPERTIES
+  {
+    Editable=No;
+    CaptionML=ENU=PDF Preview;
+    SourceTable=Table12013587;
+    PageType=CardPart;
+    ShowFilter=No;
+    OnInit=BEGIN
+             TempFilePath := ExFlowFileMgt.Path(ExFlowFileMgt.ServerTempFileName('',''));
+             CurrentlyLoadingPDF := FALSE;
+           END;
+
+    OnAfterGetRecord=BEGIN
+                       IF CurrentlyLoadingPDF THEN
+                         RecordChangedWhenLoading := TRUE
+                       ELSE
+                         PutPDF;
+                     END;
+
+  }
+  CONTROLS
+  {
+    { 1100285000;0;Container;
+                CaptionML=ENU=PDF;
+                ContainerType=ContentArea }
+
+    { 1100285002;1;Field  ;
+                Name=PdfControl;
+                ControlAddIn=[SignUpPdfControl;PublicKeyToken=436e8aeec51b873c] }
+
+  }
+  CODE
+  {
+    VAR
+      ExFlowFileMgt@1100285000 : Codeunit 12013602;
+      ExFFileURL@1100285001 : Text;
+      TempFilePath@1100285003 : Text;
+      TempInbDocNo@1100285002 : Integer;
+      RecordChangedWhenLoading@1100285005 : Boolean;
+      CurrentlyLoadingPDF@1100285006 : Boolean;
+      PDFAddInReady@1100285004 : Boolean;
+      CloseDoc@1100285007 : TextConst 'ENU=!CLOSEDOC!';
+
+    LOCAL PROCEDURE PutPDF@1100285001();
+    VAR
+      TempExFFileURL@1100285000 : Text;
+    BEGIN
+      IF PDFAddInReady AND NOT CurrentlyLoadingPDF THEN BEGIN
+        TempExFFileURL := ConvertPdfToBase64;
+        IF TempExFFileURL <> '' THEN BEGIN
+          CurrentlyLoadingPDF := TRUE;
+          CurrPage.PdfControl.PutPdf(TempExFFileURL);
+          CurrentlyLoadingPDF := FALSE;
+        END;
+      END;
+    END;
+
+    LOCAL PROCEDURE ConvertPdfToBase64@1100285000() EncodedPdf : Text;
+    VAR
+      ExFBlob@1100285002 : Record 12013591;
+      ExImportManager@1100285000 : Codeunit 12013604;
+      TempFile@1100285004 : File;
+      FileName@1100285007 : Text;
+      TempFileName@1100285005 : Text;
+      TempTime@1100285003 : Integer;
+      DontShow@1100285001 : Boolean;
+      InStr@1100285010 : InStream;
+      Convert@1100285008 : DotNet "'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.System.Convert";
+      MemStream@1100285009 : DotNet "'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.System.IO.MemoryStream";
+    BEGIN
+      IF "Inbound Document No." = 0 THEN
+        EXIT;
+
+      IF TempInbDocNo <> "Inbound Document No." THEN BEGIN
+        ExFFileURL := '';
+        DontShow := FALSE;
+        TempFileName := ExFlowFileMgt.GetFileName("Image File Name");
+        ExImportManager.TransformInteger(FORMAT("Time Created"),TempTime);
+        TempFileName := FORMAT(TempTime) + '_' + TempFileName;
+        IF TempFileName <> '' THEN BEGIN
+          FileName := TempFilePath + TempFileName;
+          IF TempFileName <> '' THEN BEGIN
+            IF NOT ExFlowFileMgt.FileExist(TempFilePath,TempFileName) THEN BEGIN
+              IF NOT ExFBlob.GET("Image Buffer ID") THEN
+                FileName := ''
+              ELSE BEGIN
+                IF NOT ExFBlob.ExportBLOB(FileName,FALSE) THEN
+                  DontShow := TRUE;
+              END;
+            END;
+          END
+          ELSE
+            FileName := '';
+
+          TempInbDocNo := "Inbound Document No.";
+          IF (NOT DontShow) AND (FileName <> '') THEN
+            ExFFileURL := FileName;
+
+          IF (STRPOS(UPPERCASE(ExFFileURL),'PDF') = 0) AND
+             (STRPOS(UPPERCASE(ExFFileURL),'htm') = 0) AND
+             (STRPOS(UPPERCASE(ExFFileURL),'html') = 0) THEN
+            ExFFileURL := '';
+        END;
+      END;
+
+      IF ExFFileURL <> '' THEN BEGIN
+        TempFile.OPEN(ExFFileURL);
+        TempFile.CREATEINSTREAM(InStr);
+
+        MemStream := MemStream.MemoryStream;
+        COPYSTREAM(MemStream,InStr);
+
+        EncodedPdf := Convert.ToBase64String(MemStream.ToArray);
+
+        TempFile.CLOSE;
+      END
+      ELSE
+        EncodedPdf := CloseDoc;
+    END;
+
+    EVENT PdfControl@-1100285002::AddInReady@1();
+    BEGIN
+      IF NOT PDFAddInReady THEN BEGIN
+        PDFAddInReady := TRUE;
+        PutPDF;
+      END;
+    END;
+
+    EVENT PdfControl@-1100285002::UpdatePdf@2();
+    BEGIN
+      CurrentlyLoadingPDF := FALSE;
+      IF RecordChangedWhenLoading THEN BEGIN
+        RecordChangedWhenLoading := FALSE;
+        PutPDF;
+      END;
+    END;
+
+    BEGIN
+    END.
+  }
+}
+

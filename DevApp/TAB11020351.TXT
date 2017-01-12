@@ -1,0 +1,62 @@
+OBJECT Table 11020351 Cost Object Sales Price
+{
+  OBJECT-PROPERTIES
+  {
+    Date=;
+    Time=;
+    Version List=4PS9.00;
+  }
+  PROPERTIES
+  {
+    OnInsert=BEGIN
+               //>> 4PSSE
+               "Creation Date" := TODAY;
+               "Last Date Modified" := TODAY;
+               "Modified by" := USERID;
+               //<<
+             END;
+
+    OnModify=BEGIN
+               //>> 4PSSE
+               "Last Date Modified" := TODAY;
+               "Modified by" := USERID;
+               //<<
+             END;
+
+    CaptionML=ENU=Cost Object Sales Price;
+    LookupPageID=Page11072422;
+  }
+  FIELDS
+  {
+    { 10  ;   ;Cost Object         ;Code20        ;TableRelation="Dimension Value".Code WHERE (Global Dimension No.=CONST(2));
+                                                   CaptionML=ENU=Cost Object;
+                                                   NotBlank=Yes;
+                                                   CaptionClass='1,2,2' }
+    { 20  ;   ;Starting Date       ;Date          ;CaptionML=ENU=Starting Date }
+    { 30  ;   ;Ending Date         ;Date          ;CaptionML=ENU=Ending Date }
+    { 40  ;   ;Sales Price         ;Decimal       ;CaptionML=ENU=Sales Price;
+                                                   MinValue=0;
+                                                   AutoFormatType=2 }
+    { 11128040;;Creation Date      ;Date          ;Description=I042 }
+    { 11128041;;Last Date Modified ;Date          ;Description=I042 }
+    { 11128042;;Modified by        ;Code30        ;Description=I042 }
+  }
+  KEYS
+  {
+    {    ;Cost Object,Starting Date               ;Clustered=Yes }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+
+    BEGIN
+    {
+      4PSSE
+      130911 ITERO.DJ New fields: Creation Date, Last Date Modified, Modified by
+    }
+    END.
+  }
+}
+

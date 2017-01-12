@@ -1,0 +1,93 @@
+OBJECT Table 12013632 EX Reference
+{
+  OBJECT-PROPERTIES
+  {
+    Date=;
+    Time=;
+    Version List=EXF400006;
+  }
+  PROPERTIES
+  {
+    OnDelete=VAR
+               ExFlowDefDim@1100285000 : Record 12013656;
+             BEGIN
+               ExFlowDefDim.RESET;
+               ExFlowDefDim.SETRANGE("Table ID", DATABASE::"EX Reference");
+               ExFlowDefDim.SETRANGE("No.", Reference);
+               ExFlowDefDim.SETRANGE("No. 2", "Vendor No.");
+               IF NOT ExFlowDefDim.ISEMPTY THEN
+                 ExFlowDefDim.DELETEALL;
+             END;
+
+    CaptionML=ENU=Reference;
+    LookupPageID=Page12013632;
+  }
+  FIELDS
+  {
+    { 1   ;   ;Reference           ;Code50        ;CaptionML=ENU=Reference;
+                                                   NotBlank=Yes }
+    { 2   ;   ;Vendor No.          ;Code20        ;TableRelation=Vendor;
+                                                   CaptionML=ENU=Vendor No. }
+    { 5   ;   ;Description         ;Text50        ;CaptionML=ENU=Description }
+    { 11  ;   ;First Approver      ;Code50        ;TableRelation="EX User Group".Code WHERE (Blocked=CONST(No));
+                                                   OnValidate=VAR
+                                                                ExFlow@1100285000 : Codeunit 12013601;
+                                                                GroupName@1100285001 : Text;
+                                                              BEGIN
+                                                                IF "First Approver" <> '' THEN BEGIN
+                                                                  "First Approver" := ExFlow.FindUserGroup("First Approver",GroupName,FALSE);
+
+                                                                  "Template Rule" := '';
+                                                                END;
+                                                              END;
+
+                                                   CaptionML=ENU=First Approver }
+    { 12  ;   ;Template Rule       ;Code20        ;TableRelation="Template Rule";
+                                                   OnValidate=VAR
+                                                                TemplateRule@1100285000 : Record 12013645;
+                                                              BEGIN
+                                                                IF "Template Rule" <> '' THEN
+                                                                  IF NOT TemplateRule.GET("Template Rule") THEN
+                                                                    ERROR(EXF052,"Template Rule")
+                                                                  ELSE
+                                                                    "First Approver" := '';
+                                                              END;
+
+                                                   CaptionML=ENU=Template Rule }
+    { 50  ;   ;Predefined Purch. Code;Code10      ;TableRelation="EX Standard Purchase Code".Code;
+                                                   OnValidate=VAR
+                                                                ExFlowDefDim@1100285000 : Record 12013656;
+                                                              BEGIN
+                                                                IF ("Predefined Purch. Code" <> '') AND ("Predefined Purch. Code" <> xRec."Predefined Purch. Code") THEN BEGIN
+                                                                  ExFlowDefDim.RESET;
+                                                                  ExFlowDefDim.SETRANGE("Table ID", DATABASE::"EX Reference");
+                                                                  ExFlowDefDim.SETRANGE("No.", Reference);
+                                                                  ExFlowDefDim.SETRANGE("No. 2", "Vendor No.");
+                                                                  IF NOT ExFlowDefDim.ISEMPTY THEN
+                                                                    ERROR(EXF053);
+                                                                END;
+                                                              END;
+
+                                                   CaptionML=ENU=Predefined ExFlow Purch. Code }
+    { 55  ;   ;Purchaser Code      ;Code10        ;TableRelation=Salesperson/Purchaser;
+                                                   CaptionML=ENU=Purchaser Code }
+  }
+  KEYS
+  {
+    {    ;Reference,Vendor No.                    ;Clustered=Yes }
+  }
+  FIELDGROUPS
+  {
+    { 1   ;DropDown            ;Reference,Description                    }
+  }
+  CODE
+  {
+    VAR
+      EXF052@1100285002 : TextConst 'ENU=Template %1 does not exist.';
+      EXF053@1100285000 : TextConst 'ENU=Dimension can not be selected in comibination with a Standard Purch Code.';
+
+    BEGIN
+    END.
+  }
+}
+

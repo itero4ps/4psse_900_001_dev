@@ -1,0 +1,205 @@
+OBJECT Table 12013622 EX Archived Document
+{
+  OBJECT-PROPERTIES
+  {
+    Date=;
+    Time=;
+    Version List=EXF410000;
+  }
+  PROPERTIES
+  {
+    CaptionML=ENU=Archived Document;
+  }
+  FIELDS
+  {
+    { 2   ;   ;Document Type       ;Option        ;CaptionML=ENU=Document Type;
+                                                   OptionCaptionML=ENU=Quote,Order,Invoice,Credit Memo,Blanket Order,Return Order,Posted Invoice,Posted Credit Memo,Requisition;
+                                                   OptionString=Quote,Order,Invoice,Credit Memo,Blanket Order,Return Order,Posted Invoice,Posted Credit Memo,Requisition }
+    { 3   ;   ;Document No.        ;Code20        ;CaptionML=ENU=Document No. }
+    { 10  ;   ;Initiator           ;Code50        ;TableRelation="EX User Group".Code;
+                                                   ValidateTableRelation=No;
+                                                   CaptionML=ENU=Assigned Purchasing Group }
+    { 11  ;   ;Vendor No.          ;Code20        ;TableRelation=Vendor;
+                                                   CaptionML=ENU=Vendor No. }
+    { 12  ;   ;Admin Comment       ;Text180       ;CaptionML=ENU=Comments }
+    { 13  ;   ;Create Date         ;Date          ;CaptionML=ENU=Create Date }
+    { 14  ;   ;Due Date            ;Date          ;CaptionML=ENU=Due Date }
+    { 15  ;   ;Posting Date        ;Date          ;CaptionML=ENU=Posting Date }
+    { 16  ;   ;Document Date       ;Date          ;CaptionML=ENU=Document Date }
+    { 17  ;   ;Status              ;Option        ;CaptionML=ENU=Status;
+                                                   OptionCaptionML=ENU=Inactive,Active,Approved,Ready for posting,On hold,Received,Invoiced,Not released;
+                                                   OptionString=Inactive,Active,Approved,Ready for posting,On hold,Received,Invoiced,Not released }
+    { 18  ;   ;Predefind Posting No.;Code20       ;CaptionML=ENU=Predefind Posting No. }
+    { 19  ;   ;Vendor Document No. ;Code50        ;CaptionML=ENU=Vendor Document No. }
+    { 20  ;   ;Currency Code       ;Code10        ;TableRelation=Currency;
+                                                   CaptionML=ENU=Currency Code }
+    { 21  ;   ;Vendor Name         ;Text50        ;CaptionML=ENU=Vendor Name }
+    { 22  ;   ;Image Name          ;Text250       ;CaptionML=ENU=Image Name }
+    { 23  ;   ;Rejected            ;Boolean       ;FieldClass=FlowField;
+                                                   CalcFormula=Exist("EX Document Line" WHERE (Document Type=FIELD(Document Type),
+                                                                                               Document No.=FIELD(Document No.),
+                                                                                               Flowstatus=CONST(Rejected)));
+                                                   CaptionML=ENU=Rejected;
+                                                   Editable=No }
+    { 24  ;   ;Net Amount          ;Decimal       ;CaptionML=ENU=Net Amount }
+    { 25  ;   ;VAT Amount          ;Decimal       ;CaptionML=ENU=VAT Amount }
+    { 26  ;   ;ID                  ;BigInteger    ;AutoIncrement=Yes;
+                                                   CaptionML=ENU=ID }
+    { 27  ;   ;Expected Receipt Date;Date         ;CaptionML=ENU=Expected Receipt Date }
+    { 28  ;   ;Hold by Approver    ;Boolean       ;FieldClass=FlowField;
+                                                   CalcFormula=Exist("EX Document Line Approver" WHERE (Document Type=FIELD(Document Type),
+                                                                                                        Document No.=FIELD(Document No.),
+                                                                                                        Flowstatus=CONST(On hold)));
+                                                   CaptionML=ENU=On Hold;
+                                                   Editable=No }
+    { 29  ;   ;Batch No.           ;Code20        ;CaptionML=ENU=Batch No.;
+                                                   Editable=No }
+    { 40  ;   ;Gross Amount        ;Decimal       ;CaptionML=ENU=Gross Amount;
+                                                   Editable=No;
+                                                   AutoFormatType=1;
+                                                   AutoFormatExpr="Currency Code" }
+    { 50  ;   ;Assigned Receipt Group;Code50      ;TableRelation="EX User Group".Code;
+                                                   ValidateTableRelation=No;
+                                                   CaptionML=ENU=Assigned Receipt Group }
+    { 60  ;   ;Ex Location ID      ;Integer       ;TableRelation="EX Location".Code;
+                                                   CaptionML=ENU=ExFlow Delivery Address ID }
+    { 70  ;   ;Requisition Status  ;Option        ;CaptionML=ENU=Requisition Status;
+                                                   OptionCaptionML=ENU=Unsubmitted,Submitted to Vendor;
+                                                   OptionString=Unsubmitted,Submitted to Vendor }
+    { 71  ;   ;Requisition Archive ID;BigInteger  ;CaptionML=ENU=Requisition Archive ID;
+                                                   Editable=No }
+    { 75  ;   ;Requisition Subtype ;Integer       ;TableRelation="Requisition subtype";
+                                                   CaptionML=ENU=Requisition Subtype }
+    { 80  ;   ;Web Company ID      ;BigInteger    ;CaptionML=ENU=Web Company ID }
+    { 81  ;   ;Web ID              ;BigInteger    ;CaptionML=ENU=Web ID }
+    { 500 ;   ;Project No.         ;Code20        ;CaptionML=ENU=Project No. }
+    { 501 ;   ;Error Message       ;Text250       ;CaptionML=ENU=Error Message }
+    { 502 ;   ;Text Field 1        ;Text100       ;CaptionML=ENU=Reference No. }
+    { 503 ;   ;Text Field 2        ;Text100       ;CaptionML=ENU=Text Field 2 }
+    { 504 ;   ;Date Field 1        ;Date          ;CaptionML=ENU=Date Field 1 }
+    { 505 ;   ;Date Field 2        ;Date          ;CaptionML=ENU=Date Field 2 }
+    { 510 ;   ;Text Field 3        ;Text100       ;CaptionML=ENU=Text Field 3 }
+    { 511 ;   ;Text Field 4        ;Text100       ;CaptionML=ENU=Text Field 4 }
+    { 512 ;   ;Text Field 5        ;Text100       ;CaptionML=ENU=Text Field 5 }
+    { 513 ;   ;Text Field 6        ;Text100       ;CaptionML=ENU=Text Field 6 }
+    { 514 ;   ;Text Field 7        ;Text100       ;CaptionML=ENU=Text Field 7 }
+    { 515 ;   ;Text Field 8        ;Text100       ;CaptionML=ENU=Text Field 8 }
+    { 516 ;   ;Text Field 9        ;Text100       ;CaptionML=ENU=Text Field 9 }
+    { 517 ;   ;Text Field 10       ;Text100       ;CaptionML=ENU=Text Field 10 }
+    { 550 ;   ;Date Field 3        ;DateTime      ;CaptionML=ENU=Date Field 3 }
+    { 551 ;   ;Date Field 4        ;DateTime      ;CaptionML=ENU=Date Field 4 }
+    { 560 ;   ;Decimal Field 1     ;Decimal       ;CaptionML=ENU=Decimal Field 1 }
+    { 561 ;   ;Decimal Field 2     ;Decimal       ;CaptionML=ENU=Decimal Field 2 }
+    { 562 ;   ;Decimal Field 3     ;Decimal       ;CaptionML=ENU=Decimal Field 3 }
+    { 563 ;   ;Decimal Field 4     ;Decimal       ;CaptionML=ENU=Decimal Field 4 }
+    { 600 ;   ;Approver Comments   ;BLOB          ;Compressed=No;
+                                                   CaptionML=ENU=Approver Header Comments }
+    { 650 ;   ;Created By          ;Code50        ;CaptionML=ENU=Created By;
+                                                   Editable=No }
+    { 651 ;   ;Created Date        ;DateTime      ;CaptionML=ENU=Created Date;
+                                                   Editable=No }
+    { 700 ;   ;Change Jnl Processed PO;Boolean    ;CaptionML=ENU=Change Jnl Processed Purchase Order }
+    { 1000;   ;Deleted By          ;Code50        ;CaptionML=ENU=Deleted By;
+                                                   Editable=No }
+    { 1001;   ;Deleted Date        ;DateTime      ;CaptionML=ENU=Deleted Date;
+                                                   Editable=No }
+    { 1500;   ;Has Attachments     ;Boolean       ;FieldClass=FlowField;
+                                                   CalcFormula=Exist("EX Attached File" WHERE (Document Type=FIELD(Document Type),
+                                                                                               Document No.=FIELD(Document No.)));
+                                                   CaptionML=ENU=Has Attachments;
+                                                   Editable=No }
+    { 1501;   ;Has Approver Comments;Boolean      ;FieldClass=FlowField;
+                                                   CalcFormula=Exist("EX Document Line Approver" WHERE (Document Type=FIELD(Document Type),
+                                                                                                        Document No.=FIELD(Document No.),
+                                                                                                        Comment=FILTER(<>''),
+                                                                                                        Auto Approved=CONST(No)));
+                                                   CaptionML=ENU=Has Approver Line Comments;
+                                                   Editable=No }
+    { 1502;   ;Financial On Hold   ;Code3         ;FieldClass=FlowField;
+                                                   CalcFormula=Lookup("Purchase Header"."On Hold" WHERE (Document Type=FIELD(Document Type),
+                                                                                                         No.=FIELD(Document No.)));
+                                                   CaptionML=ENU=Payment/Refund On Hold;
+                                                   Editable=No }
+    { 1505;   ;Shortcut Dimension 1 Code;Code20   ;FieldClass=FlowField;
+                                                   CalcFormula=Lookup("Purchase Header"."Shortcut Dimension 1 Code" WHERE (Document Type=FIELD(Document Type),
+                                                                                                                           No.=FIELD(Document No.)));
+                                                   TableRelation="Dimension Value".Code WHERE (Global Dimension No.=CONST(1));
+                                                   CaptionML=ENU=Shortcut Dimension 1 Code;
+                                                   Editable=No;
+                                                   CaptionClass='1,2,1' }
+    { 1506;   ;Shortcut Dimension 2 Code;Code20   ;FieldClass=FlowField;
+                                                   CalcFormula=Lookup("Purchase Header"."Shortcut Dimension 2 Code" WHERE (Document Type=FIELD(Document Type),
+                                                                                                                           No.=FIELD(Document No.)));
+                                                   TableRelation="Dimension Value".Code WHERE (Global Dimension No.=CONST(2));
+                                                   CaptionML=ENU=Shortcut Dimension 2 Code;
+                                                   Editable=No;
+                                                   CaptionClass='1,2,2' }
+    { 1515;   ;Connected Order No. ;Code20        ;FieldClass=FlowField;
+                                                   CalcFormula=Lookup("EX Archived Document Line"."Order No." WHERE (Document ID=FIELD(ID),
+                                                                                                                     Order No.=FILTER(<>'')));
+                                                   CaptionML=ENU=Connected Order No. (first);
+                                                   Editable=No }
+    { 2000;   ;Archive Type        ;Option        ;CaptionML=ENU=Archive Type;
+                                                   OptionCaptionML=ENU=Deleted,Archived requisition;
+                                                   OptionString=Deleted,Archived requisition }
+    { 2030;   ;Old ID              ;Integer       ;CaptionML=ENU=Old ID }
+    { 12013595;;Import Document No.;Integer       ;CaptionML=ENU=Import Document No. }
+    { 12013650;;Vendor Document No. 2;Code50      ;CaptionML=ENU=Vendor Document No. 2 }
+    { 12013720;;XML File Name      ;Text250       ;CaptionML=ENU=XML File Name }
+  }
+  KEYS
+  {
+    {    ;ID                                      ;Clustered=Yes }
+    {    ;Document No.                             }
+    {    ;Status,Document Type,Document No.        }
+    {    ;Old ID                                   }
+    {    ;Document Type,Document No.               }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+
+    PROCEDURE ShowApproverComments@1100285001();
+    VAR
+      ExFileMgt@1100285001 : Codeunit 12013602;
+      ExFlowBlob@1100285003 : Record 12013591;
+      TempFileName@1100285000 : Text[1024];
+    BEGIN
+      CALCFIELDS("Approver Comments");
+      IF NOT "Approver Comments".HASVALUE THEN
+        EXIT;
+      TempFileName := ExFileMgt.ClientTempFileName(CREATEGUID,'.txt');
+      ExFlowBlob.BLOB := "Approver Comments";
+      ExFileMgt.ShowBLOB(ExFlowBlob,TempFileName);
+    END;
+
+    PROCEDURE GetCaption@1100285011() : Text[250];
+    BEGIN
+      EXIT(STRSUBSTNO('%1 %2',FORMAT("Document Type",0,0),"Document No."));
+    END;
+
+    PROCEDURE OpenOrderNo@1100285010() : Code[20];
+    VAR
+      PurchHeader@1100285000 : Record 38;
+    BEGIN
+      CALCFIELDS("Connected Order No.");
+      IF "Connected Order No." <> '' THEN BEGIN
+        IF "Document Type" = "Document Type"::Invoice THEN BEGIN
+          IF PurchHeader.GET(PurchHeader."Document Type"::Order,"Connected Order No.") THEN
+            PAGE.RUNMODAL(50,PurchHeader);
+        END
+        ELSE
+          IF "Document Type" = "Document Type"::"Credit Memo" THEN BEGIN
+            IF PurchHeader.GET(PurchHeader."Document Type"::"Return Order","Connected Order No.") THEN
+              PAGE.RUNMODAL(6640,PurchHeader);
+          END;
+      END;
+    END;
+
+    BEGIN
+    END.
+  }
+}
+

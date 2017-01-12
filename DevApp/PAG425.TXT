@@ -1,0 +1,193 @@
+OBJECT Page 425 Vendor Bank Account Card
+{
+  OBJECT-PROPERTIES
+  {
+    Date=;
+    Time=;
+    Version List=NAVW18.00,NAVFI8,4PS9.00,4PSSE.FI;
+  }
+  PROPERTIES
+  {
+    CaptionML=ENU=Vendor Bank Account Card;
+    SourceTable=Table288;
+    PopulateAllFields=Yes;
+    PageType=Card;
+    OnOpenPage=BEGIN
+                 IF "Vendor No." <> '' THEN                   //**4PS.n
+                   CurrPage.EDITABLE(ChangingVendorIsAllowed);//**4PS.n
+
+                 //4PSSE.DK.FI
+                 GLSetup.GET;
+                 FIinfoEnable := GLSetup."Finnish localization active";
+               END;
+
+    OnNewRecord=BEGIN
+                  IF NOT (ChangingVendorIsAllowed) THEN ERROR(Text11012001);//**4PS.n
+                END;
+
+    OnInsertRecord=BEGIN
+                     EXIT(ChangingVendorIsAllowed);//**4PS.n
+                   END;
+
+    OnModifyRecord=BEGIN
+                     EXIT(ChangingVendorIsAllowed);//**4PS.n
+                   END;
+
+    OnDeleteRecord=BEGIN
+                     EXIT(ChangingVendorIsAllowed);//**4PS.n
+                   END;
+
+  }
+  CONTROLS
+  {
+    { 1900000001;0;Container;
+                ContainerType=ContentArea }
+
+    { 1   ;1   ;Group     ;
+                CaptionML=ENU=General }
+
+    { 2   ;2   ;Field     ;
+                SourceExpr=Code;
+                Importance=Promoted }
+
+    { 4   ;2   ;Field     ;
+                SourceExpr=Name;
+                Importance=Promoted }
+
+    { 6   ;2   ;Field     ;
+                SourceExpr=Address }
+
+    { 8   ;2   ;Field     ;
+                SourceExpr="Address 2" }
+
+    { 11  ;2   ;Field     ;
+                SourceExpr="Post Code" }
+
+    { 10  ;2   ;Field     ;
+                SourceExpr=City;
+                Importance=Standard }
+
+    { 12  ;2   ;Field     ;
+                SourceExpr="Country/Region Code" }
+
+    { 14  ;2   ;Field     ;
+                SourceExpr="Phone No." }
+
+    { 18  ;2   ;Field     ;
+                SourceExpr=Contact }
+
+    { 34  ;2   ;Field     ;
+                SourceExpr="Currency Code" }
+
+    { 64  ;2   ;Field     ;
+                SourceExpr="Bank Branch No." }
+
+    { 1101200000;2;Field  ;
+                SourceExpr="B-Account" }
+
+    { 36  ;2   ;Field     ;
+                SourceExpr="Bank Account No.";
+                Importance=Standard }
+
+    { 50  ;2   ;Field     ;
+                SourceExpr="Transit No." }
+
+    { 1902768601;1;Group  ;
+                CaptionML=ENU=Communication }
+
+    { 24  ;2   ;Field     ;
+                Name=Phone No.2;
+                SourceExpr="Phone No.";
+                Importance=Promoted }
+
+    { 22  ;2   ;Field     ;
+                SourceExpr="Fax No." }
+
+    { 26  ;2   ;Field     ;
+                SourceExpr="E-Mail";
+                Importance=Promoted }
+
+    { 28  ;2   ;Field     ;
+                SourceExpr="Home Page" }
+
+    { 1905090301;1;Group  ;
+                CaptionML=ENU=Transfer }
+
+    { 32  ;2   ;Field     ;
+                Name=Bank Branch No.2;
+                SourceExpr="Bank Branch No.";
+                Importance=Promoted }
+
+    { 31  ;2   ;Field     ;
+                Name=Bank Account No.2;
+                SourceExpr="Bank Account No.";
+                Importance=Promoted }
+
+    { 33  ;2   ;Field     ;
+                Name=Transit No.2;
+                SourceExpr="Transit No." }
+
+    { 42  ;2   ;Field     ;
+                SourceExpr="SWIFT Code" }
+
+    { 30  ;2   ;Field     ;
+                SourceExpr=IBAN }
+
+    { 1090000;2;Field     ;
+                SourceExpr="Clearing Code";
+                Visible=FIinfoEnable }
+
+    { 1090002;2;Field     ;
+                SourceExpr="SEPA Payment";
+                Visible=FIinfoEnable }
+
+    { 1100285101;2;Field  ;
+                SourceExpr="Bank Giro No.";
+                Importance=Additional }
+
+    { 1100285102;2;Field  ;
+                SourceExpr="Plus Giro No.";
+                Importance=Additional }
+
+    { 1100285100;2;Field  ;
+                SourceExpr="Code for Bank of Sweden";
+                Importance=Additional }
+
+    { 1900000007;0;Container;
+                ContainerType=FactBoxArea }
+
+    { 1900383207;1;Part   ;
+                Visible=FALSE;
+                PartType=System;
+                SystemPartID=RecordLinks }
+
+    { 1905767507;1;Part   ;
+                Visible=FALSE;
+                PartType=System;
+                SystemPartID=Notes }
+
+  }
+  CODE
+  {
+    VAR
+      Text11012001@1100525000 : TextConst 'ENU=Central management is active for Vendors.';
+      GLSetup@11128200 : Record 98;
+      FIinfoEnable@11128201 : Boolean INDATASET;
+
+    LOCAL PROCEDURE ChangingVendorIsAllowed@1100528400() : Boolean;
+    VAR
+      CentralDataMgt@1100528401 : Codeunit 11012010;
+    BEGIN
+      EXIT(CentralDataMgt.ChangingVendorIsAllowed("Vendor No."));//**4PS.n
+    END;
+
+    BEGIN
+    {
+      Klaas Kleermaker 4-6-2012 CurrPage.EDITABLE removed from OnAfterGetRecord and OnNewRecord. This does not work in pages.
+
+      160825 ITERO.DL RFC114 added "Plus Giro No.", "Bank Giro No.", "Code for Bank of Sweden"
+    }
+    END.
+  }
+}
+

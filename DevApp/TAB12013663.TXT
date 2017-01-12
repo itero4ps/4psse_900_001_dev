@@ -1,0 +1,146 @@
+OBJECT Table 12013663 Ex Coding Rule Line
+{
+  OBJECT-PROPERTIES
+  {
+    Date=;
+    Time=;
+    Version List=EXF400007;
+  }
+  PROPERTIES
+  {
+    OnInsert=BEGIN
+               RecRef.GETTABLE(Rec);
+               WebSetting.TableChange(RecRef);
+             END;
+
+    OnModify=BEGIN
+               RecRef.GETTABLE(Rec);
+               WebSetting.TableChange(RecRef);
+             END;
+
+    OnDelete=BEGIN
+               RecRef.GETTABLE(Rec);
+               WebSetting.TableChange(RecRef);
+             END;
+
+    CaptionML=ENU=Coding Rule Line;
+  }
+  FIELDS
+  {
+    { 2   ;   ;ID                  ;Integer       ;CaptionML=ENU=ID }
+    { 3   ;   ;Line No.            ;Integer       ;CaptionML=ENU=Line No. }
+    { 10  ;   ;Column Code         ;Text50        ;CaptionML=ENU=Column Code }
+    { 11  ;   ;Column ID           ;BigInteger    ;CaptionML=ENU=Column ID }
+    { 12  ;   ;All                 ;Boolean       ;OnValidate=BEGIN
+                                                                UpdateExpression;
+                                                              END;
+
+                                                   CaptionML=ENU=All }
+    { 13  ;   ;Empty               ;Boolean       ;OnValidate=BEGIN
+                                                                UpdateExpression;
+                                                              END;
+
+                                                   CaptionML=ENU=Empty }
+    { 15  ;   ;Text Range          ;Text250       ;OnValidate=BEGIN
+                                                                UpdateExpression;
+                                                              END;
+
+                                                   CaptionML=ENU=Text Range }
+    { 16  ;   ;Column Source       ;Text50        ;CaptionML=ENU=Source }
+  }
+  KEYS
+  {
+    {    ;ID,Line No.                             ;Clustered=Yes }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+    VAR
+      EXF01@1100285002 : TextConst 'ENU=Expression too long in rule %1!';
+      WebSetting@1100285000 : Record 12057071;
+      RecRef@1100285001 : RecordRef;
+
+    PROCEDURE UpdateExpression@1100285000();
+    VAR
+      CodingRule@1100285000 : Record 12013660;
+    BEGIN
+      MODIFY;
+
+      CodingRule.LOCKTABLE;
+      CodingRule.GET(ID);
+      CalculateExpression(0,CodingRule,COMPANYNAME);
+      CodingRule.MODIFY(TRUE);
+    END;
+
+    PROCEDURE CalculateExpression@1100285003(AddToID@1100285007 : BigInteger;VAR CodingRule@1100285008 : Record 12013660;CompName@1100285003 : Text[30]);
+    VAR
+      CodingRuleLine@1100285002 : Record 12013663;
+      txtExpression@1100285001 : Text[1024];
+      Last@1100285000 : Integer;
+    BEGIN
+      CodingRule.Expression := '';
+      CodingRule.Expression2 := '';
+      CodingRule.Expression3 := '';
+      CodingRule.Expression4 := '';
+
+      CodingRuleLine.RESET;
+      CodingRuleLine.SETRANGE(ID, ID);
+      IF CompName <> COMPANYNAME THEN
+        CodingRuleLine.CHANGECOMPANY(CompName);
+      IF CodingRuleLine.FINDSET THEN BEGIN
+        REPEAT
+          IF CodingRuleLine.All OR CodingRuleLine.Empty OR (CodingRuleLine."Text Range" <> '') THEN
+            BEGIN
+              IF STRLEN(txtExpression) <> 0 THEN
+                txtExpression := txtExpression + ';' + FORMAT(CodingRuleLine."Column ID"+AddToID) + '='
+              ELSE
+                txtExpression := txtExpression + FORMAT(CodingRuleLine."Column ID"+AddToID) + '=';
+
+              IF CodingRuleLine.All THEN
+                BEGIN
+                  Last := STRLEN(txtExpression);
+                  IF txtExpression[Last] = '=' THEN
+                    txtExpression := txtExpression + '<ALL>'
+                  ELSE
+                    txtExpression := txtExpression + '|<ALL>';
+                END;
+
+              IF CodingRuleLine.Empty THEN
+                BEGIN
+                  Last := STRLEN(txtExpression);
+
+                  IF txtExpression[Last] = '=' THEN
+                    txtExpression := txtExpression + '<EMPTY>'
+                  ELSE
+                    txtExpression := txtExpression + '|<EMPTY>';
+                END;
+
+              IF CodingRuleLine."Text Range" <> '' THEN
+                BEGIN
+                  Last := STRLEN(txtExpression);
+
+                  IF txtExpression[Last] = '=' THEN
+                    txtExpression := txtExpression + CodingRuleLine."Text Range"
+                  ELSE
+                    txtExpression := txtExpression + '|' + CodingRuleLine."Text Range";
+                END;
+            END;
+        UNTIL CodingRuleLine.NEXT = 0;
+
+        IF STRLEN(txtExpression) > (MAXSTRLEN(CodingRule.Expression)+MAXSTRLEN(CodingRule.Expression2)+MAXSTRLEN(CodingRule.Expression3)+MAXSTRLEN(CodingRule.Expression4)) THEN
+          ERROR(STRSUBSTNO(EXF01,CodingRule.ID));
+
+        CodingRule.Expression := COPYSTR(txtExpression,1,MAXSTRLEN(CodingRule.Expression));
+        CodingRule.Expression2 := COPYSTR(txtExpression,MAXSTRLEN(CodingRule.Expression)+1,MAXSTRLEN(CodingRule.Expression2));
+        CodingRule.Expression3 := COPYSTR(txtExpression,MAXSTRLEN(CodingRule.Expression)+MAXSTRLEN(CodingRule.Expression2)+1,MAXSTRLEN(CodingRule.Expression3));
+        CodingRule.Expression4 := COPYSTR(txtExpression,MAXSTRLEN(CodingRule.Expression)+MAXSTRLEN(CodingRule.Expression2)+MAXSTRLEN(CodingRule.Expression3)+1,MAXSTRLEN(CodingRule.Expression4));
+      END;
+    END;
+
+    BEGIN
+    END.
+  }
+}
+

@@ -1,0 +1,46 @@
+OBJECT Page 12013621 Document Comment Factbox
+{
+  OBJECT-PROPERTIES
+  {
+    Date=;
+    Time=;
+    Version List=EXF410000;
+  }
+  PROPERTIES
+  {
+    Editable=No;
+    CaptionML=ENU=Approver Comments;
+    SourceTable=Table12013608;
+    PageType=CardPart;
+    OnAfterGetCurrRecord=BEGIN
+                           CALCFIELDS("Approver Comments");
+                           IF NOT "Approver Comments".HASVALUE THEN
+                             MemoText := ''
+                           ELSE BEGIN
+                             "Approver Comments".CREATEINSTREAM(MemoReader);
+                             MemoReader.READ(MemoText);
+                           END;
+                         END;
+
+  }
+  CONTROLS
+  {
+    { 1100285000;0;Container;
+                ContainerType=ContentArea }
+
+    { 1100285001;1;Field  ;
+                SourceExpr=MemoText;
+                MultiLine=Yes }
+
+  }
+  CODE
+  {
+    VAR
+      MemoText@1100285000 : Text[1024];
+      MemoReader@1100285001 : InStream;
+
+    BEGIN
+    END.
+  }
+}
+

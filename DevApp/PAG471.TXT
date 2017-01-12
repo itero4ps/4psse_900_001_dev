@@ -1,0 +1,82 @@
+OBJECT Page 471 VAT Product Posting Groups
+{
+  OBJECT-PROPERTIES
+  {
+    Date=;
+    Time=;
+    Version List=NAVW17.00,NAVFI7.NO7,4PSSE.FI.NO;
+  }
+  PROPERTIES
+  {
+    CaptionML=ENU=VAT Product Posting Groups;
+    SourceTable=Table324;
+    PageType=List;
+    OnOpenPage=VAR
+                 GeneralLedgerSetup@1100285500 : Record 98;
+               BEGIN
+                 //4PSSE.NO
+                 GeneralLedgerSetup.GET;
+                 NORlocalizationEnable := GeneralLedgerSetup."Norwegian Localization Active";
+                 FIinfoEnable := GeneralLedgerSetup."Finnish localization active";
+               END;
+
+    ActionList=ACTIONS
+    {
+      { 1900000004;0 ;ActionContainer;
+                      ActionContainerType=ActionItems }
+      { 8       ;1   ;Action    ;
+                      CaptionML=ENU=&Setup;
+                      RunObject=Page 472;
+                      RunPageLink=VAT Prod. Posting Group=FIELD(Code);
+                      Promoted=Yes;
+                      Image=Setup;
+                      PromotedCategory=Process }
+    }
+  }
+  CONTROLS
+  {
+    { 1900000001;0;Container;
+                ContainerType=ContentArea }
+
+    { 1   ;1   ;Group     ;
+                GroupType=Repeater }
+
+    { 2   ;2   ;Field     ;
+                SourceExpr=Code }
+
+    { 4   ;2   ;Field     ;
+                SourceExpr=Description }
+
+    { 1090000;2;Field     ;
+                SourceExpr="Print on Invoice";
+                Visible=FIinfoEnable }
+
+    { 1080000;2;Field     ;
+                SourceExpr="Outside Tax Area";
+                Visible=NORlocalizationEnable }
+
+    { 1900000007;0;Container;
+                ContainerType=FactBoxArea }
+
+    { 1900383207;1;Part   ;
+                Visible=FALSE;
+                PartType=System;
+                SystemPartID=RecordLinks }
+
+    { 1905767507;1;Part   ;
+                Visible=FALSE;
+                PartType=System;
+                SystemPartID=Notes }
+
+  }
+  CODE
+  {
+    VAR
+      NORlocalizationEnable@1100285500 : Boolean INDATASET;
+      FIinfoEnable@1100285501 : Boolean INDATASET;
+
+    BEGIN
+    END.
+  }
+}
+

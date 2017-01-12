@@ -1,0 +1,64 @@
+OBJECT Table 12013625 EX Archived Document Line Dim
+{
+  OBJECT-PROPERTIES
+  {
+    Date=;
+    Time=;
+    Version List=EXF400003;
+  }
+  PROPERTIES
+  {
+    CaptionML=ENU=Archived Document Line Dimension;
+  }
+  FIELDS
+  {
+    { 2   ;   ;Document Type       ;Option        ;CaptionML=ENU=Document Type;
+                                                   OptionCaptionML=ENU=Quote,Order,Invoice,Credit Memo,Blanket Order,Return Order,Posted Invoice,Posted Credit Memo,Requisition;
+                                                   OptionString=Quote,Order,Invoice,Credit Memo,Blanket Order,Return Order,Posted Invoice,Posted Credit Memo,Requisition }
+    { 3   ;   ;Document No.        ;Code20        ;CaptionML=ENU=Document No. }
+    { 4   ;   ;Line No.            ;Integer       ;CaptionML=ENU=Line No. }
+    { 5   ;   ;Dimension Code      ;Code20        ;TableRelation=Dimension;
+                                                   ValidateTableRelation=No;
+                                                   TestTableRelation=No;
+                                                   CaptionML=ENU=Dimension Code;
+                                                   NotBlank=Yes }
+    { 10  ;   ;Dimension Value     ;Code20        ;TableRelation="Dimension Value".Code WHERE (Dimension Code=FIELD(Dimension Code));
+                                                   ValidateTableRelation=No;
+                                                   TestTableRelation=No;
+                                                   CaptionML=ENU=Dimension Value }
+    { 11  ;   ;Column ID           ;BigInteger    ;CaptionML=ENU=Column ID }
+    { 12  ;   ;Document Line ID    ;BigInteger    ;CaptionML=ENU=Document Line ID }
+    { 13  ;   ;ID                  ;BigInteger    ;AutoIncrement=Yes;
+                                                   CaptionML=ENU=ID }
+    { 14  ;   ;Dimension Desc.     ;Text50        ;CaptionML=ENU=Description }
+    { 31  ;   ;Document ID         ;BigInteger    ;CaptionML=ENU=Document ID }
+    { 600 ;   ;Changed By          ;Code50        ;CaptionML=ENU=Changed By;
+                                                   Editable=No }
+    { 601 ;   ;Change Date         ;DateTime      ;CaptionML=ENU=Change Date;
+                                                   Editable=No }
+    { 1000;   ;Deleted By          ;Code50        ;CaptionML=ENU=Deleted By;
+                                                   Editable=No }
+    { 1001;   ;Deleted Date        ;DateTime      ;CaptionML=ENU=Deleted Date;
+                                                   Editable=No }
+    { 2030;   ;Old ID              ;BigInteger    ;CaptionML=ENU=Old ID }
+    { 2031;   ;Old Document Line ID;BigInteger    ;CaptionML=ENU=Old Document Line ID }
+  }
+  KEYS
+  {
+    {    ;ID                                      ;Clustered=Yes }
+    {    ;Document Line ID                         }
+    {    ;Document No.                             }
+    {    ;Document Type,Document No.,Line No.,Dimension Code }
+    {    ;Old ID                                   }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+
+    BEGIN
+    END.
+  }
+}
+

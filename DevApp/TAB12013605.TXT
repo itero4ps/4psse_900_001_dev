@@ -1,0 +1,219 @@
+OBJECT Table 12013605 ExFlow Initialize Company
+{
+  OBJECT-PROPERTIES
+  {
+    Date=;
+    Time=;
+    Version List=EXF400006;
+  }
+  PROPERTIES
+  {
+    CaptionML=ENU=ExFlow Initialize Company;
+  }
+  FIELDS
+  {
+    { 1   ;   ;Primary Key         ;Code10        ;CaptionML=ENU=Entry No.;
+                                                   NotBlank=Yes }
+    { 50  ;   ;Line Type G/L Account;Boolean      ;CaptionML=ENU=Line Type G/L Account }
+    { 51  ;   ;Line Type Item      ;Boolean       ;CaptionML=ENU=Line Type Item }
+    { 52  ;   ;Line Type Fixed Asset;Boolean      ;CaptionML=ENU=Line Type Fixed Asset }
+    { 53  ;   ;Line Type Item Charge;Boolean      ;CaptionML=ENU=Line Type Item Charge }
+    { 60  ;   ;Use Jobs            ;Boolean       ;CaptionML=ENU=Use Jobs }
+    { 61  ;   ;Sort Order Jobs     ;Integer       ;CaptionML=ENU=Sort Order Jobs }
+    { 65  ;   ;Use Periodic Code (SE);Boolean     ;CaptionML=ENU=Use Periodic Code (SE Version Only) }
+    { 66  ;   ;Sort Order Periodic ;Integer       ;CaptionML=ENU=Sort Order Periodic Code }
+    { 70  ;   ;Use Shortcut Dimension 1;Boolean   ;OnValidate=BEGIN
+                                                                IF "Use Shortcut Dimension 1" THEN
+                                                                  "Sort Order 1" := GetNextSortOrder
+                                                                ELSE
+                                                                  "Sort Order 1" := 0;
+                                                              END;
+
+                                                   CaptionML=ENU=Use Shortcut Dimension 1 }
+    { 72  ;   ;Sort Order 1        ;Integer       ;CaptionML=ENU=Sort Order 1 }
+    { 75  ;   ;Use Shortcut Dimension 2;Boolean   ;OnValidate=BEGIN
+                                                                IF "Use Shortcut Dimension 2" THEN
+                                                                  "Sort Order 2" := GetNextSortOrder
+                                                                ELSE
+                                                                  "Sort Order 2" := 0;
+                                                              END;
+
+                                                   CaptionML=ENU=Use Shortcut Dimension 2 }
+    { 77  ;   ;Sort Order 2        ;Integer       ;CaptionML=ENU=Sort Order 2 }
+    { 80  ;   ;Use Shortcut Dimension 3;Boolean   ;OnValidate=BEGIN
+                                                                IF "Use Shortcut Dimension 3" THEN
+                                                                  "Sort Order 3" := GetNextSortOrder
+                                                                ELSE
+                                                                  "Sort Order 3" := 0;
+                                                              END;
+
+                                                   CaptionML=ENU=Use Shortcut Dimension 3 }
+    { 82  ;   ;Sort Order 3        ;Integer       ;CaptionML=ENU=Sort Order 3 }
+    { 85  ;   ;Use Shortcut Dimension 4;Boolean   ;OnValidate=BEGIN
+                                                                IF "Use Shortcut Dimension 4" THEN
+                                                                  "Sort Order 4" := GetNextSortOrder
+                                                                ELSE
+                                                                  "Sort Order 4" := 0;
+                                                              END;
+
+                                                   CaptionML=ENU=Use Shortcut Dimension 4 }
+    { 87  ;   ;Sort Order 4        ;Integer       ;CaptionML=ENU=Sort Order 4 }
+    { 90  ;   ;Use Shortcut Dimension 5;Boolean   ;OnValidate=BEGIN
+                                                                IF "Use Shortcut Dimension 5" THEN
+                                                                  "Sort Order 5" := GetNextSortOrder
+                                                                ELSE
+                                                                  "Sort Order 5" := 0;
+                                                              END;
+
+                                                   CaptionML=ENU=Use Shortcut Dimension 5 }
+    { 92  ;   ;Sort Order 5        ;Integer       ;CaptionML=ENU=Sort Order 5 }
+    { 95  ;   ;Use Shortcut Dimension 6;Boolean   ;OnValidate=BEGIN
+                                                                IF "Use Shortcut Dimension 6" THEN
+                                                                  "Sort Order 6" := GetNextSortOrder
+                                                                ELSE
+                                                                  "Sort Order 6" := 0;
+                                                              END;
+
+                                                   CaptionML=ENU=Use Shortcut Dimension 6 }
+    { 97  ;   ;Sort Order 6        ;Integer       ;CaptionML=ENU=Sort Order 6 }
+    { 100 ;   ;Use Shortcut Dimension 7;Boolean   ;OnValidate=BEGIN
+                                                                IF "Use Shortcut Dimension 7" THEN
+                                                                  "Sort Order 7" := GetNextSortOrder
+                                                                ELSE
+                                                                  "Sort Order 7" := 0;
+                                                              END;
+
+                                                   CaptionML=ENU=Use Shortcut Dimension 7 }
+    { 102 ;   ;Sort Order 7        ;Integer       ;CaptionML=ENU=Sort Order 7 }
+    { 105 ;   ;Use Shortcut Dimension 8;Boolean   ;OnValidate=BEGIN
+                                                                IF "Use Shortcut Dimension 8" THEN
+                                                                  "Sort Order 8" := GetNextSortOrder
+                                                                ELSE
+                                                                  "Sort Order 8" := 0;
+                                                              END;
+
+                                                   CaptionML=ENU=Use Shortcut Dimension 8 }
+    { 107 ;   ;Sort Order 8        ;Integer       ;CaptionML=ENU=Sort Order 8 }
+    { 150 ;   ;Create Default Coding Rules;Boolean;CaptionML=ENU=Create Default Coding Rules }
+    { 200 ;   ;Create Default ExFlow Setup;Boolean;CaptionML=ENU=Create Default ExFlow Setup }
+    { 201 ;   ;Path to New Invoices;Text128       ;OnValidate=BEGIN
+                                                                IF "Path to New Invoices" <> '' THEN
+                                                                  "Create Default ExFlow Setup" := TRUE;
+
+                                                                EndingSlash("Path to New Invoices");
+                                                              END;
+
+                                                   CaptionML=ENU=Path to New Invoices }
+    { 202 ;   ;Path to Used Invoices;Text128      ;OnValidate=BEGIN
+                                                                IF "Path to Used Invoices" <> '' THEN
+                                                                  "Create Default ExFlow Setup" := TRUE;
+
+                                                                EndingSlash("Path to Used Invoices");
+                                                              END;
+
+                                                   CaptionML=ENU=Path to Processed Invoices }
+    { 203 ;   ;Path to New OCR-files;Text128      ;OnValidate=BEGIN
+                                                                IF "Path to New OCR-files" <> '' THEN
+                                                                  "Create Default ExFlow Setup" := TRUE;
+
+                                                                EndingSlash("Path to New OCR-files");
+                                                              END;
+
+                                                   CaptionML=ENU=Path to New OCR files }
+    { 204 ;   ;Path to Attached Files;Text128     ;OnValidate=BEGIN
+                                                                IF "Path to Attached Files" <> '' THEN
+                                                                  "Create Default ExFlow Setup" := TRUE;
+
+                                                                EndingSlash("Path to Attached Files");
+                                                              END;
+
+                                                   CaptionML=ENU=Path to Attached files }
+    { 205 ;   ;Path to connected Att. Files;Text128;
+                                                   OnValidate=BEGIN
+                                                                IF "Path to connected Att. Files" <> '' THEN
+                                                                  "Create Default ExFlow Setup" := TRUE;
+
+                                                                EndingSlash("Path to connected Att. Files");
+                                                              END;
+
+                                                   CaptionML=ENU=Path to connected Attached Files }
+    { 300 ;   ;Create Default Security Roles;Boolean;
+                                                   CaptionML=ENU=Create Default Security Roles }
+    { 1000;   ;Apply setup         ;Boolean       ;OnValidate=BEGIN
+                                                                ExCompMgt.CreateDefaultValues(Rec);
+                                                              END;
+
+                                                   CaptionML=ENU=Apply setup }
+  }
+  KEYS
+  {
+    {    ;Primary Key                             ;Clustered=Yes }
+  }
+  FIELDGROUPS
+  {
+  }
+  CODE
+  {
+    VAR
+      ExCompMgt@1100285000 : Codeunit 12013639;
+
+    LOCAL PROCEDURE GetNextSortOrder@1100285008() : Integer;
+    VAR
+      TempInteger@1100285000 : TEMPORARY Record 2000000026;
+    BEGIN
+      TempInteger.RESET;
+      TempInteger.DELETEALL;
+
+      TempInteger.Number := "Sort Order 1";
+      IF TempInteger.INSERT THEN;
+      TempInteger.Number := "Sort Order 2";
+      IF TempInteger.INSERT THEN;
+      TempInteger.Number := "Sort Order 3";
+      IF TempInteger.INSERT THEN;
+      TempInteger.Number := "Sort Order 4";
+      IF TempInteger.INSERT THEN;
+      TempInteger.Number := "Sort Order 5";
+      IF TempInteger.INSERT THEN;
+      TempInteger.Number := "Sort Order 6";
+      IF TempInteger.INSERT THEN;
+      TempInteger.Number := "Sort Order 7";
+      IF TempInteger.INSERT THEN;
+      TempInteger.Number := "Sort Order 8";
+      IF TempInteger.INSERT THEN;
+
+      TempInteger.RESET;
+      IF TempInteger.FINDLAST THEN
+        EXIT(TempInteger.Number + 1)
+      ELSE
+        EXIT(1);
+    END;
+
+    LOCAL PROCEDURE EndingSlash@1000000000(VAR Path@1000000000 : Text[128]);
+    BEGIN
+      IF Path <> '' THEN
+        IF Path[STRLEN(Path)] <> '\' THEN
+          Path := Path + '\';
+    END;
+
+    PROCEDURE GetShortCutCode@1100285017(VAR ExFlowInitSetup@1100285000 : Record 12013605;ShortcutDimNo@1100285002 : Integer) : Code[20];
+    VAR
+      GLSetup@1100285001 : Record 98;
+    BEGIN
+      GLSetup.GET;
+      CASE ShortcutDimNo OF
+        1: EXIT(GLSetup."Shortcut Dimension 1 Code");
+        2: EXIT(GLSetup."Shortcut Dimension 2 Code");
+        3: EXIT(GLSetup."Shortcut Dimension 3 Code");
+        4: EXIT(GLSetup."Shortcut Dimension 4 Code");
+        5: EXIT(GLSetup."Shortcut Dimension 5 Code");
+        6: EXIT(GLSetup."Shortcut Dimension 6 Code");
+        7: EXIT(GLSetup."Shortcut Dimension 7 Code");
+        8: EXIT(GLSetup."Shortcut Dimension 8 Code");
+      END;
+    END;
+
+    BEGIN
+    END.
+  }
+}
+
