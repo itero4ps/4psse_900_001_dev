@@ -1,0 +1,282 @@
+T18-F100-P8629-A1044-L999:Kreditbelõp (NOK)
+T18-F102-P8629-A1044-L999:E-post
+T18-F103-P8629-A1044-L999:Hjemmeside
+T18-F104-P8629-A1044-L999:Purrebetingelseskode
+T18-F105-P8629-A1044-L999:Purrebelõp
+T18-F106-P8629-A1044-L999:Purrebelõp (NOK)
+T18-F107-P8629-A1044-L999:Nr.serie
+T18-F108-P8629-A1044-L999:Mva-omrÜdekode
+T18-F109-P8629-A1044-L999:Skyldig mva.
+T18-F10-P8629-A1044-L999:Teleks
+T18-F11012000-P8629-A1044-L999:Tilleggsgebyrsprosent, arbeidskraft
+T18-F11012001-P8629-A1044-L999:Tilleggsgebyrsprosent, Materiale
+T18-F11012002-P8629-A1044-L999:Tilleggsgebyrsprosent, underentrepenõr
+T18-F11012003-P8629-A1044-L999:Tilleggsgebyrsprosent, maskin
+T18-F11012004-P8629-A1044-L999:Tilleggsgebyrsprosent, diverse
+T18-F11012010-P8629-A1044-L999:Oppgjõrsmetode for prosjekt
+T18-F11012010-P8632-A1044-L999:Fast pris,Selvkost
+T18-F11012020-P8629-A1044-L999:Prosjektkontraktstype
+T18-F11012020-P8632-A1044-L999:Hovedkontrakt,Underentrepenõr
+T18-F11012040-P8629-A1044-L999:Saldoens dokumentdato BVA
+T18-F11012050-P8629-A1044-L999:Kreditforsikring
+T18-F11012051-P8629-A1044-L999:Sluttdato for kreditforsikring
+T18-F11012052-P8629-A1044-L999:Kreditforsikrer-ID
+T18-F11012060-P8629-A1044-L999:Organisasjonsnr
+T18-F11012061-P8629-A1044-L999:Forfallsdato, COC-setning
+T18-F11012070-P8629-A1044-L999:Moms produktbokfõringsmal
+T18-F11012075-P8629-A1044-L999:Kundemappe
+T18-F11012080-P8629-A1044-L999:Kostnadsobjekt
+T18-F11012090-P8629-A1044-L999:Direkte leveranse
+T18-F11012090-P8632-A1044-L999:Nej,Ja,Ja Õ kun prosjekt/service
+T18-F11012100-P8629-A1044-L999:Satsgruppe (netto)
+T18-F11012101-P8629-A1044-L999:Satsgruppe (brutto)
+T18-F11012160-P8629-A1044-L999:Utvidet momsbestemmelse
+T18-F11012270-P8629-A1044-L999:Bankkontonr.
+T18-F11012271-P8629-A1044-L999:Telefonnr 2
+T18-F11012272-P8629-A1044-L999:Mobiltelefonnr
+T18-F11012273-P8629-A1044-L999:Samle inn selvkosttransaksjon
+T18-F11012274-P8629-A1044-L999:Selvkost, salgspriser
+T18-F11012275-P8629-A1044-L999:Selvkost, salgspriser fra
+T18-F11012280-P8629-A1044-L999:Antall pÜ oppgjõrsark
+T18-F11012290-P8629-A1044-L999:Totalrad pÜ oppgjõrsark
+T18-F11012300-P8629-A1044-L999:Fakturatekst, avdrag
+T18-F11012310-P8629-A1044-L999:Fakturatekst, selvkost
+T18-F11012331-P8629-A1044-L999:% arbeidskraft
+T18-F11012332-P8629-A1044-L999:% til B-konto
+T18-F11012340-P8632-A1044-L999:Selvkostpris,Bruttopris Õ Salgsrabatt
+T18-F11012341-P8632-A1044-L999:Selvkostpris,Bruttopris Õ Salgsrabatt
+T18-F11012342-P8632-A1044-L999:Selvkostpris,Bruttopris Õ Salgsrabatt
+T18-F11012345-P8629-A1044-L999:Enhetspris for artikkelpris
+T18-F11012345-P8632-A1044-L999:Selvkostpris,Bruttopris
+T18-F11012350-P8629-A1044-L999:Fakturalayoutkode
+T18-F11012360-P8629-A1044-L999:Standardinnsamling av fakturaer etter
+T18-F11012360-P8632-A1044-L999:Arbeidsleder,Oppdragsgiver,Prosjekt,Provisjon,Oppgjõrsskjema,Hovedprosjekt
+T18-F11012370-P8629-A1044-L999:Mobiltelefon, primërkontakt
+T18-F11012500-P8629-A1044-L999:XML-eksporter fakturaer (salg)
+T18-F11012510-P8629-A1044-L999:Maskindepot, logistikk
+T18-F11012520-P8629-A1044-L999:Logistikk for lokasjonkode
+T18-F11012540-P8629-A1044-L999:En lokasjon per maskinfaktura
+T18-F11012610-P8629-A1044-L999:Kontaktnr
+T18-F11012620-P8629-A1044-L999:Sum (kost)
+T18-F11012625-P8629-A1044-L999:Sum (salg)
+T18-F11012630-P8629-A1044-L999:Servicesammendrag (kost)
+T18-F11012635-P8629-A1044-L999:Servicesammendrag (salg)
+T18-F11012650-P8629-A1044-L999:EU Transaksjonstype
+T18-F11012660-P8629-A1044-L999:EU Transaksjonsspesifikasjon
+T18-F11012670-P8629-A1044-L999:TransportmÜte
+T18-F11012680-P8629-A1044-L999:Utpunkt
+T18-F11012700-P8629-A1044-L999:Servicegarantikode
+T18-F11012750-P8629-A1044-L999:E-Mail (fakturaer)
+T18-F11012755-P8629-A1044-L999:Faktura via e-post
+T18-F11012756-P8629-A1044-L999:Elektronisk fakturering
+T18-F11012759-P8629-A1044-L999:E-post (pÜminnelser)
+T18-F11012760-P8629-A1044-L999:PÜminnelser via e-post
+T18-F11012761-P8629-A1044-L999:Email (Leveranser)
+T18-F11012762-P8629-A1044-L999:Leveranse via email
+T18-F11012763-P8629-A1044-L999:Email (Ordrebekreftelser)
+T18-F11012764-P8629-A1044-L999:Ordrebekreftelse via email
+T18-F11012880-P8629-A1044-L999:Referansedato for artikkelpriser
+T18-F11012881-P8629-A1044-L999:Innkjõp, rabattvilkÜrsgruppe
+T18-F11012882-P8629-A1044-L999:Salg, rabattvilkÜrsgruppe
+T18-F11012890-P8629-A1044-L999:Eksporter til Feltservice
+T18-F11012891-P8629-A1044-L999:Dato/tid, Eksporter til Feltservice
+T18-F11012892-P8629-A1044-L999:Tilgjengelig for i feltservice
+T18-F11012941-P8629-A1044-L999:Endret av
+T18-F11012950-P8629-A1044-L999:UtestÜnde kreditnotaer (NOK)
+T18-F11012951-P8629-A1044-L999:UtestÜnde kreditnotaer (NOK)
+T18-F11012998-P8629-A1044-L999:Salgsrepresentantkode
+T18-F11012999-P8629-A1044-L999:Navn pÜ selger
+T18-F11020254-P8629-A1044-L999:Kreditrestriksjon
+T18-F11020255-P8629-A1044-L999:Antall servicekontrakter
+T18-F11020256-P8629-A1044-L999:Antall servicelokasjoner
+T18-F11020259-P8629-A1044-L999:Antall prosjekter
+T18-F11020260-P8629-A1044-L999:Antall kalkyler
+T18-F110-P8629-A1044-L999:Mva-bokfõringsgruppe - firma
+T18-F11125762-P8629-A1044-L999:Fast priskontrakt (innglassing)
+T18-F11125770-P8629-A1044-L999:Samle serviceordrefakturaer etter
+T18-F11125780-P8629-A1044-L999:Send e-post ved SO-statusoppdatering
+T18-F11125790-P8629-A1044-L999:Send e-post med SO-forslag
+T18-F11125800-P8629-A1044-L999:Mõtebrev for SO
+T18-F11125810-P8629-A1044-L999:Samle prosjektfakturaer pÜ samlingsfaktura etter
+T18-F11125810-P8632-A1044-L999:Samlingsfaktura,Hovedprosjekt,Prosjekt,Kommisjon,Oppgjõrsskjema,Selvkosttransaksjon
+T18-F11125820-P8629-A1044-L999:Bruk fakturer til-kunde som selg til-kunde pÜ salgsfaktura (service)
+T18-F11125821-P8629-A1044-L999:Beregn B-belõp basert pÜ
+T18-F11125821-P8632-A1044-L999:Arbeidskraftsbelõp,Faktureringsbelõp
+T18-F11125830-P8629-A1044-L999:Fakturaperiode (samlingsfaktura)
+T18-F11125840-P8629-A1044-L999:Minimalt Fakturabelõp (samlingsfaktura)
+T18-F11125870-P8629-A1044-L999:Reisekostkode (service)
+T18-F11128000-P8629-A1044-L999:Mva prod.bokf.gruppe til innkjõpsrader
+T18-F11128010-P8629-A1044-L999:Plussgironr
+T18-F11128270-P8629-A1044-L999:Prislistekode
+T18-F11128290-P8629-A1044-L999:Salgsrabatt prosent
+T18-F11128501-P8629-A1044-L999:Kontokode
+T18-F11128502-P8629-A1044-L999:E-faktura
+T18-F11128570-P8629-A1044-L999:EAN nr.
+T18-F11128571-P8629-A1044-L999:Kontokode
+T18-F111-P8629-A1044-L999:Valutafilter
+T18-F113-P8629-A1044-L999:èpne ordrer (NOK)
+T18-F114-P8629-A1044-L999:Levert, ikke fakturert (NOK)
+T18-F115-P8629-A1044-L999:Reserver
+T18-F115-P8632-A1044-L999:Aldri,Alternativt,Alltid
+T18-F116-P8629-A1044-L999:Sperr for betalingstoleranse
+T18-F117-P8629-A1044-L999:Kont.rab.toleranse (NOK)
+T18-F118-P8629-A1044-L999:Bet.toleranse (NOK)
+T18-F119-P8629-A1044-L999:KI-partnerkode
+T18-F11-P8629-A1044-L999:Profil for dokumentsending
+T18-F120-P8629-A1044-L999:Refusjoner
+T18-F121-P8629-A1044-L999:Refusjoner (NOK)
+T18-F122-P8629-A1044-L999:Andre belõp
+T18-F123-P8629-A1044-L999:Andre belõp (NOK)
+T18-F124-P8629-A1044-L999:Forskuddsprosent
+T18-F125-P8629-A1044-L999:UtestÜende fakturaer (NOK)
+T18-F126-P8629-A1044-L999:UtestÜende fakturaer
+T18-F130-P8629-A1044-L999:Fakt. til-nr. for arkiverte bilag
+T18-F131-P8629-A1044-L999:Salg til-kundenr. for arkiverte bilag
+T18-F132-P8629-A1044-L999:Partnertype
+T18-F132-P8632-A1044-L999: ,Selskap,Person
+T18-F14-P8629-A1044-L999:VÜrt kontonr.
+T18-F15-P8629-A1044-L999:Distriktskode
+T18-F16-P8629-A1044-L999:Global dimensjon 1 - kode
+T18-F17-P8629-A1044-L999:Global dimensjon 2 - kode
+T18-F18-P8629-A1044-L999:Kjede
+T18-F19-P8629-A1044-L999:Budsjettert belõp
+T18-F1-P8629-A1044-L999:Nr.
+T18-F20-P8629-A1044-L999:Kredittgrense (NOK)
+T18-F21-P8629-A1044-L999:Bokfõringsgruppe - kunde
+T18-F22-P8629-A1044-L999:Valutakode
+T18-F23-P8629-A1044-L999:Kundeprisgruppe
+T18-F24-P8629-A1044-L999:SprÜkkode
+T18-F26-P8629-A1044-L999:Statistikkgruppe
+T18-F27-P8629-A1044-L999:Betalingsbet.kode
+T18-F288-P8629-A1044-L999:Foretrukket bankkonto
+T18-F28-P8629-A1044-L999:Rentenotabetingelseskode
+T18-F29-P8629-A1044-L999:Selgerkode
+T18-F2-P8629-A1044-L999:Navn
+T18-F30-P8629-A1044-L999:LeveringsmÜtekode
+T18-F31-P8629-A1044-L999:Transportõrkode
+T18-F32-P8629-A1044-L999:Eksportsted
+T18-F33-P8629-A1044-L999:Fakturarabattkode
+T18-F34-P8629-A1044-L999:Kunderabattgruppe
+T18-F35-P8629-A1044-L999:Lands-/regionkode
+T18-F36-P8629-A1044-L999:Oppkrevningskode
+T18-F37-P8629-A1044-L999:Belõp
+T18-F38-P8629-A1044-L999:Merknad
+T18-F39-P8629-A1044-L999:Sperret
+T18-F39-P8632-A1044-L999: ,Levering,Fakturering,Alt
+T18-F3-P8629-A1044-L999:Sõkenavn
+T18-F40-P8629-A1044-L999:Antall fakturakopier
+T18-F41-P8629-A1044-L999:Siste kontoutdragsnr.
+T18-F42-P8629-A1044-L999:Skriv ut kontoutdrag
+T18-F45-P8629-A1044-L999:Faktura til-kundenr.
+T18-F46-P8629-A1044-L999:Prioritet
+T18-F47-P8629-A1044-L999:BetalingsmÜte - kode
+T18-F4-P8629-A1044-L999:Navn 2
+T18-F5049-P8629-A1044-L999:Primërt kontaktnr.
+T18-F54-P8629-A1044-L999:Endret den
+T18-F55-P8629-A1044-L999:Datofilter
+T18-F56-P8629-A1044-L999:Filter for global dimensjon 1
+T18-F5700-P8629-A1044-L999:Ansvarssenter
+T18-F5750-P8629-A1044-L999:Leveringsõnske
+T18-F5750-P8632-A1044-L999:Delvis,Fullstendig
+T18-F5790-P8629-A1044-L999:Leveringstid
+T18-F5792-P8629-A1044-L999:Transportõrservicekode
+T18-F57-P8629-A1044-L999:Filter for global dimensjon 2
+T18-F58-P8629-A1044-L999:Saldo
+T18-F5900-P8629-A1044-L999:Servicesonekode
+T18-F5902-P8629-A1044-L999:Kontraktresultat - belõp
+T18-F5903-P8629-A1044-L999:Lever til-filter
+T18-F5910-P8629-A1044-L999:UtestÜende serviceordrer (NOK)
+T18-F5911-P8629-A1044-L999:Tjeneste levert, ikke fakturert (NOK)
+T18-F5912-P8629-A1044-L999:UtestÜende servicefakturaer (NOK)
+T18-F59-P8629-A1044-L999:Saldo (NOK)
+T18-F5-P8629-A1044-L999:Adresse
+T18-F60-P8629-A1044-L999:Bevegelse
+T18-F61-P8629-A1044-L999:Bevegelse (NOK)
+T18-F62-P8629-A1044-L999:Salg (NOK)
+T18-F63-P8629-A1044-L999:Bruttofortjeneste (NOK)
+T18-F64-P8629-A1044-L999:Fakt.rabattbelõp (NOK)
+T18-F65-P8629-A1044-L999:Kontantrabatt (NOK)
+T18-F66-P8629-A1044-L999:Forfalt saldo
+T18-F67-P8629-A1044-L999:Forfalt saldo (NOK)
+T18-F69-P8629-A1044-L999:Betalinger
+T18-F6-P8629-A1044-L999:Adresse 2
+T18-F7001-P8629-A1044-L999:Tillat linjerabatt
+T18-F70-P8629-A1044-L999:Fakturabelõp
+T18-F7171-P8629-A1044-L999:Antall forespõrsler
+T18-F7172-P8629-A1044-L999:Antall rammebestillinger
+T18-F7173-P8629-A1044-L999:Antall bestillinger
+T18-F7174-P8629-A1044-L999:Antall fakturaer
+T18-F7175-P8629-A1044-L999:Antall bestillingsreturer
+T18-F7176-P8629-A1044-L999:Antall kreditnotaer
+T18-F7177-P8629-A1044-L999:Antall bokfõrte fõlgesedler
+T18-F7178-P8629-A1044-L999:Antall bokfõrte fakturaer
+T18-F7179-P8629-A1044-L999:Antall bokfõrte retursedler
+T18-F7180-P8629-A1044-L999:Antall bokfõrte kreditnotaer
+T18-F7181-P8629-A1044-L999:Antall Lever til-adresser
+T18-F7182-P8629-A1044-L999:Faktura til - antall forespõrsler
+T18-F7183-P8629-A1044-L999:Faktura til - antall rammebestillinger
+T18-F7184-P8629-A1044-L999:Faktura til - antall bestillinger
+T18-F7185-P8629-A1044-L999:Faktura til - antall fakturaer
+T18-F7186-P8629-A1044-L999:Faktura til - antall bestillingsreturer
+T18-F7187-P8629-A1044-L999:Faktura til - antall kreditnotaer
+T18-F7188-P8629-A1044-L999:Faktura til - antall bokfõrte fõlgesedler
+T18-F7189-P8629-A1044-L999:Faktura til - antall bokfõrte fakturaer
+T18-F7190-P8629-A1044-L999:Faktura til - antall bokfõrte retursedler
+T18-F7191-P8629-A1044-L999:Faktura til - antall bokfõrte kreditnotaer
+T18-F71-P8629-A1044-L999:Kreditnotabelõp
+T18-F72-P8629-A1044-L999:Rentenotabelõp
+T18-F74-P8629-A1044-L999:Betalinger (NOK)
+T18-F75-P8629-A1044-L999:Fakturabelõp (NOK)
+T18-F7600-P8629-A1044-L999:Hovedkalenderkode
+T18-F7601-P8629-A1044-L999:Kopier Salg-til til Tilb.-fra adr.
+T18-F7601-P8632-A1044-L999:Selskap,Person
+T18-F76-P8629-A1044-L999:Kreditnotabelõp (NOK)
+T18-F77-P8629-A1044-L999:Rentenotabelõp (NOK)
+T18-F78-P8629-A1044-L999:èpne ordrer
+T18-F79-P8629-A1044-L999:Levert, ikke fakturert
+T18-F7-P8629-A1044-L999:Sted
+T18-F80-P8629-A1044-L999:Utligningsmetode
+T18-F80-P8632-A1044-L999:èpen post,Saldo
+T18-F82-P8629-A1044-L999:Priser inkl. mva.
+T18-F83-P8629-A1044-L999:Lokasjonskode
+T18-F840-P8629-A1044-L999:Kode for betalingsbetingelser for kontantstrõm
+T18-F84-P8629-A1044-L999:Faksnr.
+T18-F85-P8629-A1044-L999:Teleks (tilbakesvar)
+T18-F86-P8629-A1044-L999:Organisasjonsnr.
+T18-F87-P8629-A1044-L999:Opprett samlefaktura
+T18-F88-P8629-A1044-L999:Bokfõringsgruppe - firma
+T18-F89-P8629-A1044-L999:Bilde
+T18-F8-P8629-A1044-L999:Kontakt
+T18-F90-P8629-A1044-L999:GLN
+T18-F91-P8629-A1044-L999:Postnr.
+T18-F92-P8629-A1044-L999:Fylke/delstat
+T18-F97-P8629-A1044-L999:Debetbelõp
+T18-F98-P8629-A1044-L999:Kreditbelõp
+T18-F99-P8629-A1044-L999:Debetbelõp (NOK)
+T18-F9-P8629-A1044-L999:Telefonnr.
+T18-P8629-A1044-L999:Kunde
+T18-Q1000-P26171-A1044-L999:Du kan ikke slette %1 %2 fordi det finnes minst Çn Üpen salgs%3 for denne kunden.
+T18-Q1001-P26171-A1044-L999:Vil du opprette en kontakt for %1 %2?
+T18-Q1017-P26171-A1044-L999:Du mÜ fylle ut vinduet Oppsett av Online Map fõr du kan bruke Online Map.\Se Konfigurere Online Map i Hjelp.
+T18-Q1019-P26171-A1044-L999:Vil du fjerne betalingstoleranse fra poster som er Üpne?
+T18-Q1020-P26171-A1044-L999:Kontakten %1 %2 er ikke knyttet til kunden %3 %4.
+T18-Q1023-P26171-A1044-L999:Bokfõr
+T18-Q1024-P26171-A1044-L999:Opprett
+T18-Q1025-P26171-A1044-L999:Du kan ikke %1 denne typen dokument nÜr kunde %2 er sperret med type %3
+T18-Q1028-P26171-A1044-L999:Du kan ikke slette %1 %2 fordi det finnes minst Çn kansellert servicekontrakt for denne kunden.
+T18-Q1029-P26171-A1044-L999:Hvis du sletter %1 %2, vil dette fõre til at %3 slettes for tilhõrende servicevarer. Vil du fortsette?
+T18-Q1030-P26171-A1044-L999:Kan ikke slette kunde.
+T18-Q1031-P26171-A1044-L999:%1 %2 er tilordnet %3 %4.\Samme %1 kan ikke angis i flere enn Çn %3. Angi en annen kode.
+T18-Q1032-P26171-A1044-L999:Du kan ikke endre innholdet i feltet %1 fordi %2 har Çn eller flere Üpne poster.
+T18-Q1033-P26171-A1044-L999:Det kan vëre vanskelig Ü avstemme KI-transaksjoner hvis du endrer KI-partnerkode fordi %1 har poster i et regnskapsÜr som ikke er avsluttet ennÜ.\ Vil du fortsatt endre KI-partnerkoden?
+T18-Q1035-P26171-A1044-L999:Du kan ikke slette %1 %2 fordi det finnes minst Çn utestÜende tjeneste %3 for denne kunden.
+T18-Q1036-P26171-A1044-L999:Du kan ikke slette %1 %2 fordi minst Çn %3 er knyttet til denne kunden.
+T18-Q1037-P26171-A1044-L999:Vil du tillate betalingstoleranse for poster som er Üpne?
+T18-Q1080000-P26171-A1044-L999:GLN-nr.-feltet inneholder ikke et gyldig, 13-sifret GLN-nummer
+T18-Q1100525000-P26171-A1044-L999:Ulovlig verdi av %1 (tillatte omrÜdet er 99,9 til 99,99)
+T18-Q1100525001-P26171-A1044-L999:Du kan ikke velge noe i %1 nÜr salgsrabatt i prosent er ifyllt
+T18-Q1100525002-P26171-A1044-L999:Du kan ikke angi noen rabattprosenten nÜr %1 er valgt
+T18-U1100485000-Q1100485005-P26171-A1044-L999:Lever til-adresse er opprettet.
+T18-U1100485000-Q1100485006-P26171-A1044-L999:Vil du endre lever til-adressedata: \\Gammel: \%1 \%2 \%3 \%4 \%5 \\Ny: \%6 \%7 \%8 \%9 \%10
+T18-U1100485000-Q1100485008-P26171-A1044-L999:Lever til-adresse er endret.
+T18-U1100485001-Q1100485000-P26171-A1044-L999:Obs: %1 %2 er %3.

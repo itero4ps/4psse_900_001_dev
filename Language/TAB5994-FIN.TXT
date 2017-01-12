@@ -1,0 +1,3 @@
+T5994-F11250712-P8629-A1035-L999:Finvoice Vientien lkm.
+T5994-F11250718-P8629-A1035-L999:Finvoice-laskun l„hett„minen sallittu
+T5994-F11250719-P8629-A1035-L999:Factoring Vientien lkm.

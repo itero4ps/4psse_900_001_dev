@@ -1,0 +1,158 @@
+T124-F101-P8629-A1044-L999:OmrÜde
+T124-F102-P8629-A1044-L999:Transaksjonsspesifikasjon
+T124-F104-P8629-A1044-L999:BetalingsmÜte - kode
+T124-F107-P8629-A1044-L999:ForhÜndstilordnet nr.serie
+T124-F108-P8629-A1044-L999:Nr.serie
+T124-F10-P8629-A1044-L999:Betal til-kontakt
+T124-F11012001-P8629-A1044-L999:Kreditnota for underentrepenõr
+T124-F11012005-P8629-A1044-L999:Prosjektnr
+T124-F11012010-P8629-A1044-L999:BetalingsvilkÜr
+T124-F11012020-P8629-A1044-L999:Faktisk effektueringsdato
+T124-F11012030-P8629-A1044-L999:Faktisk sluttdato
+T124-F11012040-P8629-A1044-L999:Antall timer
+T124-F11012050-P8629-A1044-L999:Gjennomsnitlig lõnnssats
+T124-F11012060-P8629-A1044-L999:Arbeidskraftsbelõp
+T124-F11012070-P8629-A1044-L999:Dekningsbidrag, arbeidskraft
+T124-F11012071-P8629-A1044-L999:Dekningsbidrag, faktura totalt
+T124-F11012075-P8629-A1044-L999:Betal til skattemyndighet
+T124-F11012080-P8629-A1044-L999:Lõnnsgebyr (til B-konto)
+T124-F11012090-P8629-A1044-L999:Lõnnsgebyr (til skattemyndighet)
+T124-F11012100-P8629-A1044-L999:Nat.Ins.Contr.
+T124-F11012110-P8629-A1044-L999:Tekst
+T124-F11012120-P8629-A1044-L999:Direktebokfõring
+T124-F11012130-P8629-A1044-L999:Belõp inkludert moms
+T124-F11012140-P8629-A1044-L999:Moms produktbokfõringsmal
+T124-F11012190-P8629-A1044-L999:Mottatt pÜ prosjekt
+T124-F11012200-P8629-A1044-L999:Journalmal
+T124-F11012210-P8629-A1044-L999:Innkjõpsregistreringskonto
+T124-F11012215-P8629-A1044-L999:ForhÜndregistrer arbeidskapital
+T124-F11012230-P8629-A1044-L999:Forfalt saldo
+T124-F11012231-P8629-A1044-L999:Belõp inkl. forfalt mva.-balanse
+T124-F11012240-P8629-A1044-L999:Forfalt saldo (NOK)
+T124-F11012250-P8629-A1044-L999:FSC Typekode
+T124-F11012260-P8629-A1044-L999:Godkjenningsinitialer
+T124-F11012270-P8629-A1044-L999:Forbli pÜ vent
+T124-F11012280-P8629-A1044-L999:Kreditnotaen er godkjent
+T124-F11012312-P8629-A1044-L999:Kun belõp
+T124-F11012323-P8629-A1044-L999:Referanse (Leverandõr)
+T124-F11012330-P8629-A1044-L999:Prisavtale
+T124-F11012370-P8629-A1044-L999:Relatert Innkjõpsordrenr
+T124-F11012430-P8629-A1044-L999:Rentedato
+T124-F11012590-P8629-A1044-L999:Ext. dokument-ID
+T124-F11012630-P8629-A1044-L999:Selskapets momsregistreringsnr
+T124-F11012640-P8629-A1044-L999:Opprinnelsesland/Opprinnelsesregion
+T124-F11012650-P8629-A1044-L999:Destinasjonsland/destinasjonsregion
+T124-F11012660-P8629-A1044-L999:Utvidet momsbestemmelse
+T124-F11012800-P8629-A1044-L999:Serviceordrenr
+T124-F11012840-P8629-A1044-L999:Opprinnelig ordrenr
+T124-F11012850-P8629-A1044-L999:Transportõrkode
+T124-F11012860-P8629-A1044-L999:Pakkesporingsnr
+T124-F11012870-P8629-A1044-L999:Attestrader
+T124-F11020477-P8629-A1044-L999:DMS-status
+T124-F11020477-P8632-A1044-L999: ,,,Venter pÜ radtransaksjon,,,Start arbeidsflyt,,,I arbeidsflyt,,,Godkjent,,,Avvist
+T124-F11020478-P8629-A1044-L999:DMS-statustekst
+T124-F11127976-P8629-A1044-L999:Eksporter til symbriotype
+T124-F11127976-P8632-A1044-L999: ,Prelim.,Definitivt
+T124-F11127977-P8629-A1044-L999:Payment Reference
+T124-F11128010-P8629-A1044-L999:Trekanthandel
+T124-F111-P8629-A1044-L999:ForhÜndstilordnet nr.
+T124-F112-P8629-A1044-L999:Bruker-ID
+T124-F113-P8629-A1044-L999:Kildespor
+T124-F114-P8629-A1044-L999:Mva-omrÜdekode
+T124-F115-P8629-A1044-L999:Skyldig mva.
+T124-F116-P8629-A1044-L999:Mva-bokfõringsgruppe - firma
+T124-F119-P8629-A1044-L999:Mva-gr.lagsrabatt-%
+T124-F11-P8629-A1044-L999:Deres referanse
+T124-F12013603-P8629-A1044-L999:Godkjenn
+T124-F12-P8629-A1044-L999:Lever til-kode
+T124-F1300-P8629-A1044-L999:Kansellert
+T124-F1302-P8629-A1044-L999:Betalt
+T124-F1303-P8629-A1044-L999:Restbelõp
+T124-F1304-P8629-A1044-L999:Leverandõrpostnr.
+T124-F1305-P8629-A1044-L999:Fakturarabattbelõp
+T124-F138-P8629-A1044-L999:Nummerserie for kreditnota for forskudd
+T124-F13-P8629-A1044-L999:Lever til-navn
+T124-F140-P8629-A1044-L999:Kreditnota for forskudd
+T124-F141-P8629-A1044-L999:Ordrenummer for forskudd
+T124-F14-P8629-A1044-L999:Lever til-navn 2
+T124-F15-P8629-A1044-L999:Lever til-adresse
+T124-F16-P8629-A1044-L999:Lever til-adresse 2
+T124-F17-P8629-A1044-L999:Lever til-sted
+T124-F18-P8629-A1044-L999:Lever til-kontakt
+T124-F20-P8629-A1044-L999:Bokfõringsdato
+T124-F21-P8629-A1044-L999:Forventet mottaksdato
+T124-F22-P8629-A1044-L999:Bokfõringsbeskrivelse
+T124-F23-P8629-A1044-L999:Betalingsbet.kode
+T124-F24-P8629-A1044-L999:Forfallsdato
+T124-F25-P8629-A1044-L999:Kontantrabatt-%
+T124-F26-P8629-A1044-L999:Kont.rabattdato
+T124-F27-P8629-A1044-L999:LeveringsmÜtekode
+T124-F28-P8629-A1044-L999:Lokasjonskode
+T124-F29-P8629-A1044-L999:Snarveisdimensjon 1 - kode
+T124-F2-P8629-A1044-L999:Kjõp fra-leverandõrnr.
+T124-F30-P8629-A1044-L999:Snarveisdimensjon 2 - kode
+T124-F31-P8629-A1044-L999:Bokfõringsgruppe - leverandõr
+T124-F32-P8629-A1044-L999:Valutakode
+T124-F33-P8629-A1044-L999:Valutafaktor
+T124-F35-P8629-A1044-L999:Priser inkl. mva.
+T124-F37-P8629-A1044-L999:Fakturarabattkode
+T124-F3-P8629-A1044-L999:Nr.
+T124-F41-P8629-A1044-L999:SprÜkkode
+T124-F43-P8629-A1044-L999:Innkjõperkode
+T124-F46-P8629-A1044-L999:Merknad
+T124-F47-P8629-A1044-L999:Antall skrevet ut
+T124-F480-P8629-A1044-L999:Dimensjonssett-ID
+T124-F4-P8629-A1044-L999:Betal til-levrd.nr.
+T124-F5050-P8629-A1044-L999:Kampanjenr.
+T124-F5052-P8629-A1044-L999:Kjõp fra-kontaktnr.
+T124-F5053-P8629-A1044-L999:Betal til-kontaktnr.
+T124-F51-P8629-A1044-L999:Avvent
+T124-F52-P8629-A1044-L999:Utligningsbilagstype
+T124-F52-P8632-A1044-L999: ,Betaling,Faktura,Kreditnota,Rentenota,Purring,Refusjon
+T124-F53-P8629-A1044-L999:Utligningsbilagsnr.
+T124-F55-P8629-A1044-L999:Motkontonr.
+T124-F5700-P8629-A1044-L999:Ansvarssenter
+T124-F5-P8629-A1044-L999:Betal til-navn
+T124-F60-P8629-A1044-L999:Belõp
+T124-F61-P8629-A1044-L999:Belõp inkl. mva.
+T124-F6601-P8629-A1044-L999:Bestillingsreturnr.
+T124-F6602-P8629-A1044-L999:Nr.serie for bestillingsretur
+T124-F69-P8629-A1044-L999:Leverandõrs kreditnotanr.
+T124-F6-P8629-A1044-L999:Betal til-navn 2
+T124-F70-P8629-A1044-L999:Organisasjonsnr.
+T124-F72-P8629-A1044-L999:Salg til-kundenr.
+T124-F73-P8629-A1044-L999:èrsaksspor
+T124-F74-P8629-A1044-L999:Bokfõringsgruppe - firma
+T124-F76-P8629-A1044-L999:Transaksjonsart
+T124-F77-P8629-A1044-L999:TransportmÜte
+T124-F78-P8629-A1044-L999:Lands-/regionkode for mva
+T124-F79-P8629-A1044-L999:Kjõp fra-leverandõrnavn
+T124-F7-P8629-A1044-L999:Betal til-adresse
+T124-F80-P8629-A1044-L999:Kjõp fra-leverandõrnavn 2
+T124-F81-P8629-A1044-L999:Kjõp fra-adresse
+T124-F82-P8629-A1044-L999:Kjõp fra-adresse 2
+T124-F83-P8629-A1044-L999:Kjõp fra-sted
+T124-F84-P8629-A1044-L999:Kjõp fra-kontakt
+T124-F85-P8629-A1044-L999:Betal til-postnr.
+T124-F86-P8629-A1044-L999:Betal til-fylke/delstat
+T124-F87-P8629-A1044-L999:Lands-/regionkode for Betal til
+T124-F88-P8629-A1044-L999:Kjõp fra-postnr.
+T124-F89-P8629-A1044-L999:Kjõp fra-fylke/delstat
+T124-F8-P8629-A1044-L999:Betal til-adresse 2
+T124-F90-P8629-A1044-L999:Lands-/regionkode for Kjõp fra
+T124-F91-P8629-A1044-L999:Lever til-postnr.
+T124-F92-P8629-A1044-L999:Lever til-fylke/delstat
+T124-F93-P8629-A1044-L999:Lands-/regionkode for Lever til
+T124-F94-P8629-A1044-L999:Motkontotype
+T124-F94-P8632-A1044-L999:Finanskonto,Bankkonto
+T124-F95-P8629-A1044-L999:Bestillingsadressekode
+T124-F97-P8629-A1044-L999:Innpunkt
+T124-F98-P8629-A1044-L999:Korreksjon
+T124-F99-P8629-A1044-L999:Bilagsdato
+T124-F9-P8629-A1044-L999:Betal til-sted
+T124-P8629-A1044-L999:Kjõpskreditnotahode
+T124-Q1100525000-P26171-A1044-L999:Endringen har ikke fortsatt
+T124-Q1100525001-P26171-A1044-L999:Melding: Journalmal for fakturagodkjenning er endret, endret faktura   flyttes til %1. Vil du fortsette?
+T124-Q1100525002-P26171-A1044-L999:Journalmal for fakturagodkjenning kan ikke vëre tom
+T124-Q1100525003-P26171-A1044-L999:Kreditnota har ikke blitt brukt til samtykke. Bruke?
+T124-Q1210190000-P26171-A1044-L999:Rader for fakturagodkjenning finnes, endring av %1 ikke tillatt

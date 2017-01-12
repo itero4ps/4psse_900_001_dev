@@ -1,0 +1,218 @@
+T38-F101-P8629-A1044-L999:OmrÜde
+T38-F102-P8629-A1044-L999:Transaksjonsspesifikasjon
+T38-F104-P8629-A1044-L999:BetalingsmÜte - kode
+T38-F107-P8629-A1044-L999:Nr.serie
+T38-F108-P8629-A1044-L999:Bokfõringsnr.serie
+T38-F109-P8629-A1044-L999:Mottaksnr.serie
+T38-F10-P8629-A1044-L999:Betal til-kontakt
+T38-F11127976-P8629-A1044-L999:Eksporter til symbriotype
+T38-F11127976-P8632-A1044-L999: ,Prelim.,Definitivt
+T38-F11128010-P8629-A1044-L999:EU handel med tredjepart
+T38-F11128011-P8629-A1044-L999:Periodisk malkode
+T38-F11128012-P8629-A1044-L999:Periodisk startdato
+T38-F11128500-P8629-A1044-L999:KID
+T38-F11128501-P8629-A1044-L999:Betalingsartkode utland
+T38-F11128502-P8629-A1044-L999:Spesifikasjon (Norges Bank)
+T38-F114-P8629-A1044-L999:Mva-omrÜdekode
+T38-F115-P8629-A1044-L999:Skyldig mva.
+T38-F116-P8629-A1044-L999:Mva-bokfõringsgruppe - firma
+T38-F118-P8629-A1044-L999:Utlignings-ID
+T38-F119-P8629-A1044-L999:Mva-gr.lagsrabatt-%
+T38-F11-P8629-A1044-L999:Deres referanse
+T38-F12013601-P8629-A1044-L999:Ny linje
+T38-F12013603-P8629-A1044-L999:Godkjenn
+T38-F12013604-P8629-A1044-L999:GjenstÜende belõp
+T38-F12013610-P8629-A1044-L999:GjenstÜende belõp
+T38-F12013622-P8629-A1044-L999:Ordrenummer for forskudd
+T38-F120-P8629-A1044-L999:Status
+T38-F120-P8632-A1044-L999:èpen,Frigitt,Venter pÜ godkjenning,Venter pÜ forskudd,,,,,StÑngd
+T38-F121-P8629-A1044-L999:Fakturarabattberegning
+T38-F121-P8632-A1044-L999:Ingen,%,Belõp
+T38-F122-P8629-A1044-L999:Fakturarabattverdi
+T38-F123-P8629-A1044-L999:Send KI-dokument
+T38-F124-P8629-A1044-L999:KI-status
+T38-F124-P8632-A1044-L999:Ny,I kõ,Sendt
+T38-F125-P8629-A1044-L999:KI-partnerkode for Kjõp fra
+T38-F126-P8629-A1044-L999:KI-partnerkode for Betal til
+T38-F129-P8629-A1044-L999:KI-retning
+T38-F129-P8632-A1044-L999:UtgÜende,InngÜende
+T38-F12-P8629-A1044-L999:Lever til-kode
+T38-F1305-P8629-A1044-L999:Fakturarabattbelõp
+T38-F130-P8629-A1044-L999:Forskuddsnummer
+T38-F131-P8629-A1044-L999:Siste forskuddsnummer
+T38-F132-P8629-A1044-L999:Kreditnotanummer for forskudd
+T38-F133-P8629-A1044-L999:Siste kreditnotanummer for forskudd
+T38-F134-P8629-A1044-L999:Forskuddsprosent
+T38-F135-P8629-A1044-L999:Nummerserie for forskudd
+T38-F136-P8629-A1044-L999:Komprimer forskudd
+T38-F137-P8629-A1044-L999:Forfallsdato for forskudd
+T38-F138-P8629-A1044-L999:Nummerserie for kreditnota for forskudd
+T38-F139-P8629-A1044-L999:Beskrivelse av bokfõring av forskudd
+T38-F13-P8629-A1044-L999:Lever til-navn
+T38-F142-P8629-A1044-L999:Rabattdato for betaling for forskudd
+T38-F143-P8629-A1044-L999:Kode for betalingsbetingelser for forskudd
+T38-F144-P8629-A1044-L999:Rabattprosent for betaling for forskudd
+T38-F14-P8629-A1044-L999:Lever til-navn 2
+T38-F151-P8629-A1044-L999:Forespõrselsnr.
+T38-F15-P8629-A1044-L999:Lever til-adresse
+T38-F160-P8629-A1044-L999:Jobbkõstatus
+T38-F160-P8632-A1044-L999: ,Planlagt for bokfõring,Feil,Bokfõring
+T38-F161-P8629-A1044-L999:Post-ID for jobbkõ
+T38-F165-P8629-A1044-L999:Lõpenummer for inngÜende dokument
+T38-F16-P8629-A1044-L999:Lever til-adresse 2
+T38-F170-P8629-A1044-L999:Kreditornr.
+T38-F171-P8629-A1044-L999:Betalingsreferanse
+T38-F17-P8629-A1044-L999:Lever til-sted
+T38-F18-P8629-A1044-L999:Lever til-kontakt
+T38-F19-P8629-A1044-L999:Bestillingsdato
+T38-F1-P8629-A1044-L999:Bilagstype
+T38-F1-P8632-A1044-L999:Forespõrsel,Bestilling,Faktura,Kreditnota,Rammebestilling,Bestillingsretur
+T38-F20-P8629-A1044-L999:Bokfõringsdato
+T38-F21-P8629-A1044-L999:Forventet mottaksdato
+T38-F22-P8629-A1044-L999:Bokfõringsbeskrivelse
+T38-F23-P8629-A1044-L999:Betalingsbet.kode
+T38-F24-P8629-A1044-L999:Forfallsdato
+T38-F25-P8629-A1044-L999:Kontantrabatt-%
+T38-F26-P8629-A1044-L999:Kont.rabattdato
+T38-F27-P8629-A1044-L999:LeveringsmÜtekode
+T38-F28-P8629-A1044-L999:Lokasjonskode
+T38-F29-P8629-A1044-L999:Snarveisdimensjon 1 - kode
+T38-F2-P8629-A1044-L999:Kjõp fra-leverandõrnr.
+T38-F30-P8629-A1044-L999:Snarveisdimensjon 2 - kode
+T38-F31-P8629-A1044-L999:Bokfõringsgruppe - leverandõr
+T38-F32-P8629-A1044-L999:Valutakode
+T38-F33-P8629-A1044-L999:Valutafaktor
+T38-F35-P8629-A1044-L999:Priser inkl. mva.
+T38-F37-P8629-A1044-L999:Fakturarabattkode
+T38-F3-P8629-A1044-L999:Nr.
+T38-F41-P8629-A1044-L999:SprÜkkode
+T38-F43-P8629-A1044-L999:Innkjõperkode
+T38-F45-P8629-A1044-L999:Ordreklasse
+T38-F46-P8629-A1044-L999:Merknad
+T38-F47-P8629-A1044-L999:Antall skrevet ut
+T38-F480-P8629-A1044-L999:Dimensjonssett-ID
+T38-F4-P8629-A1044-L999:Betal til-levrd.nr.
+T38-F5043-P8629-A1044-L999:Ant. arkiverte versjoner
+T38-F5048-P8629-A1044-L999:Forekomst av bilagsnr.
+T38-F5050-P8629-A1044-L999:Kampanjenr.
+T38-F5052-P8629-A1044-L999:Kjõp fra-kontaktnr.
+T38-F5053-P8629-A1044-L999:Betal til-kontaktnr.
+T38-F51-P8629-A1044-L999:Avvent
+T38-F52-P8629-A1044-L999:Utligningsbilagstype
+T38-F52-P8632-A1044-L999: ,Betaling,Faktura,Kreditnota,Rentenota,Purring,Refusjon
+T38-F53-P8629-A1044-L999:Utligningsbilagsnr.
+T38-F55-P8629-A1044-L999:Motkontonr.
+T38-F56-P8629-A1044-L999:Beregn fakturarabatt pÜ nytt
+T38-F5700-P8629-A1044-L999:Ansvarssenter
+T38-F5752-P8629-A1044-L999:Fullstendig mottatt
+T38-F5753-P8629-A1044-L999:Bokfõring fra lagerref.
+T38-F5754-P8629-A1044-L999:Lokasjonsfilter
+T38-F5790-P8629-A1044-L999:ùnsket mottaksdato
+T38-F5791-P8629-A1044-L999:Lovet mottaksdato
+T38-F5792-P8629-A1044-L999:Beregning av leveringstid
+T38-F5793-P8629-A1044-L999:InngÜende lagerhÜndteringstid
+T38-F5796-P8629-A1044-L999:Datofilter
+T38-F57-P8629-A1044-L999:Motta
+T38-F5800-P8629-A1044-L999:Leverandõrgodkjenningsnr.
+T38-F5801-P8629-A1044-L999:Returforsendelsesnr.
+T38-F5802-P8629-A1044-L999:Returforsendelse - nr.serie
+T38-F5803-P8629-A1044-L999:Levere
+T38-F5804-P8629-A1044-L999:Siste returforsendelsesnr.
+T38-F58-P8629-A1044-L999:Faktura
+T38-F59-P8629-A1044-L999:Skriv ut bokfõrte dokumenter
+T38-F5-P8629-A1044-L999:Betal til-navn
+T38-F60-P8629-A1044-L999:Belõp
+T38-F61-P8629-A1044-L999:Belõp inkl. mva.
+T38-F62-P8629-A1044-L999:Mottaksnr.
+T38-F63-P8629-A1044-L999:Bokfõringsnr.
+T38-F64-P8629-A1044-L999:Siste mottaksnr.
+T38-F65-P8629-A1044-L999:Siste bokfõringsnr.
+T38-F66-P8629-A1044-L999:Leverandõrs bestillingsnr.
+T38-F67-P8629-A1044-L999:Leverandõrs fõlgeseddelnr.
+T38-F68-P8629-A1044-L999:Leverandõrs fakturanr.
+T38-F69-P8629-A1044-L999:Leverandõrs kreditnotanr.
+T38-F6-P8629-A1044-L999:Betal til-navn 2
+T38-F70-P8629-A1044-L999:Organisasjonsnr.
+T38-F72-P8629-A1044-L999:Salg til-kundenr.
+T38-F73-P8629-A1044-L999:èrsaksspor
+T38-F74-P8629-A1044-L999:Bokfõringsgruppe - firma
+T38-F76-P8629-A1044-L999:Transaksjonsart
+T38-F77-P8629-A1044-L999:TransportmÜte
+T38-F78-P8629-A1044-L999:Lands-/regionkode for mva
+T38-F79-P8629-A1044-L999:Kjõp fra-leverandõrnavn
+T38-F7-P8629-A1044-L999:Betal til-adresse
+T38-F80-P8629-A1044-L999:Kjõp fra-leverandõrnavn 2
+T38-F81-P8629-A1044-L999:Kjõp fra-adresse
+T38-F82-P8629-A1044-L999:Kjõp fra-adresse 2
+T38-F83-P8629-A1044-L999:Kjõp fra-sted
+T38-F84-P8629-A1044-L999:Kjõp fra-kontakt
+T38-F85-P8629-A1044-L999:Betal til-postnr.
+T38-F86-P8629-A1044-L999:Betal til-fylke/delstat
+T38-F87-P8629-A1044-L999:Lands-/regionkode for Betal til
+T38-F88-P8629-A1044-L999:Kjõp fra-postnr.
+T38-F89-P8629-A1044-L999:Kjõp fra-fylke/delstat
+T38-F8-P8629-A1044-L999:Betal til-adresse 2
+T38-F9000-P8629-A1044-L999:Tilordnet bruker-ID
+T38-F9001-P8629-A1044-L999:Venter pÜ godkjenninger
+T38-F90-P8629-A1044-L999:Lands-/regionkode for Kjõp fra
+T38-F91-P8629-A1044-L999:Lever til-postnr.
+T38-F92-P8629-A1044-L999:Lever til-fylke/delstat
+T38-F93-P8629-A1044-L999:Lands-/regionkode for Lever til
+T38-F94-P8629-A1044-L999:Motkontotype
+T38-F94-P8632-A1044-L999:Finanskonto,Bankkonto
+T38-F95-P8629-A1044-L999:Bestillingsadressekode
+T38-F97-P8629-A1044-L999:Innpunkt
+T38-F98-P8629-A1044-L999:Korreksjon
+T38-F99-P8629-A1044-L999:Bilagsdato
+T38-F9-P8629-A1044-L999:Betal til-sted
+T38-P8629-A1044-L999:Bestillingshode
+T38-Q1000-P26171-A1044-L999:Vil du skrive ut mottak %1?
+T38-Q1001-P26171-A1044-L999:Vil du skrive ut faktura %1?
+T38-Q1002-P26171-A1044-L999:Vil du skrive ut kreditnota %1?
+T38-Q1003-P26171-A1044-L999:Du kan ikke gi nytt navn til en %1.
+T38-Q1004-P26171-A1044-L999:Vil du endre %1?
+T38-Q1005-P26171-A1044-L999:Du kan ikke nullstille %1 fordi dokumentet fremdeles har Çn eller flere linjer.
+T38-Q1006-P26171-A1044-L999:Du kan ikke endre %1 fordi bestillingen er tilknyttet Çn eller flere ordrer.
+T38-Q1007-P26171-A1044-L999:%1 er stõrre enn %2 i tabellen %3.\
+T38-Q1008-P26171-A1044-L999:Bekrefte endring?
+T38-Q1009-P26171-A1044-L999:Hvis dokumentet slettes, vil det oppstÜ et hull i nummerserien for mottak. 
+T38-Q1010-P26171-A1044-L999:Det opprettes et tomt mottak %1 for Ü fylle dette hullet i nummerserien.\\
+T38-Q1011-P26171-A1044-L999:Vil du fortsette?
+T38-Q1012-P26171-A1044-L999:Hvis dokumentet slettes, vil det oppstÜ et hull i nummerserien for bokfõrte fakturaer. 
+T38-Q1013-P26171-A1044-L999:Det opprettes en tom faktura %1 for Ü fylle dette hullet i nummerserien.\\
+T38-Q1014-P26171-A1044-L999:Hvis dokumentet slettes, vil det oppstÜ et hull i nummerserien for bokfõrte kreditnotaer. 
+T38-Q1015-P26171-A1044-L999:Det opprettes en tom kreditnota %1 for Ü fylle dette hullet i nummerserien.\\
+T38-Q1016-P26171-A1044-L999:Hvis du endrer %1, slettes eksisterende bestillingslinjer mens det opprettes nye bestillingslinjer basert pÜ de nye opplysningene i hodet.\\
+T38-Q1017-P26171-A1044-L999:Du mÜ slette eksisterende bestillingslinjer fõr du kan endre %1.
+T38-Q1018-P26171-A1044-L999:Du har endret %1 i bestillingshodet, men det er ikke blitt endret pÜ eksisterende bestillingslinjer.\
+T38-Q1019-P26171-A1044-L999:Du mÜ oppdatere eksisterende bestillingslinjer manuelt.
+T38-Q1020-P26171-A1044-L999:Endringen kan pÜvirke valutakursen som brukes i prisberegningen av kjõpslinjene.
+T38-Q1021-P26171-A1044-L999:Vil du oppdatere valutakursen?
+T38-Q1022-P26171-A1044-L999:Du kan ikke slette dette dokumentet. Identifikasjonen din er angitt til bare Ü behandle fra %1 %2.
+T38-Q1023-P26171-A1044-L999:Vil du skrive ut returforsendelse %1?
+T38-Q1024-P26171-A1044-L999:Du har endret feltet %1. Merk at gjenberegningen av mva. kan gi noen kroners differanse, og at du mÜ kontrollere belõpene etterpÜ. 
+T38-Q1025-P26171-A1044-L999:Du kan ha endret en dimensjon.\\Vil du oppdatere linjene?
+T38-Q1026-P26171-A1044-L999:Vil du oppdatere feltet %2 pÜ linjene slik at de gjenspeiler den nye verdien for %1?
+T38-Q1027-P26171-A1044-L999:Identifikasjonen din er angitt til bare Ü behandle fra %1 %2.
+T38-Q1028-P26171-A1044-L999:Hvis du sletter dette dokumentet, vil det medfõre et hull i nummerserien for returforsendelser. 
+T38-Q1029-P26171-A1044-L999:Det opprettes en tom returforsendelse, %1, for Ü fylle dette hullet.\\
+T38-Q1031-P26171-A1044-L999:Du har endret %1.\\
+T38-Q1032-P26171-A1044-L999:Vil du oppdatere linjene?
+T38-Q1067-P26171-A1044-L999:Det finnes reservasjoner for denne bestillingen. Reservasjonene vil bli slettet hvis denne endringen forÜrsaker en datokonflikt.\\
+T38-Q1072-P26171-A1044-L999:Du kan ikke endre %1 nÜr %2 er fyllt ut.
+T38-Q1073-P26171-A1044-L999:Hvis du endrer %1, slettes eksisterende kjõpslinjer mens det opprettes nye kjõpslinjer basert pÜ nye opplysninger i hodet. Det kan hende at du mÜ oppdatere prisinformasjonen manuelt.\\Vil du endre %1?
+T38-Q1075-P26171-A1044-L999:Kontakten %1 %2 er knyttet til et annet selskap enn leverandõren %3.
+T38-Q1076-P26171-A1044-L999:Kontakten %1 %2 er ikke knyttet til leverandõren %3.
+T38-Q1077-P26171-A1044-L999:Kontakten %1 %2  er ikke knyttet til noen leverandõr.
+T38-Q1079-P26171-A1044-L999:Du kan ikke endre feltet %1 fordi %2 %3 har %4 = %5 og %6 er allerede tilordnet %7 %8.
+T38-Q1083-P26171-A1044-L999:Vil du skrive ut forskuddsfakturaen %1?
+T38-Q1084-P26171-A1044-L999:Du mÜ avbryte godkjenningsprosessen hvis du vil endre %1.
+T38-Q1085-P26171-A1044-L999:Vil du skrive ut kreditnotaen for forskudd %1?
+T38-Q1086-P26171-A1044-L999:Hvis du sletter dette dokumentet, fÜr du et tomrom i nummerserien for forskuddsfakturaer. Det opprettes en tom forskuddsfaktura %1 for Ü fylle dette hullet i nummerserien.\\Vil du fortsette?
+T38-Q1087-P26171-A1044-L999:Hvis du sletter dette dokumentet, fÜr du et tomrom i nummerserien for kreditnotaer for forskudd. Det opprettes en tom kreditnota %1 for Ü fylle dette hullet i nummerserien.\\Vil du fortsette?
+T38-Q1091-P26171-A1044-L999:Feltet %1 i bestillingen %2 mÜ vëre det samme som i ordren %3.
+T38-Q1092-P26171-A1044-L999:%1 er konfigurert for behandling bare fra %2 %3.
+T38-Q1095-P26171-A1044-L999:Det finnes ikke-bokfõrte forskuddsbelõp pÜ dokumentet av typen %1 med nummer %2.
+T38-Q1096-P26171-A1044-L999:Det finnes ubetalte forskuddsfakturaer som er relatert til dokumentet av typen %1 med nummer %2.
+T38-Q1155-P26171-A1044-L999:Du har endret %1 i bestillingshodet, vil du oppdatere tidsplanene for utsettelse for linjene med denne datoen?
+T38-Q1182-P26171-A1044-L999:Kjõpet %1 %2 har varesporing. Vil du slette det likevel?

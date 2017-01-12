@@ -1,0 +1,8 @@
+T12013669-F10-P8629-A1053-L999:Antal dimensioner
+T12013669-F3-P8629-A1053-L999:Leverant”rsnr
+T12013669-F4-P8629-A1053-L999:Import nr.
+T12013669-F5-P8629-A1053-L999:™vers„tt till Typ
+T12013669-F5-P8632-A1053-L999: ,Redov.konto,Artikel,,Anl.tillg†ng,Omkostnad (artikel)
+T12013669-F6-P8629-A1053-L999:™vers„tt till Nr.
+T12013669-F7-P8629-A1053-L999:Ingen ink”psorder matchning
+T12013669-P8629-A1053-L999:Import mappningstabell

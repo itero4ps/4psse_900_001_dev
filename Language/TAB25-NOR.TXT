@@ -1,0 +1,148 @@
+T25-F11012000-P8629-A1044-L999:Underentrepenõrsfaktura
+T25-F11012010-P8629-A1044-L999:BetalingsvilkÜr
+T25-F11012020-P8629-A1044-L999:Faktisk effektueringsdato
+T25-F11012030-P8629-A1044-L999:Faktisk sluttdato
+T25-F11012033-P8629-A1044-L999:Utlignet belõp (NOK)
+T25-F11012040-P8629-A1044-L999:Antall timer
+T25-F11012050-P8629-A1044-L999:Gjennomsnitlig lõnnssats
+T25-F11012060-P8629-A1044-L999:Arbeidskraftsbelõp
+T25-F11012070-P8629-A1044-L999:Dekningsbidrag, arbeidskraft
+T25-F11012071-P8629-A1044-L999:Dekningsbidrag, faktura totalt
+T25-F11012080-P8629-A1044-L999:Betal til skattemyndighet
+T25-F11012090-P8629-A1044-L999:Lõnnsgebyr (til B-konto)
+T25-F11012100-P8629-A1044-L999:Lõnnsgebyr (til skattemyndighet)
+T25-F11012110-P8629-A1044-L999:Nat.Ins.Contr.
+T25-F11012120-P8629-A1044-L999:Merknad
+T25-F11012130-P8629-A1044-L999:Transaksjonsmodus for Kode B-betalninger
+T25-F11012140-P8629-A1044-L999:Bankkontokode B-betalinger
+T25-F11012150-P8629-A1044-L999:Godkjent
+T25-F11012160-P8629-A1044-L999:WKA-godkjenning
+T25-F11012170-P8629-A1044-L999:Utlignings-ID-skatt
+T25-F11012180-P8629-A1044-L999:Utlignings-ID enf.inst.
+T25-F11012190-P8629-A1044-L999:Godkjenningsinitialer
+T25-F11012200-P8629-A1044-L999:Utlignings-ID B
+T25-F11012220-P8629-A1044-L999:GjenstÜende bel. Forfallsdato (NOK)
+T25-F11012230-P8629-A1044-L999:GjenstÜende bel. Dok.dato (NOK)
+T25-F11012235-P8629-A1044-L999:Attestrad finnes
+T25-F11012240-P8629-A1044-L999:Kommentarrad finnes
+T25-F11012250-P8629-A1044-L999:Din referanse
+T25-F11012260-P8629-A1044-L999:Prosjektnr
+T25-F11012270-P8629-A1044-L999:Innkjõpsordrenr.
+T25-F11012280-P8629-A1044-L999:Leverandõrsnavn
+T25-F11012290-P8629-A1044-L999:Beskrivelse 2
+T25-F11012291-P8629-A1044-L999:Kontantrabattdato 2
+T25-F11012292-P8629-A1044-L999:Opprinnelig kontantrabatt mulig 2
+T25-F11012293-P8629-A1044-L999:Kontantrabatt, toleransedato 2
+T25-F11012294-P8629-A1044-L999:Kontantrabattdato 3
+T25-F11012295-P8629-A1044-L999:Opprinnelig kontantrabatt mulig 3
+T25-F11012296-P8629-A1044-L999:Kontantrabatt, toleransedato 3
+T25-F11012297-P8629-A1044-L999:GjenstÜende kontantrabatt mulig 2
+T25-F11012298-P8629-A1044-L999:GjenstÜende kontantrabatt mulig 3
+T25-F11012300-P8629-A1044-L999:Siste utligningsdato
+T25-F11012310-P8629-A1044-L999:Underentreprenõrnr.
+T25-F11012320-P8629-A1044-L999:Faktura, DMS-status
+T25-F11012320-P8632-A1044-L999:,,,Venter pÜ radtransaksjon,,,Start arbeidsflyt,,,I arbeidsflyt,,,Godkjent,,,Avvist
+T25-F11012321-P8629-A1044-L999:Faktura, DMS-statustekst
+T25-F11012322-P8629-A1044-L999:Kreditnota DMS-status
+T25-F11012322-P8632-A1044-L999:,,,Venter pÜ radtransaksjon,,,Start arbeidsflyt,,,I arbeidsflyt,,,Godkjent,,,Avvist
+T25-F11012323-P8629-A1044-L999:Kreditnota DMS-statustekst
+T25-F11126180-P8629-A1044-L999:Meldingstype
+T25-F11126183-P8629-A1044-L999:Betalingsdato
+T25-F11128010-P8629-A1044-L999:Kode for Bank of Sweden
+T25-F11128011-P8629-A1044-L999:Journalnr for LB-giro
+T25-F11128012-P8629-A1044-L999:Opprinnelig transaksjon forfallsdato
+T25-F11128270-P8629-A1044-L999:Eksportdato for symbrio
+T25-F11128500-P8629-A1044-L999:Remitterings ID
+T25-F11128501-P8629-A1044-L999:KID
+T25-F11128502-P8629-A1044-L999:Betalingsartkode utland
+T25-F11128503-P8629-A1044-L999:Spesifikasjon (Norges Bank)
+T25-F11-P8629-A1044-L999:Valutakode
+T25-F13-P8629-A1044-L999:Belõp
+T25-F14-P8629-A1044-L999:Restbelõp
+T25-F15-P8629-A1044-L999:Opprinnelig belõp (NOK)
+T25-F16-P8629-A1044-L999:Restbelõp (NOK)
+T25-F170-P8629-A1044-L999:Kreditornr.
+T25-F171-P8629-A1044-L999:Betalingsreferanse
+T25-F172-P8629-A1044-L999:BetalingsmÜte - kode
+T25-F173-P8629-A1044-L999:Ekst. utligningsdok.nr.
+T25-F17-P8629-A1044-L999:Belõp (NOK)
+T25-F18-P8629-A1044-L999:Kjõp (NOK)
+T25-F1-P8629-A1044-L999:Lõpenr.
+T25-F20-P8629-A1044-L999:Fakturarabatt (NOK)
+T25-F21-P8629-A1044-L999:Kjõp fra-leverandõrnr.
+T25-F22-P8629-A1044-L999:Bokfõringsgruppe - leverandõr
+T25-F23-P8629-A1044-L999:Global dimensjon 1 - kode
+T25-F24-P8629-A1044-L999:Global dimensjon 2 - kode
+T25-F25-P8629-A1044-L999:Innkjõperkode
+T25-F27-P8629-A1044-L999:Bruker-ID
+T25-F288-P8629-A1044-L999:Mottakerbankkonto
+T25-F289-P8629-A1044-L999:Melding til mottaker
+T25-F28-P8629-A1044-L999:Kildespor
+T25-F290-P8629-A1044-L999:Lest ut til betalingsfil
+T25-F33-P8629-A1044-L999:Avvent
+T25-F34-P8629-A1044-L999:Utligningsbilagstype
+T25-F34-P8632-A1044-L999: ,Betaling,Faktura,Kreditnota,Rentenota,Purring,Refusjon
+T25-F35-P8629-A1044-L999:Utligningsbilagsnr.
+T25-F36-P8629-A1044-L999:èpne
+T25-F37-P8629-A1044-L999:Forfallsdato
+T25-F38-P8629-A1044-L999:Kont.rabattdato
+T25-F39-P8629-A1044-L999:Mulig opprinnelig kont.rab.
+T25-F3-P8629-A1044-L999:Leverandõrnr.
+T25-F40-P8629-A1044-L999:Mott. kont.rabatt (NOK)
+T25-F43-P8629-A1044-L999:Positiv
+T25-F44-P8629-A1044-L999:Lukket av lõpenr.
+T25-F45-P8629-A1044-L999:Lukket per dato
+T25-F46-P8629-A1044-L999:Lukket av belõp
+T25-F47-P8629-A1044-L999:Utlignings-ID
+T25-F480-P8629-A1044-L999:Dimensjonssett-ID
+T25-F49-P8629-A1044-L999:Kladdenavn
+T25-F4-P8629-A1044-L999:Bokfõringsdato
+T25-F50-P8629-A1044-L999:èrsaksspor
+T25-F51-P8629-A1044-L999:Motkontotype
+T25-F51-P8632-A1044-L999:Finans,Kunde,Leverandõr,Bank,Aktiva
+T25-F52-P8629-A1044-L999:Motkontonr.
+T25-F53-P8629-A1044-L999:Transaksjonsnr.
+T25-F54-P8629-A1044-L999:Lukket av belõp (NOK)
+T25-F58-P8629-A1044-L999:Debetbelõp
+T25-F59-P8629-A1044-L999:Kreditbelõp
+T25-F5-P8629-A1044-L999:Bilagstype
+T25-F5-P8632-A1044-L999: ,Betaling,Faktura,Kreditnota,Rentenota,Purring,Refusjon
+T25-F60-P8629-A1044-L999:Debetbelõp (NOK)
+T25-F61-P8629-A1044-L999:Kreditbelõp (NOK)
+T25-F62-P8629-A1044-L999:Bilagsdato
+T25-F63-P8629-A1044-L999:Eksterndokumentnr.
+T25-F64-P8629-A1044-L999:Nr.serie
+T25-F65-P8629-A1044-L999:Lukket av valutakode
+T25-F66-P8629-A1044-L999:Lukket av valutabelõp
+T25-F6-P8629-A1044-L999:Bilagsnr.
+T25-F73-P8629-A1044-L999:Justert valutafaktor
+T25-F74-P8629-A1044-L999:Opprinnelig valutafaktor
+T25-F75-P8629-A1044-L999:Opprinnelig belõp
+T25-F76-P8629-A1044-L999:Datofilter
+T25-F77-P8629-A1044-L999:Mulig resterende kont.rab.
+T25-F78-P8629-A1044-L999:Dato for kontantrabattoleranse
+T25-F79-P8629-A1044-L999:Maks. betalingstoleranse
+T25-F7-P8629-A1044-L999:Beskrivelse
+T25-F81-P8629-A1044-L999:Tillatt betalingstoleranse
+T25-F82-P8629-A1044-L999:Godkjent kont.rab.toleranse
+T25-F83-P8629-A1044-L999:Bet.toleranse (NOK)
+T25-F84-P8629-A1044-L999:Belõp som skal utlignes
+T25-F85-P8629-A1044-L999:KI-partnerkode
+T25-F86-P8629-A1044-L999:Utligningspost
+T25-F87-P8629-A1044-L999:Tilbakefõrt
+T25-F88-P8629-A1044-L999:Tilbakefõrt ved lõpenr.
+T25-F89-P8629-A1044-L999:Tilbakefõrt lõpenr.
+T25-F90-P8629-A1044-L999:Forskudd
+T25-P8629-A1044-L999:Leverandõrpost
+T25-Q1000-P26171-A1044-L999:mÜ ha samme fortegn som %1
+T25-Q1001-P26171-A1044-L999:kan ikke vëre stõrre enn %1
+T25-Q1002-P26171-A1044-L999:%1 kan ikke brukes mens %2 har en verdi.
+T25-Q1100525001-P26171-A1044-L999:%1 %2 finnes allerede som forslagspost
+T25-Q1100528400-P26171-A1044-L999:%1 av %2 kan ikke fjernes fordi %3 av %4 %5 tom
+T25-Q1100528401-P26171-A1044-L999:%1 av %2 kan ikke fjernes fordi %3 og %4 av %5 %6 er tom
+T25-Q1100528402-P26171-A1044-L999:%1 av %2 kan ikke fjernes.
+T25-Q11012000-P26171-A1044-L999:kun redigerbar for dokumenttypen faktura eller kreditnota og Üpne
+T25-Q11012001-P26171-A1044-L999:mÜ inntreffe fõr %1
+T25-Q11012002-P26171-A1044-L999:mÜ forekomme etter %1
+T25-Q11012003-P26171-A1044-L999:Ingen %1 kjent for %2 %3
+T25-Q11012004-P26171-A1044-L999:kun redigerbar for dokumenttypen faktura eller kreditnota, underentrepenõr og Üpne
