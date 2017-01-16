@@ -4,7 +4,7 @@ OBJECT Page 12013593 ExFlow Purch. Doc. Worksheet
   {
     Date=;
     Time=;
-    Version List=EXF410000;
+    Version List=EXF410000,EXFFI1.01;
   }
   PROPERTIES
   {
@@ -450,6 +450,12 @@ OBJECT Page 12013593 ExFlow Purch. Doc. Worksheet
     { 1100285112;2;Field  ;
                 SourceExpr="Vendor Document No. 2" }
 
+    { 1100285120;2;Field  ;
+                SourceExpr="Message Type" }
+
+    { 1100285121;2;Field  ;
+                SourceExpr="Invoice Message" }
+
     { 1100285010;2;Field  ;
                 SourceExpr=Factoring;
                 Visible=False }
@@ -815,15 +821,13 @@ OBJECT Page 12013593 ExFlow Purch. Doc. Worksheet
                 PartType=Page }
 
     { 1100285065;1;Part   ;
-                SubPageLink=Entry No.=FIELD(Inbound Document No.),
-                            Line No.=FIELD(Line No.);
+                SubPageLink=Entry No.=FIELD(Inbound Document No.), Line No.=FIELD(Line No.);
                 PagePartID=Page12013599;
                 ProviderID=1100285044;
                 PartType=Page }
 
     { 1100285045;1;Part   ;
-                SubPageLink=Inbound Document No.=FIELD(Inbound Document No.),
-                            Line No.=FIELD(Line No.);
+                SubPageLink=Inbound Document No.=FIELD(Inbound Document No.), Line No.=FIELD(Line No.);
                 PagePartID=Page12013626;
                 ProviderID=1100285044;
                 Visible=True;

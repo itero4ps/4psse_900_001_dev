@@ -7846,6 +7846,9 @@ OBJECT Codeunit 90 Purch.-Post
         IF "Document Type" = "Document Type"::Order THEN
           PurchInvHeader."Related Purch. Order No." := "No.";
         //**4PS.en
+        CALCFIELDS("Message Type","Invoice Message");  //NAVFI
+        PurchInvHeader."Message Type" := "Message Type";  //NAVFI
+        PurchInvHeader."Invoice Message" := "Invoice Message";  //NAVFI
         PurchInvHeader.INSERT;
 
         //**4PS.sn
@@ -11173,6 +11176,7 @@ OBJECT Codeunit 90 Purch.-Post
       Version List=NAVW19.00.00.45834,NAVNO9.00.00.45834;
       NAVFI: removed field "Invoice Message 2", reduced size of "Invoice Message" from 250 -> 128, due to full table-definition
       160929 ITERO.DL RFC148 handle Payment Reference for more countries and added OCR
+      170111 ITERO.WG Moved CALCFIELDS NAVFI fields before create invoice
     }
     END.
   }

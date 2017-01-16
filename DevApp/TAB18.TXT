@@ -1388,7 +1388,7 @@ OBJECT Table 18 Customer
                                                                 cuCreditSafeMgmt@1100285000 : Codeunit 11128106;
                                                                 lvCreditsafeSetup@1100285500 : Record 11128107;
                                                               BEGIN
-                                                                IF lvCreditsafeSetup.GET THEN
+                                                                IF lvCreditsafeSetup.GET THEN //4PSSE.n 170110
                                                                   // 131212 IMSE023 <<
                                                                   cuCreditSafeMgmt.CheckCOCNo(0,xRec."COC Registration No.", "COC Registration No.", "No.");
                                                                   // 131212 >>

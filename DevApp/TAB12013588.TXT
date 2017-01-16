@@ -4,7 +4,7 @@ OBJECT Table 12013588 Exflow Purchase Document Line
   {
     Date=;
     Time=;
-    Version List=EXF410001,2016,W1,4PS;
+    Version List=EXF410001,2016W1,EXFFI1.00,4PS;
   }
   PROPERTIES
   {
@@ -141,17 +141,7 @@ OBJECT Table 12013588 Exflow Purchase Document Line
                                                    CaptionML=ENU=Type;
                                                    OptionCaptionML=ENU=" ,G/L Account,Item,,Fixed Asset,Charge (Item)";
                                                    OptionString=[ ,G/L Account,Item,,Fixed Asset,Charge (Item)] }
-    { 6   ;   ;No.                 ;Code20        ;TableRelation=IF (Type=CONST(" ")) "Standard Text"
-                                                                 ELSE IF (Type=CONST(G/L Account),
-                                                                          System-Created Entry=CONST(No)) "G/L Account" WHERE (Direct Posting=CONST(Yes),
-                                                                                                                               Account Type=CONST(Posting),
-                                                                                                                               Blocked=CONST(No))
-                                                                                                                               ELSE IF (Type=CONST(G/L Account),
-                                                                                                                                        System-Created Entry=CONST(No)) "G/L Account"
-                                                                                                                                        ELSE IF (Type=CONST(Item)) Item
-                                                                                                                                        ELSE IF (Type=CONST(3)) Resource
-                                                                                                                                        ELSE IF (Type=CONST(Fixed Asset)) "Fixed Asset"
-                                                                                                                                        ELSE IF (Type=CONST("Charge (Item)")) "Item Charge";
+    { 6   ;   ;No.                 ;Code20        ;TableRelation=IF (Type=CONST(" ")) "Standard Text" ELSE IF (Type=CONST(G/L Account), System-Created Entry=CONST(No)) "G/L Account" WHERE (Direct Posting=CONST(Yes), Account Type=CONST(Posting), Blocked=CONST(No)) ELSE IF (Type=CONST(G/L Account), System-Created Entry=CONST(No)) "G/L Account" ELSE IF (Type=CONST(Item)) Item ELSE IF (Type=CONST(3)) Resource ELSE IF (Type=CONST(Fixed Asset)) "Fixed Asset" ELSE IF (Type=CONST("Charge (Item)")) "Item Charge";
                                                    OnValidate=VAR
                                                                 ExFlowSetup@1100285002 : Record 12013601;
                                                                 ExfValidateDoc@1100285003 : Codeunit 12013594;
@@ -463,8 +453,7 @@ OBJECT Table 12013588 Exflow Purchase Document Line
                                                               END;
 
                                                    CaptionML=ENU=Location Code }
-    { 8   ;   ;Posting Group       ;Code10        ;TableRelation=IF (Type=CONST(Item)) "Inventory Posting Group"
-                                                                 ELSE IF (Type=CONST(Fixed Asset)) "FA Posting Group";
+    { 8   ;   ;Posting Group       ;Code10        ;TableRelation=IF (Type=CONST(Item)) "Inventory Posting Group" ELSE IF (Type=CONST(Fixed Asset)) "FA Posting Group";
                                                    CaptionML=ENU=Posting Group;
                                                    Editable=Yes }
     { 11  ;   ;Description         ;Text50        ;CaptionML=ENU=Description }
@@ -1169,8 +1158,7 @@ OBJECT Table 12013588 Exflow Purchase Document Line
                                                    CaptionML=ENU=Sales Order No. (Order);
                                                    Editable=No }
     { 72  ;   ;Sales Order Line No. (Order);Integer;
-                                                   TableRelation=IF (Drop Shipment (Order)=CONST(Yes)) "Sales Line"."Line No." WHERE (Document Type=CONST(Order),
-                                                                                                                                      Document No.=FIELD("Sales Order No. (Order)"));
+                                                   TableRelation=IF (Drop Shipment (Order)=CONST(Yes)) "Sales Line"."Line No." WHERE (Document Type=CONST(Order), Document No.=FIELD("Sales Order No. (Order)"));
                                                    CaptionML=ENU=Sales Order Line No. (Order);
                                                    Editable=No }
     { 73  ;   ;Drop Shipment (Order);Boolean      ;CaptionML=ENU=Drop Shipment (Order);
@@ -1741,8 +1729,7 @@ OBJECT Table 12013588 Exflow Purchase Document Line
     { 5404;   ;Qty. per Unit of Measure;Decimal   ;InitValue=1;
                                                    CaptionML=ENU=Qty. per Unit of Measure;
                                                    DecimalPlaces=0:5 }
-    { 5407;   ;Unit of Measure Code;Code10        ;TableRelation=IF (Type=CONST(Item)) "Item Unit of Measure".Code WHERE (Item No.=FIELD(No.))
-                                                                 ELSE "Unit of Measure";
+    { 5407;   ;Unit of Measure Code;Code10        ;TableRelation=IF (Type=CONST(Item)) "Item Unit of Measure".Code WHERE (Item No.=FIELD(No.)) ELSE "Unit of Measure";
                                                    OnValidate=VAR
                                                                 UnitOfMeasureTranslation@1000 : Record 5402;
                                                               BEGIN
@@ -1913,14 +1900,12 @@ OBJECT Table 12013588 Exflow Purchase Document Line
 
                                                    CaptionML=ENU=Allow Item Charge Assignment }
     { 5801;   ;Qty. to Assign      ;Decimal       ;FieldClass=FlowField;
-                                                   CalcFormula=Sum("Item Charge Assign. (EX Purch)"."Qty. to Assign" WHERE (Inbound Document No.=FIELD(Inbound Document No.),
-                                                                                                                            Document Line No.=FIELD(Line No.)));
+                                                   CalcFormula=Sum("Item Charge Assign. (EX Purch)"."Qty. to Assign" WHERE (Inbound Document No.=FIELD(Inbound Document No.), Document Line No.=FIELD(Line No.)));
                                                    CaptionML=ENU=Qty. to Assign;
                                                    DecimalPlaces=0:5;
                                                    Editable=No }
     { 5802;   ;Qty. Assigned       ;Decimal       ;FieldClass=FlowField;
-                                                   CalcFormula=Sum("Item Charge Assign. (EX Purch)"."Qty. Assigned" WHERE (Inbound Document No.=FIELD(Inbound Document No.),
-                                                                                                                           Document Line No.=FIELD(Line No.)));
+                                                   CalcFormula=Sum("Item Charge Assign. (EX Purch)"."Qty. Assigned" WHERE (Inbound Document No.=FIELD(Inbound Document No.), Document Line No.=FIELD(Line No.)));
                                                    CaptionML=ENU=Qty. Assigned;
                                                    DecimalPlaces=0:5;
                                                    Editable=No }
@@ -2024,12 +2009,7 @@ OBJECT Table 12013588 Exflow Purchase Document Line
                                                               END;
 
                                                    CaptionML=ENU=Auto. Acc. Group }
-    { 11012040;;Purchase Action    ;Code10        ;TableRelation=IF (Document Type=CONST(Quote),
-                                                                     Estimate No.=FILTER(<>'')) "Estimate Purchase Action".Code WHERE (Estimate No.=FIELD(Estimate No.))
-                                                                     ELSE IF (Document Type=CONST(Quote),
-                                                                              Estimate No.=FILTER(='')) "Project Purchase Action".Code WHERE (Project No.=FIELD(Job No.))
-                                                                              ELSE "Project Purchase Action".Code WHERE (Project No.=FIELD(Job No.),
-                                                                                                                         Status=FILTER(>=Approved));
+    { 11012040;;Purchase Action    ;Code10        ;TableRelation=IF (Document Type=CONST(Quote), Estimate No.=FILTER(<>'')) "Estimate Purchase Action".Code WHERE (Estimate No.=FIELD(Estimate No.)) ELSE IF (Document Type=CONST(Quote), Estimate No.=FILTER(='')) "Project Purchase Action".Code WHERE (Project No.=FIELD(Job No.)) ELSE "Project Purchase Action".Code WHERE (Project No.=FIELD(Job No.), Status=FILTER(>=Approved));
                                                    OnValidate=VAR
                                                                 lvProjPurchActionRec@1100485000 : Record 11012026;
                                                                 lvBudgetLine@1100485001 : Record 11012001;
@@ -2275,8 +2255,7 @@ OBJECT Table 12013588 Exflow Purchase Document Line
 
                                                    CaptionML=ENU=Basic Item;
                                                    Description=4PS }
-    { 11012152;;Trade Item         ;Code20        ;TableRelation=IF (Vendor (Trade Item)=FILTER(<>'')) "Trade Item"."Item Code" WHERE (Vendor=FIELD("Vendor (Trade Item)"))
-                                                                 ELSE IF (Vendor (Trade Item)=FILTER('')) "Trade Item"."Item Code";
+    { 11012152;;Trade Item         ;Code20        ;TableRelation=IF (Vendor (Trade Item)=FILTER(<>'')) "Trade Item"."Item Code" WHERE (Vendor=FIELD("Vendor (Trade Item)")) ELSE IF (Vendor (Trade Item)=FILTER('')) "Trade Item"."Item Code";
                                                    OnValidate=BEGIN
                                                                 //**4PS
                                                                 //IF ("Trade Item" <> '') THEN    //*C-028911.n  //*33895.o
@@ -2394,9 +2373,7 @@ OBJECT Table 12013588 Exflow Purchase Document Line
                                                    CaptionML=ENU=Plant Order No.;
                                                    Description=4PS;
                                                    Editable=No }
-    { 11012447;;Plant Order Line No.;Integer      ;TableRelation=IF (Plant Type=CONST(),
-                                                                     Item No.=FILTER(<>'')) Table11020510.Field20 WHERE (Field10=FIELD(Plant Order No.))
-                                                                     ELSE "Plant Order Line"."Line No." WHERE (Plant Order No.=FIELD(Plant Order No.));
+    { 11012447;;Plant Order Line No.;Integer      ;TableRelation=IF (Plant Type=CONST(), Item No.=FILTER(<>'')) "Plant Order Item Line"."Line No." WHERE (Plant Order No.=FIELD(Plant Order No.)) ELSE "Plant Order Line"."Line No." WHERE (Plant Order No.=FIELD(Plant Order No.));
                                                    TestTableRelation=No;
                                                    CaptionML=ENU=Plant Order Line No.;
                                                    Description=4PS;
@@ -2908,9 +2885,7 @@ OBJECT Table 12013588 Exflow Purchase Document Line
                                                    Editable=No }
     { 12013664;;Line Discount % (Import);Decimal  ;CaptionML=ENU=Line Discount % (Import) }
     { 12013665;;Unit of Measure (Import);Text10   ;CaptionML=ENU=Unit of Measure (Import) }
-    { 12013667;;Order Line No.     ;Integer       ;TableRelation="Purchase Line"."Line No." WHERE (Document Type=FILTER(Order|Return Order),
-                                                                                                   Document No.=FIELD(Order No.),
-                                                                                                   Type=FILTER(G/L Account|Item|Fixed Asset|'Charge (Item)'));
+    { 12013667;;Order Line No.     ;Integer       ;TableRelation="Purchase Line"."Line No." WHERE (Document Type=FILTER(Order|Return Order), Document No.=FIELD(Order No.), Type=FILTER(G/L Account|Item|Fixed Asset|'Charge (Item)'));
                                                    OnValidate=VAR
                                                                 PurchOrderHeader@1100285004 : Record 38;
                                                                 PurchOrderLine@1100285000 : Record 39;
@@ -3071,8 +3046,7 @@ OBJECT Table 12013588 Exflow Purchase Document Line
     { 12057072;;Potential UOM Mismatch;Boolean    ;CaptionML=ENU=Potential unit of measure mismatch;
                                                    Editable=No }
     { 12057073;;Receipt Date       ;Date          ;FieldClass=FlowField;
-                                                   CalcFormula=Lookup("Purch. Rcpt. Line"."Posting Date" WHERE (Document No.=FIELD(Receipt No.),
-                                                                                                                Line No.=FIELD(Receipt Line No.)));
+                                                   CalcFormula=Lookup("Purch. Rcpt. Line"."Posting Date" WHERE (Document No.=FIELD(Receipt No.), Line No.=FIELD(Receipt Line No.)));
                                                    CaptionML=ENU=Receipt Date;
                                                    Editable=No }
     { 12057074;;Accept Potential UOM Mismatch;Boolean;
@@ -3086,9 +3060,7 @@ OBJECT Table 12013588 Exflow Purchase Document Line
                                                               END;
 
                                                    CaptionML=ENU=Routing No. }
-    { 99000751;;Operation No.      ;Code10        ;TableRelation="Prod. Order Routing Line"."Operation No." WHERE (Status=CONST(Released),
-                                                                                                                   Prod. Order No.=FIELD(Prod. Order No.),
-                                                                                                                   Routing No.=FIELD(Routing No.));
+    { 99000751;;Operation No.      ;Code10        ;TableRelation="Prod. Order Routing Line"."Operation No." WHERE (Status=CONST(Released), Prod. Order No.=FIELD(Prod. Order No.), Routing No.=FIELD(Routing No.));
                                                    OnValidate=BEGIN
                                                                 TESTFIELD("Document Type", "Document Type"::Order);
                                                               END;
@@ -3105,8 +3077,7 @@ OBJECT Table 12013588 Exflow Purchase Document Line
                                                               END;
 
                                                    CaptionML=ENU=Finished }
-    { 99000754;;Prod. Order Line No.;Integer      ;TableRelation="Prod. Order Line"."Line No." WHERE (Status=FILTER(Released..),
-                                                                                                      Prod. Order No.=FIELD(Prod. Order No.));
+    { 99000754;;Prod. Order Line No.;Integer      ;TableRelation="Prod. Order Line"."Line No." WHERE (Status=FILTER(Released..), Prod. Order No.=FIELD(Prod. Order No.));
                                                    OnValidate=BEGIN
                                                                 TESTFIELD("Document Type", "Document Type"::Order);
                                                               END;
