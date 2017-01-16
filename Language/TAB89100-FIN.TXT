@@ -1,0 +1,7 @@
+T89100-F1-P8629-A1035-L999:Ulkoinen ALV koodi
+T89100-F2-P8629-A1035-L999:Yleinen kirjaustyyppi
+T89100-F2-P8632-A1035-L999: ,Osto,Myynti,Suoritus
+T89100-F3-P8629-A1035-L999:Ylein. liiketoim. kirjausryhm„
+T89100-F4-P8629-A1035-L999:Yleinen tuotteen kirjausryhm„
+T89100-F5-P8629-A1035-L999:Liiketoiminnan ALV-kirjausryhm„
+T89100-F6-P8629-A1035-L999:Tuotteen ALV-kirjausryhm„
