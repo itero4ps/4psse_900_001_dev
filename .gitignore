@@ -1,3 +1,4 @@
 *.fob
 BaseApp/*.*
 #*.zip
+AllObjects.txt
