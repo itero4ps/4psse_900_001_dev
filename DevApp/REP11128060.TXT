@@ -68,7 +68,7 @@ OBJECT Report 11128060 VP Transfer vendors to VP UPG
                                   //IF (lVendor."Address 2" <> '') AND (lVendorBankAccount."Address 2" = '') THEN lVendorBankAccount."Address 2" := lVendor."Address 2";
                                   //IF (lVendor.City <> '') AND (lVendorBankAccount.City = '') THEN lVendorBankAccount.City := lVendor.City;
                                   //IF (lVendor.Contact <> '') AND (lVendorBankAccount.Contact = '') THEN lVendorBankAccount.Contact := lVendor.Contact;
-                                  //IF (lVendor."Country/Region Code" <> '') AND (lVendorBankAccount."Country/Region Code" = '') THEN lVendorBankAccount."Country/Region Code" := lVendor."Country/Region Code";
+                                  IF (lVendor."Country/Region Code" <> '') AND (lVendorBankAccount."Country/Region Code" = '') THEN lVendorBankAccount."Country/Region Code" := lVendor."Country/Region Code";
                                   //IF (lVendor.County <> '') AND (lVendorBankAccount.County = '') THEN lVendorBankAccount.County := lVendor.County;
                                   //IF (lVendor."E-Mail" <> '') AND (lVendorBankAccount."E-Mail" = '') THEN lVendorBankAccount."E-Mail" := lVendor."E-Mail";
                                   //IF (lVendor."Fax No." <> '') AND (lVendorBankAccount."Fax No." = '') THEN lVendorBankAccount."Fax No." := lVendor."Fax No.";
